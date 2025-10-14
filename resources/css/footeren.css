@@ -1,0 +1,13 @@
+.footeren-image-container {
+    width: 10.8cm;
+    max-height: 1.2cm;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ 
+.footeren-logo {
+    width: 10.8cm;
+    height: 100%;
+}

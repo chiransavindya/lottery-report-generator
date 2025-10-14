@@ -1,0 +1,640 @@
+.shanida-ticket-container {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+.shanida-ticket-containersn {
+  width: 9.3cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+.shanida-ticket-container-tm {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+  
+  /* Header Section */
+.shanida-ticket-header {
+  display: flex;
+  align-items: center;
+}
+  
+  /* Logo Section */
+.shanida-ticket-logo-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+.shanida-ticket-logo {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+.shanida-ticket-logosn {
+  height: 2.4cm;
+  width: 9.3cm;
+}
+
+.shanida-ticket-logotm {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+/* Draw Number Section */
+.shanida-ticket-draw-number-container {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.35cm;
+  margin-right: 0.1cm;
+}
+
+.shanida-ticket-draw-number-containersn {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.0cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+.shanida-ticket-draw-number-containertm {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.5cm;
+  margin-right: 0.1cm;
+  margin-top: -0.1cm;
+}
+  
+/* Draw Number Text Section - Common for all languages */
+.shanida-ticket-draw-number-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 0.9cm;
+}
+
+/* Sinhala Draw Number Text - Language specific for Sinhala */
+.shanida-ticket-draw-number-text-sn {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: -0.88cm;
+}
+
+/* Tamil Draw Number Text - Language specific for Tamil */
+.shanida-ticket-draw-number-text-tm {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: -1.6cm;
+}
+
+.shanida-ticket-draw-number-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.shanida-ticket-draw-number-text1-sn {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.28cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.shanida-ticket-draw-number-text1-tm {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.31cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Color Section - Common for all languages */
+.shanida-ticket-colour-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.5cm;
+}
+
+/* Sinhala Color Text - Language specific for Sinhala */
+.shanida-ticket-colour-text-sn {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.4cm;
+}
+
+/* Tamil Color Text - Language specific for Tamil */
+.shanida-ticket-colour-text-tm {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.5cm;
+}
+
+.shanida-ticket-colour-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Sinhala Color Text1 - Language specific for Sinhala */
+.shanida-ticket-colour-text1-sn {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Tamil Color Text1 - Language specific for Tamil */
+.shanida-ticket-colour-text1-tm {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Winning Numbers Section */
+
+/* winning numbers container - English version */
+.shanida-ticket-winning-numbers {
+  justify-content: center;
+}
+
+.shanida-ticket-winning-numbers-title {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -2.6cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap:0.6cm
+}
+
+/* Sinhala Winning Numbers Title - Language specific for Sinhala */
+.shanida-ticket-winning-numbers-title-sn {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -3cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+  display: flex;
+  gap: 0.5cm;
+}
+
+
+
+.shanida-ticket-winning-numbers-titletm {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -2.3cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap:0.45cm
+}
+
+.shanida-ticket-all-numbers-row-sn {
+  display: flex;
+  align-items: center;
+  gap: 0.3cm;
+  margin-left: -0.9cm;
+}
+
+
+.shanida-ticket-winning-numbers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.15cm;
+  margin-left: -1.9cm;
+}
+
+.shanida-ticket-winning-numbers-container-sn {
+  display: flex;
+  align-items: center;
+  gap: 0.12cm;
+  /* Remove margin-left since it's now controlled by the row container */
+}
+.shanida-ticket-english-letter-container-sn {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2cm; /* Space between winning numbers and English letter */
+}
+
+.shanida-ticket-english-letter-sn {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff; /* Different background color for English letter */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.shanida-ticket-english-letter-text-sn {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+}
+
+.shanida-ticket-winning-numbers-container-tm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -1.8cm;
+  margin-top: -0.07cm;
+  gap: 0.5cm;
+}
+
+.shanida-ticket-winning-numbers-group-tm {
+  display: flex;
+  align-items: center;
+  gap: 0.12cm; /* Original gap between winning numbers */
+}
+
+.shanida-ticket-english-letter-group-tm {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2cm;
+}
+
+.shanida-ticket-winning-number:nth-child(5) {
+  margin-left: 0.5cm;
+}
+
+/* Winning Number Styling - Common for all languages */
+.shanida-ticket-winning-number {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.shanida-ticket-winning-number-sn {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Tamil Winning Number Styling (special case) - Language specific for Tamil */
+.shanida-ticket-winning-number-tml {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -0.52cm;
+  padding-bottom: 0.0cm;
+}
+
+/* width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -0.6cm;
+  margin-top: 0.05cm;
+  padding-bottom: 0.0cm; */
+
+.shanida-ticket-winning-number-text {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+}
+
+.shanida-ticket-winning-number-text-sn {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* Tamil Winning Number Text - Language specific for Tamil */
+.shanida-ticket-winning-number-text-tm {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* Bottom Section */
+.shanida-ticket-bottom {
+  align-items: center;
+  margin-left: -2.5cm;
+  margin-right: 0.3cm;
+  margin-top: 0.05cm;
+  width: 60%;
+  height: 0.6cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.30cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-ticket-bottomsn {
+  align-items: center;
+  margin-left: -1.4cm;
+  margin-right: 0.03cm;
+  margin-top: 0.05cm;
+  width: 60%;
+  height: 0.6cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.30cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-ticket-bottomtm {
+  align-items: center;
+  margin-left: -2.4cm;
+  margin-right: 0.01cm;
+  margin-top: 0.068cm;
+  width: 55%;
+  height: 0.6cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.18cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-ticket-bottomtm-txt {
+  color: white;
+  font-size: 0.27cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-ticket-special {
+  display: flex;
+  margin-top: 0.05cm;
+  margin-left: 0.5cm;
+ }
+
+ .shanida-ticket-special-tm {
+  display: flex;
+  margin-top: 0.05cm;
+  margin-left: 0.5cm;
+ }
+
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+ 
+ /* Special Prize Section */
+ .shanida-ticket-special-prize-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.2cm;
+  width: 3cm;
+  padding: 0.01cm 0.01cm 0.09cm 0.01cm;
+  margin-top: -0.778cm;
+  margin-left: 1.7cm;
+ }
+ 
+ .shanida-ticket-special-prize-container-sn {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.16cm;
+  width: 2.87cm;
+  padding: 0.01cm 0.01cm 0.15cm 0.01cm;
+  margin-left: 1.5cm;
+  margin-top: -0.6cm;
+ }
+
+ .shanida-ticket-special-prize-container-tm {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.2cm;
+  height: 1.70cm;
+  width: 3cm;
+  padding: 0.0cm 0.0cm 0.05cm 0.0cm;
+  margin-top: -0.9cm;
+  margin-left:2cm;
+ }
+
+/* display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1cm;
+  width: 3.5cm;
+  padding: 0.cm 0.01cm -1cm 0.01cm;
+  margin-top: -0.7cm;
+  margin-left: 1.2cm; */
+ 
+ 
+
+ .shanida-ticket-special-prize-icon {
+  margin-left: -1.65cm;
+  margin-right: 0.14cm;
+  margin-top: 0.6cm;
+  height: 0.85cm;
+  width: 1.5cm;  
+ }
+
+ .shanida-ticket-special-prize-icon-sn {
+  margin-left: -1.48cm;
+  margin-top: 0.5cm;
+  height: 0.85cm;
+  width: 1.5cm;
+ }
+
+ .shanida-ticket-special-prize-icon-tm {
+  margin-left: -1.5cm;
+  margin-top: 0.8cm;
+  height: 0.85cm;
+  width: 1.5cm;
+ }
+ 
+ /* Additional Styling - Common for all languages */
+ .shanida-special-numbers {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 0.3cm;
+  font-size: 0.28cm;
+  font-weight: bold;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Sinhala Special Numbers - Language specific for Sinhala */
+.shanida-special-numbers-sn {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 0.3cm;
+  font-size: 0.28cm;
+  font-weight: bold;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-special-numbers-tm {
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.232cm;
+  border-collapse: collapse;
+  width: 100%;
+  height: 55%;
+  margin-top: 0.01cm;
+  margin-left: 0.001cm;
+  margin-right: 0.02cm;
+  margin-bottom: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.shanida-special-numbers-text {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.17cm;
+  font-weight: 1000;
+  margin-top: -0.04cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-special-numbers-text-pp {
+  color: rgb(0, 0, 0);
+  text-align: start;
+  font-size: 0.12cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.shanida-special-numbers-tm-text {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.1cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}

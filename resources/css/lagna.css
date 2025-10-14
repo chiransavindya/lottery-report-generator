@@ -1,0 +1,479 @@
+.lagna-ticket-container {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+.lagna-ticket-containersn {
+  width: 9.3cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+  
+  /* Header Section */
+.lagna-ticket-header {
+  display: flex;
+  align-items: center;
+}
+  
+  /* Logo Section */
+.lagna-ticket-logo-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+.lagna-ticket-logo {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+.lagna-ticket-logosn {
+  height: 2.4cm;
+  width: 9.3cm;
+}
+
+/* Draw Number Section */
+.lagna-ticket-draw-number-container {
+  flex:1;
+  align-items: flex-start;
+  margin-left: -6cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+.lagna-ticket-draw-number-containersn {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -5.2cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+.lagna-ticket-draw-number-containertm {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.5cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+  
+.lagna-ticket-draw-number-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lagna-ticket-draw-number-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.lagna-ticket-draw-number-text1-sn {
+  background-color: #eceef1;
+  padding: 0.04cm 0.02cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.lagna-ticket-draw-number-text1-tm {
+  background-color: #eceef1;
+  padding: 0.08cm 0.04cm 0.0cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+
+/* Color Section */
+
+.lagna-ticket-colour-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.3cm;
+}
+
+.lagna-ticket-colour-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Winning Numbers Section */
+.lagna-ticket-winning-numbers {
+  justify-content: center;
+}
+
+.lagna-ticket-winning-numbers-title {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -0.0cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+}
+
+.lagna-ticket-winning-numbers-titles {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -0.0cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+}
+
+.lagna-ticket-winning-numbers-titlet {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -0.0cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+}
+
+.lagna-ticket-winning-numbers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-left: 0.0cm;
+}
+
+.lagna-ticket-winning-numbers-containersn {
+  display: flex;
+  align-items: center;
+  gap: 0.1cm;
+  margin-left: 0.0cm;
+}
+
+.lagna-ticket-winning-numbers-containertm {
+  display: flex;
+  align-items: center;
+  gap: 0.18cm;
+  margin-left: 0.0cm;
+}
+
+.lagna-ticket-winning-number:nth-child(5) {
+  margin-left: 0.15cm;
+}
+
+.lagna-ticket-winning-number {
+  width: 0.55cm;
+  height: 0.55cm;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;  /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+}
+
+.lagna-ticket-winning-number-text {
+  font-size: 0.47cm; /* Slightly reduce if needed */
+  font-weight: 1000;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 1.5; /* Ensures text doesn't push down */
+}
+
+/* Bottom Section */
+.lagna-ticket-bottom {
+  align-items: center;
+  margin-left: -1.0cm;
+  margin-top: 0.08cm;
+  width: auto;
+  height: 0.65cm;
+  background-color: #3b4453;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm;
+  color: white;
+  font-size: 0.32cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.lagna-ticket-bottoms {
+  align-items: center;
+  margin-left: -1.0cm;
+  margin-top: 0.04cm;
+  margin-bottom: 0.1cm;
+  width: 100%;
+  height: 0.65cm;
+  background-color: #3b4453;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.30cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.lagna-ticket-bottomtm {
+  align-items: center;
+  margin-left: -1.6cm;
+  margin-top: 0.01cm;
+  width: 5.3cm;
+  height: 0.65cm;
+  background-color: #3b4453;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.22cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.lagna-ticket-bottomtm-txt {
+  margin-left: 0.2cm;
+  color: white;
+  font-size: 0.29cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lagna-ticket-special {
+  display: flex;
+  margin-left: 1cm;
+  margin-top: 0.1cm;
+ }
+
+ .lagna-ticket-special-sn {
+  display: flex;
+  margin-top: 0.05cm;
+  margin-left: 1cm;
+ }
+
+ .lagna-ticket-special-tm {
+  display: flex;
+  margin-top: 0.05cm;
+  margin-left: 1.6cm;
+ }
+ 
+ /* Special Prize Section */
+ .lagna-ticket-special-prize-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.3cm;
+  width: 4.3cm;
+  padding: 0.01cm 0.01cm 0.01cm 0.02cm;
+  margin-left: 0.83cm;
+  margin-top: -0.5cm;
+ }
+
+ .lagna-ticket-special-prize-containersn {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.33cm;
+  width: 3.8cm;
+  padding: 0.01cm 0.01cm 0.01cm 0.01cm;
+  margin-left: 0.63cm;
+  margin-top: -0.5cm;
+ }
+
+ .lagna-ticket-special-prize-container-tm {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.3cm;
+  width: 3.3cm;
+  padding: 0.01cm 0.01cm 0.01cm 0.01cm;
+  margin-left: 0.5cm;
+  margin-top: -0.5cm;
+ }
+ 
+ .lagna-ticket-special-prize-icon {
+  margin-left: -0.5cm;
+  margin-top: 0.7cm;
+  height: 0.5cm;
+  width: 0.8cm;
+ }
+
+ .lottery-table {
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.26cm;
+  border-collapse: collapse;
+  width: 100%;
+  height: 65%;
+  margin-top: 0.1cm;
+  margin-left: 0.001cm;
+  margin-right: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+ }
+
+ .lottery-table-sn {
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.20cm;
+  border-collapse: collapse;
+  width: 100%;
+  height: 65%;
+  margin-top: 0.1cm;
+  margin-left: 0.001cm;
+  margin-right: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+ }
+
+ .lottery-table-tm {
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.18cm;
+  border-collapse: collapse;
+  width: 100%;
+  height: 65%;
+  margin-top: 0.1cm;
+  margin-left: 0.01cm;
+  margin-right: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ /* Additional Styling */
+ .lagna-special-numbers {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+  font-size: 0.29cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lagna-special-numbers-text-pp {
+  color: rgb(0, 0, 0);
+  text-align: start;
+  font-size: 0.14cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: -0.01cm;
+}
+
+.lagna-special-numbers-text-pptm {
+  color: rgb(0, 0, 0);
+  text-align: start;
+  font-size: 0.1cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 0.01cm;
+}
+
+.lagna-special-txt {
+  font-size: 0.31cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.03cm;
+}
+
+.lagna-special-numbers-tamil-text {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.1cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lagna-special-numbers-tamil {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.2cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.lagna-ticket-ball-image {
+  width: 20px;
+  height: 20px;
+  margin-left: center;
+}
+
+.lagna-ticket-ball-name {
+  font-size: 0.18cm;
+  font-weight: bold;
+  margin-top: -0.9cm;
+  margin-left: -0.6cm;
+  color: #ffffff;
+}
+
+.lagna-ticket-ball-images {
+  width: 25px;
+  height: 25px;
+}
+
+.lagna-ticket-ball-names {
+  text-align: center;
+  font-size: 0.26cm;
+  font-weight: bold;
+  margin-top: -0.95cm;
+  margin-left: -0.58cm;
+  color: #ffffff;
+}
+
+.lagna-ticket-ball-imaget {
+  width: 30px;
+  height: 25px;
+  margin-left: 0.05cm;
+}
+
+.lagna-ticket-ball-namet {
+  text-align: center;
+  font-size: 0.18cm;
+  font-weight: bold;
+  margin-top: -0.9cm;
+  margin-left: -0.67cm;
+  color: #ffffff;
+}

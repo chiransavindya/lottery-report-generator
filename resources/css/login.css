@@ -1,0 +1,104 @@
+/* Login Page Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #cef6e2, #114e45);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(33, 31, 31);
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.input-field::placeholder {
+    color: rgba(47, 46, 46, 0.7);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.checkbox-container input {
+    width: 16px;
+    height: 16px;
+}
+
+.forgot-password {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #d81e14;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #f6f6f8;
+    border: none;
+    border-radius: 8px;
+    color: rgb(7, 7, 7);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-items: center;
+}
+
+.submit-button:hover {
+    background: #18915b;
+}
+
+.sign-up-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.sign-up-text a {
+    color: #fbbf24;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sign-up-text a:hover {
+    text-decoration: underline;
+}

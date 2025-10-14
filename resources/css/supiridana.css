@@ -1,0 +1,475 @@
+.supiridana-ticket-container {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+.supiridana-ticket-containersn {
+  width: 9.3cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+  
+  /* Header Section */
+.supiridana-ticket-header {
+  display: flex;
+
+}
+  
+  /* Logo Section */
+.supiridana-ticket-logo-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+.supiridana-ticket-logo {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+.supiridana-ticket-logosn {
+  height: 2.4cm;
+  width: 9.3cm;
+}
+
+/* Draw Number Section */
+.supiridana-ticket-draw-number-container {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -7cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+.supiridana-ticket-draw-number-containersn {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -5.5cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+.supiridana-ticket-draw-number-containertm {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -7cm;
+  margin-top: 0.05cm;
+}
+  
+.supiridana-ticket-draw-number-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-ticket-draw-number-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.supiridana-ticket-draw-number-text1-tm {
+  background-color: #eceef1;
+  padding: 0.06cm 0.1cm 0.0cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.31cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+
+/* Color Section */
+
+.supiridana-ticket-colour-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.5cm;
+}
+
+.supiridana-ticket-colour-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Winning Numbers Section */
+.supiridana-ticket-winning-numbers {
+  justify-content: center;
+}
+
+.supiridana-ticket-winning-numbers-title {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -1cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+  display: flex;
+  gap: 0.7cm;
+}
+
+.supiridana-ticket-winning-numbers-titles {
+  color: white;
+  font-size: 0.2cm;
+  font-weight: 1000;
+  margin-left: -0.5cm;
+  margin-top: 0.01cm;
+  margin-bottom: 0.08cm;
+  display: flex;
+  justify-content: center;
+  gap: 1.55cm;
+}
+
+.supiridana-ticket-winning-numbers-titletm {
+  color: white;
+  font-size: 0.15cm;
+  font-weight: 1000;
+  margin-left: -1.5cm;
+  margin-top: 0.1cm;
+  margin-bottom: 0.1cm;
+  display: flex;
+  justify-content: center;
+  gap: 1.5cm;
+}
+
+.supiridana-ticket-english-letter-container-sn {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2cm;
+  margin-right: 0.5cm;
+}
+
+.supiridana-ticket-winning-numbers-container-sn {
+  display: flex;
+  align-items: center;
+  gap: 0.1cm;
+  margin-left: 0.3cm;
+  margin-top: 0.001cm;
+}
+
+/* English row container */
+.supiridana-ticket-all-numbers-row {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-top: 0.1cm;
+  margin-left: 0.0cm;
+}
+
+/* Sinhala row container */
+.supiridana-ticket-all-numbers-row-sn {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-top: 0.001cm;
+  margin-left: 0.5cm;
+}
+
+/* English Letter Container */
+.supiridana-ticket-english-letter-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0.4cm;
+
+}
+
+/* Winning Numbers Container - Update existing */
+.supiridana-ticket-winning-numbers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.1cm;
+  margin-left: 0.8cm;
+  margin-top: 0cm;
+}
+
+.supiridana-ticket-all-numbers-row-tm {
+  display: flex;
+  align-items: center;
+  gap: 0.6cm;
+  margin-top: -0.05cm;
+}
+
+/* English Letter Container - Tamil version */
+.supiridana-ticket-english-letter-container-tm {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5cm; /* Adjust as needed */;
+}
+
+
+
+/* Winning Numbers Container - Tamil version - Update existing */
+.supiridana-ticket-winning-numbers-container-tm {
+  display: flex;
+  align-items: center;
+  gap: 0.1cm;
+  margin-left: 0.5cm; /* Adjust spacing between sections */
+  margin-top: 0cm; /* Remove top margin since we're in a row */
+}
+
+.supiridana-ticket-winning-number-text:nth-child(1) {
+  margin-right: 0.2cm;
+}
+
+.supiridana-ticket-winning-number-text:nth-child(2) {
+  margin-right: 0.2cm;
+}
+
+.supiridana-ticket-winning-number {
+  width: 0.5cm;
+  height: 0.5cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;  /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+}
+
+.supiridana-ticket-winning-number-sn {
+  width: 0.45cm;
+  height: 0.45cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;  /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;/* Centers vertically */
+  text-align: center;
+}
+
+.supiridana-ticket-winning-number-tm {
+  width: 0.5cm;
+  height: 0.5cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;  /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+}
+
+.supiridana-ticket-winning-number-text {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+  margin-left: 0.21cm;
+}
+
+/* Bottom Section */
+.supiridana-ticket-bottom {
+  align-items: center;
+  margin-left: 0.7cm;
+  margin-right: 0.1cm;
+  margin-top: 0cm;
+  width: auto;
+  height: 0.65cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.30cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-ticket-bottom-sn {
+  align-items: center;
+  margin-left: 0.7cm;
+  margin-right: 0.01cm;
+  margin-top: 0.1cm;
+  width: auto;
+  height: 0.6cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.30cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-ticket-bottomtm {
+  align-items: center;
+  margin-left: 0.7cm;
+  margin-right: 0.01cm;
+  margin-top: 0.1cm;
+  width: auto;
+  height: 0.6cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.26cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-ticket-bottomtm-txt {
+  margin-left: 0.05cm;
+  color: white;
+  font-size: 0.24cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-ticket-special {
+  display: flex;
+  margin-top: 0.1cm;
+  margin-left: -0.7cm;
+ }
+ 
+ /* Special Prize Section */
+ .supiridana-ticket-special-prize-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.3cm;
+  width: 3.3cm;
+  padding: 0.01cm 0.01cm 0.01cm 0.01cm;
+  margin-left: 1.4cm;
+  margin-top: -0.5cm;
+ }
+
+ .supiridana-ticket-special-prize-container-sn {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.2cm;
+  width: 4cm;
+  padding: 0.01cm 0.01cm 0.01cm 0.01cm;
+  margin-left: 1.01cm;
+  margin-top: -0.3cm;
+ }
+
+ .supiridana-ticket-special-prize-container-tm {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 1.2cm;
+  width: 3.5cm;
+  padding: 0.01cm 0.01cm 0.01cm 0.01cm;
+  margin-left: 0.6cm;
+  margin-top: -0.4cm;
+ }
+ 
+ .supiridana-ticket-special-prize-icon {
+  margin-left: -0.4cm;
+  margin-top: 0.5cm;
+  height: 0.5cm;
+  width: 0.8cm;  
+ }
+
+ .special-prize-table{
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.26cm;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0.1cm;
+  margin-left: 0.001cm;
+  margin-right: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+ }
+
+ .special-prize-table-sn{
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.25cm;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0.1cm;
+  margin-left: 0.001cm;
+  margin-right: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+ }
+
+ .special-prize-table-tm{
+  text-size-adjust: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.15cm;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0.1cm;
+  margin-left: 0.001cm;
+  margin-right: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ /* Additional Styling */
+ .supiridana-special-numbers {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 0.3cm;
+  font-size: 0.26cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-special-numbers-text {
+  color: rgb(0, 0, 0);
+  text-align: start;
+  font-size: 0.12cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-special-numbers-tm {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.14cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.supiridana-special-numbers-text-pptm {
+  color: rgb(0, 0, 0);
+  text-align: start;
+  font-size: 0.12cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}

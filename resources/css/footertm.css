@@ -1,0 +1,11 @@
+.footertm-image-container {
+  width: 10.8cm;
+  max-height: 1.2cm;
+  margin: 0 auto;
+  display: flex;
+  }
+ 
+.footertm-logo {
+  width: 10.8cm;
+  height: 100%;
+}

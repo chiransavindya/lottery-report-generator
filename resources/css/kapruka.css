@@ -1,0 +1,490 @@
+/* Main Container - Common for all languages */
+.kapruka-ticket-container {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 ;
+  display: flex;
+}
+
+/* Sinhala Container - Language specific for Sinhala version */
+.kapruka-ticket-containersn {
+  width: 9.3cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Tamil Container - Language specific for Tamil version */
+.shanida-ticket-container-tm {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 0.01cm;
+  margin-top: 0.01cm;
+}
+
+/* ========================================
+   HEADER SECTION STYLES
+   ========================================
+   Layout and positioning for ticket header
+   includes logo and main title elements
+   ======================================== */
+
+.kapruka-ticket-header {
+  display: flex;
+  align-items: center;
+}
+  
+/* Logo Section - Container and sizing for lottery logos */
+.kapruka-ticket-logo-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+/* Main logo - English version dimensions */
+.kapruka-ticket-logo {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+/* Sinhala logo - Adjusted dimensions for Sinhala text */
+.kapruka-ticket-logosn {
+  height: 2.4cm;
+  width: 9.3cm;
+}
+
+/* ========================================
+   DRAW NUMBER SECTION STYLES
+   ========================================
+   Positioning and styling for draw numbers
+   Different positioning for each language version
+   ======================================== */
+
+/* English version draw number container */
+.kapruka-ticket-draw-number-container {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -8cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+/* Sinhala version draw number container */
+.kapruka-ticket-draw-number-containersn {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.8cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+/* Tamil version draw number container */
+.kapruka-ticket-draw-number-containertm {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -8.0cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+/* Draw number label - Background and text styling */
+.kapruka-ticket-draw-number-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Draw number value - English version */
+.kapruka-ticket-draw-number-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Draw number value - Sinhala version */
+.kapruka-ticket-draw-number-text1-sn {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.28cm;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Draw number value - Tamil version */
+.kapruka-ticket-draw-number-text1-tm {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.0cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.32cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* ========================================
+   COLOR SECTION STYLES
+   ========================================
+   Color label and value display styling
+   Consistent with draw number design
+   ======================================== */
+
+/* Color label - Background and text styling */
+.kapruka-ticket-colour-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.3cm;
+}
+
+/* Color value - Display area for color name */
+.kapruka-ticket-colour-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* ========================================
+   WINNING NUMBERS SECTION STYLES
+   ========================================
+   Layout for winning numbers display
+   Includes titles and number containers
+   ======================================== */
+
+/* winning numbers container - English version */
+.kapruka-ticket-winning-numbers {
+  display: flex;            /* make children line up horizontally */
+  justify-content: center;  /* center them horizontally inside parent */
+  align-items: center;      /* optional: vertically align text */
+  gap: 1rem;                /* optional: space between each div */
+}
+
+/* winning numbers container - Sinhala version */
+.kapruka-ticket-winning-numbers-s {
+  display: flex;            /* make children line up horizontally */
+  justify-content: center;  /* center them horizontally inside parent */
+  align-items: center;      /* optional: vertically align text */
+  gap: 4rem;                /* optional: space between each div */
+}
+
+/* winning numbers container - Tamil version */
+.kapruka-ticket-winning-numbers-tm {
+  display: flex;            /* make children line up horizontally */
+  justify-content: center;  /* center them horizontally inside parent */
+  align-items: center;      /* optional: vertically align text */
+  gap: 0rem;                /* optional: space between each div */
+}
+
+/* Winning numbers title - English version */
+.kapruka-ticket-winning-numbers-title {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -1.15cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - Sinhala version */
+.kapruka-ticket-winning-numbers-titles {
+  color: white;
+  font-size: 0.2cm;
+  font-weight: 1000;
+  margin-left: -1.7cm;
+  margin-top: 0.03cm;
+  margin-bottom: 0.03cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - Tamil version */
+.kapruka-ticket-winning-numbers-titletm {
+  color: white;
+  font-size: 0.15cm;
+  font-weight: 1000;
+  margin-left: -1.0cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - English version */
+.kapruka-ticket-winning-numbers-title1 {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: 0.1cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - Sinhala version */
+.kapruka-ticket-winning-numbers-title1s {
+  color: white;
+  font-size: 0.2cm;
+  font-weight: 1000;
+  margin-left: -1.0cm;
+  margin-top: 0.03cm;
+  margin-bottom: 0.03cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - Tamil version */
+.kapruka-ticket-winning-numbers-title1tm {
+  color: white;
+  font-size: 0.15cm;
+  font-weight: 1000;
+  margin-left: 0.5cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - English version */
+.kapruka-ticket-winning-numbers-title2 {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: 0.1cm;
+  margin-bottom: 0.03cm;
+  margin-top: 0.03cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - Sinhala version */
+.kapruka-ticket-winning-numbers-title2s {
+  color: white;
+  font-size: 0.2cm;
+  font-weight: 1000;
+  margin-left: -1.0cm;
+  margin-top: 0.03cm;
+  margin-bottom: 0.03cm;
+  justify-content: center;
+}
+
+/* Winning numbers title - Tamil version */
+.kapruka-ticket-winning-numbers-title2tm {
+  color: white;
+  font-size: 0.15cm;
+  font-weight: 1000;
+  margin-left: 1.2cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+}
+
+/* Winning numbers container - English version */
+.kapruka-ticket-winning-numbers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-left: 0.4cm;
+}
+
+/* Winning numbers container - Sinhala version */
+.kapruka-ticket-winning-numbers-containersn {
+  display: flex;
+  align-items: center;
+  gap: 0.1cm;
+  margin-left: 0.2cm;
+}
+
+/* Winning numbers container - Tamil version */
+.kapruka-ticket-winning-numbers-containertm {
+  display: flex;
+  align-items: center;
+  gap: 0.1cm;
+  margin-left: 0.5cm;
+}
+
+/* Special spacing for first two winning numbers */
+.kapruka-ticket-winning-number:nth-child(1) {
+  margin-right: 1.1cm;
+}
+
+.kapruka-ticket-winning-number:nth-child(2) {
+  margin-right: 0.5cm;
+}
+
+/* Individual winning number ball styling */
+.kapruka-ticket-winning-number {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Winning number text - English version */
+.kapruka-ticket-winning-number-text {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+  margin-left: 0.03cm;
+}
+
+/* Winning number text - Sinhala version */
+.kapruka-ticket-winning-number-text-sn {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+  margin-left: 0.02cm;
+}
+
+/* ========================================
+   BOTTOM SECTION STYLES
+   ========================================
+   Next super prize and special number display
+   Different styling for each language version
+   ======================================== */
+
+/* Bottom section - English version */
+.kapruka-ticket-bottom {
+  align-items: center;
+  margin-left: -0.0cm;
+  margin-right: 0.5cm;
+  margin-top: 0.05cm;
+  width: auto;
+  height: 0.45cm;
+  background-color: #3b4557;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm;
+  color: white;
+  font-size: 0.32cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Bottom section - Sinhala version */
+.kapruka-ticket-bottoms {
+  align-items: center;
+  margin-left: -0.1cm;
+  margin-right: 0.5cm;
+  width: auto;
+  height: 0.4cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm;
+  color: white;
+  font-size: 0.32cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Bottom section - Tamil version */
+.kapruka-ticket-bottomtm {
+  align-items: center;
+  margin-left: 0.5cm;
+  margin-right: 0.5cm;
+  margin-top: 0.05cm;
+  width: auto;
+  height: 0.4cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm;
+  color: white;
+  font-size: 0.25cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tamil bottom text styling */
+.kapruka-ticket-bottomtm-txt {
+  color: white;
+  font-size: 0.29cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Special section container */
+.kapruka-ticket-special {
+  display: flex;
+  margin-top: 0.1cm;
+ }
+ 
+/* ========================================
+   SPECIAL PRIZE SECTION STYLES
+   ========================================
+   Special prize container and icon styling
+   Used for bonus numbers and prizes
+   ======================================== */
+
+/* Special prize container */
+ .kapruka-ticket-special-prize-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 0.5cm;
+  width: auto;
+  padding: 0.05cm 0.2cm;
+ }
+ 
+ /* Special prize icon */
+ .kapruka-ticket-special-prize-icon {
+  margin-left: -0.4cm;
+  margin-top: -0.2cm;
+  height: 0.5cm;
+  width: 0.8cm;  
+ }
+ 
+/* ========================================
+   ADDITIONAL STYLING
+   ========================================
+   Miscellaneous styles and utility classes
+   General purpose styling elements
+   ======================================== */
+
+/* Special numbers text styling */
+ .special-numbers {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.25cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+

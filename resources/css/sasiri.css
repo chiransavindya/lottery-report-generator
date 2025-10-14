@@ -1,0 +1,370 @@
+.sasiri-ticket-container {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sasiri-ticket-containersn {
+  width: 9.3cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+  
+/* Header Section */
+.sasiri-ticket-header {
+  display: flex;
+  align-items: center;
+}
+  
+/* Logo Section */
+.sasiri-ticket-logo-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+.sasiri-ticket-logo {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+.sasiri-ticket-logosn {
+  height: 2.4cm;
+  width: 9.3cm;
+}
+
+/* Draw Number Section */
+.sasiri-ticket-draw-number-container {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.4cm;
+  margin-right: 0.1cm;
+  margin-top: 0.05cm;
+}
+
+.sasiri-ticket-draw-number-containersn {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -5.5cm;
+  margin-right: 0.1cm;
+}
+
+.sasiri-ticket-draw-number-containertm {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -6.9cm;
+  margin-right: 0.1cm;
+}
+  
+.sasiri-ticket-draw-number {
+  background-color: #eceef1;
+  border-radius: 0.1cm;
+  padding: 0.1cm 0.1cm;
+  display: inline-block;
+}
+  
+.sasiri-ticket-draw-number-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 0.5cm;
+}
+
+.sasiri-ticket-draw-number-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.sasiri-ticket-draw-number-text1-sn {
+  background-color: #eceef1;
+  padding: 0.01cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.28cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+.sasiri-ticket-draw-number-text1tm {
+  background-color: #eceef1;
+  padding: 0.02cm 0.2cm 0.0cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.3cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Color Section */
+.sasiri-ticket-colour-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.5cm;
+}
+
+.sasiri-ticket-colour-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+
+/* Winning Numbers Section */
+.sasiri-ticket-winning-numbers {
+  justify-content: center;
+}
+
+.sasiri-ticket-winning-numbers-title {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -0.75cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+}
+
+.sasiri-ticket-winning-numbers-titles {
+  color: white;
+  font-size: 0.19cm;
+  font-weight: 1000;
+  margin-left: -0.57cm;
+  margin-top: 0.01cm;
+  justify-content: center;
+}
+
+.sasiri-ticket-winning-numbers-titletm {
+  color: white;
+  font-size: 0.18cm;
+  font-weight: 1000;
+  margin-left: -0.1cm;
+  margin-top: 0.08cm;
+  margin-bottom: 0.03cm;
+  justify-content: center;
+}
+
+.sasiri-ticket-winning-numbers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3cm;
+  margin-left: -0.8cm;
+}
+
+.sasiri-ticket-winning-numbers-containersn {
+  display: flex;
+  align-items: center;
+  gap: 0.15cm;
+  margin-left: -0.6cm;
+  margin-top: 0.01cm;
+}
+
+.sasiri-ticket-winning-numbers-containertm {
+  display: flex;
+  align-items: center;
+  gap: 0.20cm;
+  margin-left: -0.1cm;
+  margin-top: 0.1cm;
+}
+
+.sasiri-ticket-winning-number {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;  /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+}
+
+.sasiri-ticket-winning-number-text {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5; /* Ensures text doesn't push down */
+}
+
+.sasiri-ticket-winner-container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.3cm;
+  margin-top: -0.02cm;
+  width: 2.6cm;
+  height: 0.8cm;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 0.24cm;
+  font-weight: bold;
+}
+
+.sasiri-ticket-winner-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -0.3cm;
+  margin-top: -0.02cm;
+  width: 0.8cm;
+  height: 0.8cm;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 0.5cm;
+  font-weight: bold;
+  border-left: 0.03cm solid #000000;
+}
+
+.sasiri-ticket-winner-containeren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5cm;
+  margin-top: -0.2cm;
+  width: 2.5cm;
+  height: 0.8cm;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 0.26cm;
+  font-weight: bold;
+}
+
+.sasiri-ticket-winner-container1en {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -0.3cm;
+  margin-top: -0.2cm;
+  width: 0.6cm;
+  height: 0.8cm;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 0.45cm;
+  font-weight: bold;
+  border-left: 0.03cm solid #000000;
+}
+
+.sasiri-ticket-winner-containertm {
+  display: flex;
+  align-items: center;
+  margin-left: 0.3cm;
+  margin-top: -0.1cm;
+  width: 3cm;
+  height: 0.6cm;
+  background-color: #ffffff;
+  padding: 0.1cm 0.1cm;
+  color: rgb(0, 0, 0);
+  font-size: 0.16cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sasiri-ticket-winner-containertm1 {
+  display: flex;
+  align-items: center;
+  margin-left: -0.3cm;
+  margin-top: -0.1cm;
+  height: 0.6cm;
+  background-color: #ffffff;
+  padding: 0.1cm 0.1cm;
+  color: rgb(0, 0, 0);
+  font-size: 0.45cm;
+  font-weight: 1000;
+  border-left: 0.03cm solid #000000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Bottom Section */
+.sasiri-ticket-bottom {
+  align-items: center;
+  margin-left: -0.7cm;
+  margin-right: 1cm;
+  margin-top: 0.1cm;
+  width: auto;
+  height: 0.45cm;
+  background-color: #2d3748;
+  padding: 0.1cm 0.1cm;
+  border-radius: 0.1cm;
+  color: white;
+  font-size: 0.32cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sasiri-ticket-bottomsn {
+  align-items: center;
+  margin-left: -0.6cm;
+  margin-top: 0.2cm;
+  width: 4cm;
+  height: 0.35cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.26cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sasiri-ticket-bottomtm {
+  display: flex;
+  padding: 0.1cm 0.1cm;
+  align-items: center;
+  margin-left: -0.15cm;
+  margin-right: 1cm;
+  margin-top: 0.05cm;
+  width: 6cm;
+  height: 0.4cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  color: white;
+  font-size: 0.16cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sasiri-ticket-bottomtm-txt {
+  margin-left: 0.2cm;
+  color: white;
+  font-size: 0.29cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}

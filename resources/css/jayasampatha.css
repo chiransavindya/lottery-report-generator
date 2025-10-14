@@ -1,0 +1,403 @@
+/* Main Container - Common for all languages (English, Sinhala, Tamil) */
+.jayasampatha-ticket-container {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Sinhala Container - Language specific for Sinhala */
+.jayasampatha-ticket-containersn {
+  width: 9.3cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Tamil Container - Language specific for Tamil */
+.jayasampatha-ticket-container-tm {
+  width: 10.8cm;
+  height: auto;
+  max-height: 2.4cm;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Header Section - Common for all languages */
+.jayasampatha-ticket-header {
+  display: flex;
+}
+  
+/* Logo Section - Common for all languages */
+.jayasampatha-ticket-logo-container {
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+  }
+  
+.jayasampatha-ticket-logo {
+  height: 2.4cm;
+  width: 10.8cm;
+}
+
+/* Sinhala Logo - Language specific for Sinhala */
+.jayasampatha-ticket-logosn {
+  height: 2.4cm;
+  width: 9.3cm;
+}
+
+/* Draw Number Section - Common for all languages */
+.jayasampatha-ticket-draw-number-container {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -7cm;
+}
+
+/* Sinhala Draw Number Container - Language specific for Sinhala */
+.jayasampatha-ticket-draw-number-container-sn {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -5.5cm;
+  margin-right: 0.1cm;
+  margin-top: -0.05cm;
+}
+
+/* Tamil Draw Number Container - Language specific for Tamil */
+.jayasampatha-ticket-draw-number-container-tm {
+  flex: 1;
+  align-items: flex-start;
+  margin-left: -7.3cm;
+  margin-right: 0.1cm;
+}
+  
+.jayasampatha-ticket-draw-number-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.jayasampatha-ticket-draw-number-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.26cm;
+  letter-spacing: 0.05cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Sinhala Draw Number Text - Language specific for Sinhala */
+.jayasampatha-ticket-draw-number-text1-sn {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Tamil Draw Number Text - Language specific for Tamil */
+.jayasampatha-ticket-draw-number-text1-tm {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.02cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Color Section - Common for all languages */
+
+.jayasampatha-ticket-colour-text {
+  background-color: #b4b4b4;
+  padding: 0.04cm 0.04cm 0.04cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 0.5cm;
+}
+
+.jayasampatha-ticket-colour-text1 {
+  background-color: #eceef1;
+  padding: 0.04cm 0.2cm 0.04cm;
+  display: inline-block;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 0.26cm;
+  letter-spacing: 0.01cm;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-left: 0.03cm solid #000000;
+}
+
+/* Winning Numbers Section - Common for all languages */
+
+.jayasampatha-ticket-winning-numbers {
+  justify-content: center;
+  margin-left: 0.3cm;
+}
+
+.jayasampatha-ticket-winning-numbers-title {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: -1.0cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+  display: flex;
+  gap: 0.5cm;
+}
+
+/* Sinhala Winning Numbers Title - Language specific for Sinhala */
+.jayasampatha-ticket-winning-numbers-titles {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: 1.6cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+}
+
+/* Tamil Winning Numbers Title - Language specific for Tamil */
+.jayasampatha-ticket-winning-numbers-title-tm {
+  color: white;
+  font-size: 0.23cm;
+  font-weight: 1000;
+  margin-left: 2.2cm;
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+  justify-content: center;
+}
+
+/* Container holding letter on the left and numbers on the right - Common for all languages */
+.jayasampatha-letter-and-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.6cm;
+  margin-left: -0.1cm;
+}
+
+/* Letter block - Common for all languages */
+.jayasampatha-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05cm;
+  margin-top: -0.3cm;
+  margin-bottom: 0.2cm;
+}
+
+.jayasampatha-letter-en {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05cm;
+  margin-top: -0.2cm;
+  margin-bottom: 0cm;
+  margin-left: 0.15cm;
+}
+
+
+.jayasampatha-letter-label {
+  color: white;
+  font-size: 0.18cm;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: -0.08cm;
+}
+
+.jayasampatha-letter-badge {
+  width: 0.7cm;
+  height: 0.7cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.2cm;
+}
+
+.jayasampatha-letter-text {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+}
+
+/* Winning Numbers Container - Common for all languages */
+.jayasampatha-ticket-winning-numbers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-left: 0;
+}
+
+/* Sinhala Winning Numbers Container - Language specific for Sinhala */
+.jayasampatha-ticket-winning-numbers-containersn {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-left: 0.3cm;
+}
+
+/* Tamil Winning Numbers Container - Language specific for Tamil */
+.jayasampatha-ticket-winning-numbers-container-tm {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  margin-left: 0;
+}
+
+.jayasampatha-ticket-winning-number:nth-child(5) {
+  margin-left: 0.2cm;
+}
+
+.jayasampatha-ticket-winning-number {
+  width: 0.65cm;
+  height: 0.65cm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.jayasampatha-ticket-winning-number-text {
+  font-size: 0.47cm;
+  font-weight: 1000;
+  color: #000;
+  line-height: 1.5;
+}
+
+
+
+/* Special Prize Section - Common for all languages */
+.jayasampatha-ticket-special {
+  display: flex;
+  margin-top: 0.0cm;
+ }
+ 
+ .jayasampatha-ticket-special-prize-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0.1cm;
+  height: 0.5cm;
+  width: auto;
+  padding: 0.05cm 0.2cm;
+ }
+ 
+ .jayasampatha-ticket-special-prize-icon {
+  margin-left: -0.4cm;
+  margin-top: -0.2cm;
+  height: 0.5cm;
+  width: 0.8cm;
+ }
+ 
+/* Bottom Section - Common for all languages */
+.jayasampatha-ticket-bottom {
+  align-items: center;
+  margin-left: 0.3cm;
+  margin-right: 0.5cm;
+  margin-top: 0.1cm;
+  width: auto;
+  height: 0.3cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.25cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Sinhala Bottom Section - Language specific for Sinhala */
+.jayasampatha-ticket-bottom-sn {
+  align-items: center;
+  margin-left: -0.2cm;
+  margin-right: 0.5cm;
+  margin-top: 0.1cm;
+  width: auto;
+  height: 0.3cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.25cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tamil Bottom Section - Language specific for Tamil */
+.jayasampatha-ticket-bottom-tm {
+  align-items: center;
+  margin-left: 0.4cm;
+  margin-right: 0.5cm;
+  margin-top: -0.05cm;
+  width: auto;
+  height: 0.3cm;
+  background-color: #2d3748;
+  border-radius: 0.1cm;
+  display: flex;
+  padding: 0.05cm 0.05cm 0.05cm 0.05cm;
+  color: white;
+  font-size: 0.25cm;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Special Numbers - Common for all languages */
+.special-numbers {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.25cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Sinhala Special Numbers - Language specific for Sinhala */
+.special-numbers-sn {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.25cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tamil Special Numbers - Language specific for Tamil */
+.special-numbers-tm {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.25cm;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
