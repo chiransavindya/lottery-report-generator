@@ -8,7 +8,7 @@ import AdakotipathiEnglish from "../Components/adakotipathiEnglish";
 import FooterEnglish from "../Components/footerEnglish";
 import HeaderEnglish from "../Components/headerEnglish";
 import JayasampathaEnglish from "../Components/jayasampathaEnglish";
-// import JayodaEnglish from "../Components/jayodaEnglish";
+import JayodaEnglish from "../Components/jayodaEnglish";
 import KaprukaEnglish from "../Components/kaprukaEnglish";
 import LagnaWasanaEnglish from "../Components/lagnawasanaEnglish";
 import SasiriEnglish from "../Components/sasiriEnglish";
@@ -21,7 +21,7 @@ import AdakotipathiSinhala from "../Components/adakotipathiSinhala";
 import FooterSinhala from "../Components/footerSinhala";
 import HeaderSinhala from "../Components/headerSinhala";
 import JayasampathaSinhala from "../Components/jayasampathaSinhala";
-// import JayodaSinhala from "../Components/jayodaSinhala";
+import JayodaSinhala from "../Components/jayodaSinhala";
 import KaprukaSinhala from "../Components/kaprukaSinhala";
 import LagnaWasanaSinhala from "../Components/lagnawasanawaSinhala";
 import SasiriSinhala from "../Components/sasiriSinhala";
@@ -34,7 +34,7 @@ import AdakotipathiTamil from "../Components/adakotipathiTamil";
 import FooterTamil from "../Components/footerTamil";
 import HeaderTamil from "../Components/headerTamil";
 import JayasampathaTamil from "../Components/jayasampathaTamil";
-// import JayodaTamil from "../Components/jayodaTamil";
+import JayodaTamil from "../Components/jayodaTamil";
 import KaprukaTamil from "../Components/kaprukaTamil";
 import LagnaWasanaTamil from "../Components/lagnawasanawaTamil";
 import SasiriTamil from "../Components/sasiriTamil";
@@ -50,9 +50,8 @@ const Report = () => {
   const [generatingLanguage, setGeneratingLanguage] = useState('');
 
   const today = new Date().getDay();
-  // const isMondayOrWednesday = today === 1 || today === 3; // Jayoda temporarily removed
-  // const isSasiriDay = [0, 2, 4, 5, 6].includes(today); // Sasiri now shows all 7 days
-  const isSasiriDay = true; // Sasiri shows all days of the week
+  const isMondayOrWednesday = today === 1 || today === 3;
+  const isSasiriDay = [0, 2, 4, 5, 6].includes(today);
   const isJayasampathaDay = true;
 
   // High quality single language PDF generation
@@ -202,7 +201,7 @@ const Report = () => {
           ShanidaEnglish,
           SuperballEnglish,
           isSasiriDay && SasiriEnglish,
-          // isMondayOrWednesday && JayodaEnglish, // Jayoda temporarily removed
+          isMondayOrWednesday && JayodaEnglish,
           isJayasampathaDay && JayasampathaEnglish,
           SupiridanaEnglish,
           FooterEnglish,
@@ -221,7 +220,7 @@ const Report = () => {
           ShanidaSinhala,
           SuperballSinhala,
           isSasiriDay && SasiriSinhala,
-          // isMondayOrWednesday && JayodaSinhala, // Jayoda temporarily removed
+          isMondayOrWednesday && JayodaSinhala,
           isJayasampathaDay && JayasampathaSinhala,
           SupiridanaSinhala,
           FooterSinhala,
@@ -240,7 +239,7 @@ const Report = () => {
           ShanidaTamil,
           SuperballTamil,
           isSasiriDay && SasiriTamil,
-          // isMondayOrWednesday && JayodaTamil, // Jayoda temporarily removed
+          isMondayOrWednesday && JayodaTamil, 
           isJayasampathaDay && JayasampathaTamil,
           SupiridanaTamil,
           FooterTamil,
