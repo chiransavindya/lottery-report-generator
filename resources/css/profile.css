@@ -96,6 +96,30 @@
 /* Space between label and control */
 .profile-card label { display: block; margin-bottom: 6px; color: var(--color-subtle); }
 
+/* Modal confirmation styling to match cards */
+.profile-modal-card header h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+.profile-modal-card header p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: var(--color-subtle);
+}
+.profile-modal-card .actions { gap: 12px; }
+
+/* Inline confirmation block separation */
+.confirm-section {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: #fafafa;
+}
+.confirm-section header h2 { font-size: 16px; }
+.confirm-section header p { margin-top: 6px; color: var(--color-subtle); }
+
 /* Inputs - animated bottom border */
 .profile-card input[type="text"],
 .profile-card input[type="email"],
