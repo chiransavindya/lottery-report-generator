@@ -1,8 +1,10 @@
 import GuestLayout from '@/Layouts/GuestLayout';
 import InputError from '@/Components/InputError';
+import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
 import { Head, useForm } from '@inertiajs/react';
+import "../../../css/login.css";
 
 export default function ForgotPassword({ status }) {
     const { data, setData, post, processing, errors } = useForm({
@@ -23,32 +25,39 @@ export default function ForgotPassword({ status }) {
         <GuestLayout>
             <Head title="Forgot Password" />
 
-            <div className="mb-4 text-sm text-gray-600">
-                Forgot your password? No problem. Just let us know your email address and we will email you a password
-                reset link that will allow you to choose a new one.
-            </div>
+            <section className="container">
+                <div className="login-box">
+                    <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <img src="/dlb.png" alt="DLB" className="login-logo" />
+                        <h1 className="login-title">Forgot your password?</h1>
+                        <p className="text-sm" style={{color:'#6b7280'}}>
+                            Enter your email address and we will send you a link to reset your password.
+                        </p>
 
-            {status && <div className="mb-4 font-medium text-sm text-green-600">{status}</div>}
+                        {status && <div className="mb-2 font-medium text-sm text-green-600">{status}</div>}
 
-            <form onSubmit={submit}>
-                <TextInput
-                    id="email"
-                    type="email"
-                    name="email"
-                    value={data.email}
-                    className="mt-1 block w-full"
-                    isFocused={true}
-                    onChange={onHandleChange}
-                />
+                        <form className="space-y-4 md:space-y-6" onSubmit={submit}>
+                            <div>
+                                <InputLabel htmlFor="email" value="Email" className="block mb-2 text-sm font-medium text-gray-700" />
+                                <TextInput
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    value={data.email}
+                                    className="input-field"
+                                    isFocused={true}
+                                    onChange={onHandleChange}
+                                />
+                                <InputError message={errors.email} className="input-error" />
+                            </div>
 
-                <InputError message={errors.email} className="mt-2" />
-
-                <div className="flex items-center justify-end mt-4">
-                    <PrimaryButton className="ml-4" disabled={processing}>
-                        Email Password Reset Link
-                    </PrimaryButton>
+                            <PrimaryButton className="submit-button" disabled={processing}>
+                                Email Password Reset Link
+                            </PrimaryButton>
+                        </form>
+                    </div>
                 </div>
-            </form>
+            </section>
         </GuestLayout>
     );
 }
