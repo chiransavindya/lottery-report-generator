@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import ApplicationLogo from '@/Components/ApplicationLogo';
 import Dropdown from '@/Components/Dropdown';
 import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
+import { useState } from 'react';
 import '../../css/authenticated.css';
 
 export default function Authenticated({ auth, header, children }) {
@@ -21,6 +21,9 @@ export default function Authenticated({ auth, header, children }) {
                         </Link>
                         <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                             Dashboard
+                        </NavLink>
+                        <NavLink href={route('report')} active={route().current('report')}>
+                            Report
                         </NavLink>
                     </div>
 
@@ -41,7 +44,7 @@ export default function Authenticated({ auth, header, children }) {
                             </Dropdown.Trigger>
                             <Dropdown.Content>
                                 <Dropdown.Link href={route('profile.edit')}>Profile</Dropdown.Link>
-                                <Dropdown.Link href={route('logout')} method="post" as="button">
+                                <Dropdown.Link href={route('logout')} method="post" as="button" className="logout-link">
                                     Log Out
                                 </Dropdown.Link>
                             </Dropdown.Content>
@@ -75,6 +78,9 @@ export default function Authenticated({ auth, header, children }) {
                     <div className="space-y-1 pt-2 pb-3">
                         <ResponsiveNavLink href={route('dashboard')} active={route().current('dashboard')}>
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink href={route('report')} active={route().current('report')}>
+                            Report
                         </ResponsiveNavLink>
                     </div>
                     <div className="border-t border-gray-200 pt-4 pb-1">
