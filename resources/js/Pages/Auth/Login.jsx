@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
 import Checkbox from '@/Components/Checkbox';
-import GuestLayout from '@/Layouts/GuestLayout';
 import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
+import GuestLayout from '@/Layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
+import { useEffect } from 'react';
 import "../../../css/login.css";
 
 
@@ -37,11 +37,12 @@ export default function Login({ status, canResetPassword }) {
             <section className="container">
                 <div className="login-box">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <img src="/dlb.png" alt="DLB" className="login-logo" />
                         <h1 className="login-title">Sign in to your account</h1>
                         {status && <div className="mb-4 font-medium text-sm text-green-300">{status}</div>}
                         <form className="space-y-4 md:space-y-6" onSubmit={submit}>
                             <div>
-                                <InputLabel htmlFor="email" value="Your email" className="block mb-2 text-sm font-medium text-white" />
+                                <InputLabel htmlFor="email" value="Your email" className="block mb-2 text-sm font-medium text-gray-700" />
                                 <TextInput
                                     id="email"
                                     type="email"
@@ -57,7 +58,7 @@ export default function Login({ status, canResetPassword }) {
                             </div>
 
                             <div>
-                                <InputLabel htmlFor="password" value="Password" className="block mb-2 text-sm font-medium text-white" />
+                                <InputLabel htmlFor="password" value="Password" className="block mb-2 text-sm font-medium text-gray-700" />
                                 <TextInput
                                     id="password"
                                     type="password"
@@ -74,7 +75,7 @@ export default function Login({ status, canResetPassword }) {
                             <div className="flex items-center justify-between">
                                 <label className="flex items-center remember-label">
                                     <Checkbox name="remember" checked={data.remember} onChange={handleOnChange} className="checkbox" />
-                                    <span className="ml-2 text-sm">Remember me</span>
+                                    <span className="ml-2 text-sm text-gray-700">Remember me</span>
                                 </label>
                                 <br />
                                 {canResetPassword && (

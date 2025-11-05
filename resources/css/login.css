@@ -1,8 +1,19 @@
-/* Login Page Styles */
+/* Login Page Styles - white theme consistent with app */
+:root {
+    --color-bg: #f5f7fb;
+    --color-surface: #ffffff;
+    --color-border: #e5e7eb;
+    --color-text: #111827;
+    --color-subtle: #6b7280;
+    --color-primary: #6366f1;
+    --color-primary-700: #4338ca;
+    --shadow-soft: 0 6px 20px rgba(0,0,0,0.06);
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, #cef6e2, #114e45);
-    color: rgb(0, 0, 0);
+    background: var(--color-bg);
+    color: var(--color-text);
 }
 
 .container {
@@ -13,12 +24,12 @@ body {
 }
 
 .login-box {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
     padding: 2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    box-shadow: var(--shadow-soft);
+    max-width: 420px;
     width: 100%;
 }
 
@@ -26,24 +37,29 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.input-field {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.2);
-    color: rgb(33, 31, 31);
-    font-size: 1rem;
-    outline: none;
     margin-bottom: 1rem;
 }
 
-.input-field::placeholder {
-    color: rgba(47, 46, 46, 0.7);
+.login-logo { display:block; margin: 0 auto 0.75rem; height: 46px; width: auto; }
+
+.input-field {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: #fff;
+    color: var(--color-text);
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 0.75rem;
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 0 2px;
 }
+
+.input-field::placeholder { color: rgba(17,24,39,0.45); }
+.input-field:focus { border-color: rgba(99,102,241,0.5); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); background-size: 100% 2px; }
 
 .checkbox-container {
     display: flex;
@@ -61,7 +77,7 @@ body {
 .forgot-password {
     text-align: right;
     font-size: 0.9rem;
-    color: #d81e14;
+    color: var(--color-primary);
     cursor: pointer;
 }
 
@@ -72,20 +88,20 @@ body {
 .submit-button {
     width: 100%;
     padding: 12px;
-    background: #f6f6f8;
-    border: none;
-    border-radius: 8px;
-    color: rgb(7, 7, 7);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-700));
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
     align-items: center;
+    box-shadow: 0 6px 16px rgba(79,70,229,0.25);
 }
 
-.submit-button:hover {
-    background: #18915b;
-}
+.submit-button:hover { transform: translateY(-1px); filter: brightness(1.02); box-shadow: 0 8px 20px rgba(79,70,229,0.32); }
+.submit-button:active { transform: translateY(0); filter: brightness(.98); }
 
 .sign-up-text {
     text-align: center;
