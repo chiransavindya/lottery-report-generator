@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<lottery>
+  <code>LW</code>
+  <name>LAGNA WASANAWA</name>
+  <number>4709</number>
+  <date>2025-12-01 05:36:55</date>
+  <color>Yellow</color>
+  <super>5415333.20</super>
+  <balls>
+    <ball>34</ball>
+    <ball>53</ball>
+    <ball>52</ball>
+    <ball>04</ball>
+    <ball>PISCES</ball>
+  </balls>
+  <total>15,085,680.00</total>
+  <count>234338</count>
+  <next>
+    <date>2025-11-25</date>
+    <color>Red</color>
+    <super>5,725,084.00</super>
+  </next>
+  <results>
+    <prize>
+      <code>9</code>
+      <index>9</index>
+      <value>40.0</value>
+      <count>49173</count>
+    </prize>
+    <prize>
+      <code>8</code>
+      <index>8</index>
+      <value>40.0</value>
+      <count>156917</count>
+    </prize>
+    <prize>
+      <code>7</code>
+      <index>7</index>
+      <value>120.0</value>
+      <count>14174</count>
+    </prize>
+    <prize>
+      <code>6</code>
+      <index>6</index>
+      <value>200.0</value>
+      <count>12576</count>
+    </prize>
+    <prize>
+      <code>5</code>
+      <index>5</index>
+      <value>400.0</value>
+      <count>1170</count>
+    </prize>
+    <prize>
+      <code>4</code>
+      <index>4</index>
+      <value>2000.0</value>
+      <count>299</count>
+    </prize>
+    <prize>
+      <code>3</code>
+      <index>3</index>
+      <value>20000.0</value>
+      <count>28</count>
+    </prize>
+    <prize>
+      <code>2</code>
+      <index>2</index>
+      <value>1,000,000.00</value>
+      <count>1</count>
+      <agent>
+        <code>040531</code>
+        <nameen>K.P.THANOJA HEMAMALI  KANDEKUMBURA</nameen>
+        <namesi>fla'mS'à' fyauud,s lkafoal=Uqr uy;añh</namesi>
+        <nametm>jpUkjp.vr;.fe;njFk;Gu</nametm>
+        <locationen>NO.23/1, DANGAN PLACE,, YATAWATHTHA. YATAWATHTHA  -  Matale.</locationen>
+        <locationsi>hgj;a;</locationsi>
+        <locationtm>altj;ij&gt;khj;jis</locationtm>
+        <district>MATALE</district>
+      </agent>
+    </prize>
+    <prize>
+      <code>2</code>
+      <index>2</index>
+      <value>5,415,333.20</value>
+      <count>0</count>
+    </prize>
+  </results>
+</lottery>

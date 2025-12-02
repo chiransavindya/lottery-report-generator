@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lottery>
+  <code>0325</code>
+  <name>SASIRI</name>
+  <number>827</number>
+  <date>2025-12-01 05:36:55</date>
+  <color>Light Blue</color>
+  <balls>
+    <ball>09</ball>
+    <ball>16</ball>
+    <ball>01</ball>
+  </balls>
+  <next>
+    <date>2025-11-25</date>
+    <color>Purple</color>
+    <super />
+  </next>
+  <today>
+    <super />
+  </today>
+  <total>3,400,360</total>
+  <count>29092</count>
+  <results>
+    <prize>
+      <code>1001</code>
+      <index>3</index>
+      <value>40</value>
+      <count>27869</count>
+    </prize>
+    <prize>
+      <code>3302</code>
+      <index>2</index>
+      <value>400</value>
+      <count>1214</count>
+    </prize>
+    <prize>
+      <code>0008</code>
+      <index>1</index>
+      <value>200000.00</value>
+      <count>9</count>
+      <agent>
+        <code>099053</code>
+        <nameen>R. MANOKARATHASH</nameen>
+        <namesi>wd¾' ufkdalrd;Ia uy;d</namesi>
+        <nametm>jpU.Mu;.kNdhfujh];</nametm>
+        <locationen>ARASAMKULAM099053R. MANOKARATHASH</locationen>
+        <locationsi>je,ajeá;=frhs'</locationsi>
+        <locationtm>ty;ntl;bj;Jiw</locationtm>
+        <district>JAFFNA</district>
+      </agent>
+      <agent>
+        <code>212243</code>
+        <nameen>H G PRIYANTHA</nameen>
+        <namesi>tÉ'Ô' m%shka; uy;d</namesi>
+        <nametm>jpU.vr;.[p.gpupae;j</nametm>
+        <locationen>NO 661 2/2, HOSPITAL PLACE, NEW TOWN212243H G PRIYANTHA</locationen>
+        <locationsi>weô,smsáh</locationsi>
+        <locationtm>vk;gpypgpl;ba</locationtm>
+        <district>RATNAPURA</district>
+      </agent>
+      <agent>
+        <code>050606</code>
+        <nameen>Mrs.T M L Kumari Thilakarathna</nameen>
+        <namesi>tï't,a'fla' ;s,lr;ak uy;añh</namesi>
+        <nametm>jpUkjp.B.vk;.vy;.Nf.jpyfuj;d</nametm>
+        <locationen>BUS STAND050606Mrs.T M L Kumari Thilakarathna</locationen>
+        <locationsi>yÕ=rkafl;</locationsi>
+        <locationtm>`q;Fuhq;nfj;ij</locationtm>
+        <district>NUWARAELIYA</district>
+      </agent>
+      <agent>
+        <code>111140</code>
+        <nameen>S.CHANDRIKA</nameen>
+        <namesi>tia'pkaøsld ufkúh</namesi>
+        <nametm>nry;tp.v];.re;jpupfh</nametm>
+        <locationen>74111140S.CHANDRIKA</locationen>
+        <locationsi>ÿïßh ia:dkh mdr" jjqkshdj</locationsi>
+        <locationtm>Gifapuj epiya tPjp&gt; tTdpah</locationtm>
+        <district>VAVUNIA</district>
+      </agent>
+      <agent>
+        <code>171808</code>
+        <nameen>AAS AMARASINHA</nameen>
+        <namesi>ta'ta' iqñ;a wurisxy uy;d</namesi>
+        <nametm>jpU.v.v.v];.mkurpq;f</nametm>
+        <locationen>AURWEDA WEDA GEDARA171808AAS AMARASINHA</locationen>
+        <locationsi>fkdÉÑhd.u</locationsi>
+        <locationtm>nehr;rpahfk</locationtm>
+        <district>ANURADHAPURA</district>
+      </agent>
+      <agent>
+        <code>020310</code>
+        <nameen>Mr.A.ROHANA CHAMINDA PERERA</nameen>
+        <namesi>frdayK pdñkao fmf¾rd uy;d</namesi>
+        <nametm>jpU.V.Nuh`z rhkpe;j ngNuuh</nametm>
+        <locationen>NO.48/A/4, WAWA PARA VVEEDAGAMA020310Mr.A.ROHANA CHAMINDA PERERA</locationen>
+        <locationsi>nKavdr.u</locationsi>
+        <locationtm>gz;lhufk</locationtm>
+        <district>KALUTARA</district>
+      </agent>
+      <agent>
+        <code>017593</code>
+        <nameen>D A KARUNATHILAKA</nameen>
+        <namesi>ã'ta' lreKd;s,l uy;d</namesi>
+        <nametm>jpU.b.V fUzhjpyf</nametm>
+        <locationen>NO. 87/2B,  WEERA WIJITHA  MAWATHA017593D A KARUNATHILAKA</locationen>
+        <locationsi>lgqneoao yxÈh</locationsi>
+        <locationtm>fLngj;j re;jp</locationtm>
+        <district>COLOMBO</district>
+      </agent>
+      <agent>
+        <code>020480</code>
+        <nameen>L.D. CHANDRADASA</nameen>
+        <namesi>t,a'ã' pkaøodi uy;d</namesi>
+        <nametm>jpU.vy;.b re;jpujhr</nametm>
+        <locationen>MILLAGAHAWATTA020480L.D. CHANDRADASA</locationen>
+        <locationsi>.,au;a; ykaÈh' j,f.or</locationsi>
+        <locationtm>tynfju</locationtm>
+        <district>KALUTARA</district>
+      </agent>
+      <agent>
+        <code>161701</code>
+        <nameen>H P N PREMASIRI</nameen>
+        <namesi>tÉ'mS'tka' fma%uisß uy;d</namesi>
+        <nametm>jpU.vr;.gP.vd;.gpNukrpup</nametm>
+        <locationen>165A , HALPANWILLA EAST161701H P N PREMASIRI</locationen>
+        <locationsi>udrjs,</locationsi>
+        <locationtm>`y;gd;tpy</locationtm>
+        <district>PUTTALM</district>
+      </agent>
+    </prize>
+  </results>
+</lottery>

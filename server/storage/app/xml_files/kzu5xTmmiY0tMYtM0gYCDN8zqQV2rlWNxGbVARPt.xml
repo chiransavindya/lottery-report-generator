@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><lottery>
+	  <code>SF</code><!-- Lottery Code -->
+	<name>Shanida</name><!-- Lottery Name -->
+	<number>5158</number><!-- Draw Number -->
+	<date>2025-12-01 05:36:55</date>
+	<color>light blue</color>
+ 
+
+	<super>66960275.6000</super><power>0</power><grand>0</grand>
+	
+	<balls>
+<ball>21</ball><ball>22</ball><ball>28</ball><ball>37</ball><ball>I</ball>
+	</balls>
+
+	<total>6172560.00</total>
+	<count>101674</count>
+	
+ 
+	<next>
+		<date>2025-11-25 00:00:00</date>
+		<color>green</color>
+		<super>67111739.6000</super><power>0</power><grand>0</grand> 
+	</next>
+	<results>
+		<prize>
+			<code>10</code><index>11</index><value>40.00</value><count>17223</count><game>1</game>
+		</prize>
+		<prize>
+			<code>8</code><index>10</index><value>40.00</value><count>64421</count><game>0</game>
+		</prize>
+		<prize>
+			<code>9</code><index>9</index><value>40.00</value><count>11795</count><game>0</game>
+		</prize>
+		<prize>
+			<code>11</code><index>8</index><value>200.00</value><count>1383</count><game>1</game>
+		</prize>
+		<prize>
+			<code>6</code><index>7</index><value>200.00</value><count>4020</count><game>0</game>
+		</prize>
+		<prize>
+			<code>7</code><index>6</index><value>200.00</value><count>2592</count><game>0</game>
+		</prize>
+		<prize>
+			<code>5</code><index>5</index><value>2000.00</value><count>160</count><game>0</game>
+		</prize>
+		<prize>
+			<code>4</code><index>4</index><value>4000.00</value><count>79</count><game>0</game>
+		</prize>
+		<prize>
+			<code>3</code><index>3</index><value>200000.00</value><count>1</count><game>0</game>
+							<agent>
+								<code>181820</code>
+								<nameen>K S LIYANAGE</nameen>
+								<namesi>fla&#39;tia&#39; ,shkf.a uy;d</namesi>
+								<nametm>jpU.nf.v];.ypadnf</nametm>
+								<locationen>Yaya 09,, Bakamuna., Elahera - Bakamuna</locationen>
+								<locationsi>we,yer&quot; nluQK&#39;</locationsi>
+								<locationtm>vyn`u&gt; gf%d</locationtm>
+								<district></district>
+							</agent> 
+						
+		</prize>
+		<prize>
+			<code>2</code><index>2</index><value>2000000.00</value><count>0</count><game>0</game>
+		</prize>
+		<prize>
+			<code>1</code><index>1</index><value>66960275.60</value><count>0</count><game>0</game>
+		</prize>
+
+	</results>
+	<attributes>
+	
+    <attribute><key>SP_200_NO</key><valueen>523</valueen></attribute> 
+    <attribute><key>SP_200_COUNT</key><valueen>1383</valueen><valuesi>1383</valuesi><valuetm>1383</valuetm></attribute>
+
+    <attribute><key>SP_40_NO</key><valueen>61</valueen></attribute> 
+    <attribute><key>SP_40_COUNT</key><valueen>17223</valueen><valuesi>17223</valuesi><valuetm>17223</valuetm></attribute>
+
+	</attributes>
+</lottery>

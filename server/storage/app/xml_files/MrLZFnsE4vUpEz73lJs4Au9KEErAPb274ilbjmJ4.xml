@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><lottery>
+	  <code>SB</code><!-- Lottery Code -->
+	<name>Super Ball</name><!-- Lottery Name -->
+	<number>2997</number><!-- Draw Number -->
+	<date>2025-11-29 00:00:00</date>
+	<color>purple</color>
+ 
+
+	<super>77308076.0000</super><power>0</power><grand>0</grand>
+	
+	<balls>
+<ball>03</ball><ball>21</ball><ball>42</ball><ball>59</ball><ball>R</ball>
+	</balls>
+
+	<total>5665760.00</total>
+	<count>83874</count>
+	
+ 
+	<next>
+		<date>2025-11-25 00:00:00</date>
+		<color>light blue</color>
+		<super>77572276.8000</super><power>0</power><grand>0</grand> 
+	</next>
+	<results>
+		<prize>
+			<code>10</code><index>11</index><value>40.00</value><count>10325</count><game>1</game>
+		</prize>
+		<prize>
+			<code>8</code><index>10</index><value>40.00</value><count>56692</count><game>0</game>
+		</prize>
+		<prize>
+			<code>9</code><index>9</index><value>40.00</value><count>10352</count><game>0</game>
+		</prize>
+		<prize>
+			<code>11</code><index>8</index><value>200.00</value><count>685</count><game>1</game>
+		</prize>
+		<prize>
+			<code>6</code><index>7</index><value>200.00</value><count>3408</count><game>0</game>
+		</prize>
+		<prize>
+			<code>7</code><index>6</index><value>200.00</value><count>2212</count><game>0</game>
+		</prize>
+		<prize>
+			<code>5</code><index>5</index><value>2000.00</value><count>137</count><game>0</game>
+		</prize>
+		<prize>
+			<code>4</code><index>4</index><value>4000.00</value><count>59</count><game>0</game>
+		</prize>
+		<prize>
+			<code>3</code><index>3</index><value>200000.00</value><count>4</count><game>0</game>
+							<agent>
+								<code>017154</code>
+								<nameen>T. DERIK DAIN</nameen>
+								<namesi>&#224;&#39;&#227;&#39; f&#226;ka uy;d</namesi>
+								<nametm>jpU.up.B. Nld;</nametm>
+								<locationen>302/5E/2, BRANDIYA WATHTHA, WELLAMPITIYA, WELLAMPITIYA</locationen>
+								<locationsi>je,a,&#239;ms&#225;h</locationsi>
+								<locationtm>nty;yk;gpl;b</locationtm>
+								<district></district>
+							</agent> 
+						
+							<agent>
+								<code>020489</code>
+								<nameen>H.W.K. SENEWIRATHNA</nameen>
+								<namesi>t&#201;&#39;v&#237;&#39;fla&#39; fifk&#250;r;ak uy;d</namesi>
+								<nametm>jpU.vr;.lgps;A+.Nf.nrndtpuj;d</nametm>
+								<locationen>NO 110 MADURAWALA, ANGURUWATOTA, YALA JUNCTION, MADURAWALA</locationen>
+								<locationsi>hd, yka&#200;h&quot; u&#255;rdj,</locationsi>
+								<locationtm>kJuhty</locationtm>
+								<district></district>
+							</agent> 
+						
+							<agent>
+								<code>151514</code>
+								<nameen>S.H.C. RATHNASOORIYA MENIKE</nameen>
+								<namesi>t&#201;&#39;iS&#39; r;akiQ&#223;h ueKsfla uy;a&#241;h</namesi>
+								<nametm>jpUkjp.v];.vr;.rP.uj;dR+upa</nametm>
+								<locationen>-THAKSHILA- NO 16, HALAMBAWAWA, HURIGASWEWA, Meegalewa Town</locationen>
+								<locationsi>&#241;.,Ej</locationsi>
+								<locationtm>kPfNyt</locationtm>
+								<district></district>
+							</agent> 
+						
+							<agent>
+								<code>172030</code>
+								<nameen>Mr. N.E.SUMATHIPALA DIAS</nameen>
+								<namesi>tka&#39;B&#39; iqu;smd, vhia uy;d</namesi>
+								<nametm>;jpU.vd;.V.Rkjpghy la];</nametm>
+								<locationen>RAJAVINDU, KURUNEGALA ROAD, TALAWA, SARASAVI POTH MEDURA&quot; TALAWA</locationen>
+								<locationsi>iri&#250; fmd;a ue&#255;r&quot; ;,dj</locationsi>
+								<locationtm>jyht</locationtm>
+								<district></district>
+							</agent> 
+						
+		</prize>
+		<prize>
+			<code>2</code><index>2</index><value>2000000.00</value><count>0</count><game>0</game>
+		</prize>
+		<prize>
+			<code>1</code><index>1</index><value>77308076.00</value><count>0</count><game>0</game>
+		</prize>
+
+	</results>
+	<attributes>
+	
+    <attribute><key>SP_200_NO</key><valueen>460</valueen></attribute> 
+    <attribute><key>SP_200_COUNT</key><valueen>685</valueen><valuesi>685</valuesi><valuetm>685</valuetm></attribute>
+
+    <attribute><key>SP_40_NO</key><valueen>63</valueen></attribute> 
+    <attribute><key>SP_40_COUNT</key><valueen>10325</valueen><valuesi>10325</valuesi><valuetm>10325</valuetm></attribute>
+
+	</attributes>
+</lottery>

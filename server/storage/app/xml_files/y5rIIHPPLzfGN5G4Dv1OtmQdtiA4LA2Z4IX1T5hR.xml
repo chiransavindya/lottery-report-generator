@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<lottery>
+  <code>KP</code>
+  <name>KAPRUKA</name>
+  <number>2156</number>
+  <date>2025-11-27 18:46:32</date>
+  <color>Light Brown</color>
+  <super>605224112.20</super>
+  <balls>
+    <ball>41</ball>
+    <ball>69</ball>
+    <ball>11</ball>
+    <ball>04</ball>
+    <ball>R</ball>
+    <ball>32</ball>
+  </balls>
+  <total>20,194,440.00</total>
+  <count>307995</count>
+  <next>
+    <date>2025-11-08</date>
+    <color>Red</color>
+    <super>605,464,439.80</super>
+    <power>10000000.00</power>
+    <grand>10000000.00</grand>
+  </next>
+  <results>
+    <prize>
+      <code>9</code>
+      <index>9</index>
+      <value>200.0</value>
+      <count>8625</count>
+    </prize>
+    <prize>
+      <code>8</code>
+      <index>8</index>
+      <value>200.0</value>
+      <count>14184</count>
+    </prize>
+    <prize>
+      <code>7</code>
+      <index>7</index>
+      <value>2000.0</value>
+      <count>590</count>
+    </prize>
+    <prize>
+      <code>6</code>
+      <index>6</index>
+      <value>4000.0</value>
+      <count>270</count>
+    </prize>
+    <prize>
+      <code>12</code>
+      <index>12</index>
+      <value>40.0</value>
+      <count>29981</count>
+    </prize>
+    <prize>
+      <code>11</code>
+      <index>11</index>
+      <value>40.0</value>
+      <count>37064</count>
+    </prize>
+    <prize>
+      <code>10</code>
+      <index>10</index>
+      <value>40.0</value>
+      <count>217271</count>
+    </prize>
+    <prize>
+      <code>5</code>
+      <index>5</index>
+      <value>200,000.00</value>
+      <count>10</count>
+      <agent>
+        <code>017906</code>
+        <nameen>K.G.W.U. KUMARA</nameen>
+        <namesi>fla'Â'ví' Woh l=udr uy;d</namesi>
+        <nametm>jpU.Nf.[P.lg;.cjaFkhu</nametm>
+        <locationen>NO: 97/6 ATHURUGIRIYA ROAD, HOMAGAMA WIMANA JUNCTION HOMAGAMA</locationen>
+        <locationsi>úudk ykaosh" fydaud.u</locationsi>
+        <locationtm>N`hkhfk</locationtm>
+        <district>COLOMBO</district>
+      </agent>
+      <agent>
+        <code>018299</code>
+        <nameen>D M D PIYAL ROHITHA</nameen>
+        <namesi>ã'tï'ã' msh,a frdays; uy;d</namesi>
+        <nametm>jpU.b.vk;.gpahy; Nuh`pj</nametm>
+        <locationen>300/1, DEVALA ROAD BATAKETHTHARA, MADAPATHA NEAR THE GATEWAY INTERNATIONAL SCHOOL</locationen>
+        <locationsi>l=f¾ udj;" rdc.sßh</locationsi>
+        <locationtm>uh[fpupa</locationtm>
+        <district>COLOMBO</district>
+      </agent>
+      <agent>
+        <code>030481</code>
+        <nameen>S. W. GILMON SILVA</nameen>
+        <namesi>tia'ví' .s,auka is,ajd uy;d</namesi>
+        <nametm>jpU.v];.lg;. fpy;kd; rpy;th</nametm>
+        <locationen>NO. 84/ C, PAHALA THENNE KUMBURA,, KANDY. INFRONT OF THE CENTRAL MARKET, KANDY</locationen>
+        <locationsi>uykqjr</locationsi>
+        <locationtm>fz;b</locationtm>
+        <district>KANDY</district>
+      </agent>
+      <agent>
+        <code>030501</code>
+        <nameen>K.G.JINASENA</nameen>
+        <namesi>fla' Ô' ðkfiak uy;d</namesi>
+        <nametm>jpU.Nf.[p.[pdNrdh</nametm>
+        <locationen>109 AMBAGAHAPITIYA ANKUBURA 05, E.A.P.EDIRISINGHA SHOP , ANKUMBURA JUNCTION</locationen>
+        <locationsi>wxl=Uqr uxikaêh</locationsi>
+        <locationtm>mq;Fk;G+u re;jp</locationtm>
+        <district>KANDY</district>
+      </agent>
+      <agent>
+        <code>030629</code>
+        <nameen>R. G. A. PRIYANGANI</nameen>
+        <namesi>wd¾'Ô'ta' m%shx.kS uy;añh</namesi>
+        <nametm>jpUkjp.Mu;.[P.V.gpupaq;fdp</nametm>
+        <locationen>DHARMARAMA MAWATHA, MEDAGODA,, GALAGEDARA. INFRONT OF MAIN BUS STAND,GALAGEDARA</locationen>
+        <locationsi>.,f.or</locationsi>
+        <locationtm>fynfju</locationtm>
+        <district>KANDY</district>
+      </agent>
+      <agent>
+        <code>030688</code>
+        <nameen>R. A. AJITH RANASINGHA</nameen>
+        <namesi>wd¾'ta'wð;a rKisxy uy;d</namesi>
+        <nametm>jpU.Mu;.V.m[pj; uzrpq;`</nametm>
+        <locationen>21/12, METHSIRIPAYA,KURUNEGALA ROAD KATUGASTOTA METHSIRIPAYA,KATUGASTOTA</locationen>
+        <locationsi>lgq.iaf;dg</locationsi>
+        <locationtm>fLf];Njhl;il</locationtm>
+        <district>KANDY</district>
+      </agent>
+      <agent>
+        <code>050502</code>
+        <nameen>L JOLA</nameen>
+        <namesi>t,a' fcda,d uy;d</namesi>
+        <nametm>jpU.vy;. N[hyh</nametm>
+        <locationen>GAMAGE HOTEL THALAWAKELE. Thalawakele Bus Stand</locationen>
+        <locationsi>m?%Odk ùÈh" ;,jlef,a'</locationsi>
+        <locationtm>jythf;fiy</locationtm>
+        <district>NUWARA ELIYA</district>
+      </agent>
+      <agent>
+        <code>171708</code>
+        <nameen>A.B.SUNETHRA UBESIRI</nameen>
+        <namesi>ta'î' iqfka;%d Wfíisß uy;añh</namesi>
+        <nametm>jpUkjp.v.gp.RNdj;uh cNgrpup</nametm>
+        <locationen>PADAVI ROAD KEBITHIGOLLEWA. KEBITHIGOLLEWA.</locationen>
+        <locationsi>leì;sf.d,a,Ej</locationsi>
+        <locationtm>nfngjpnfhy;Nyt</locationtm>
+        <district>ANURADHAPURA</district>
+      </agent>
+      <agent>
+        <code>232826</code>
+        <nameen>R.J.M.A. RUPASINGHE</nameen>
+        <namesi>wd¾'fþ'tï'ta' rEmisxy uy;d</namesi>
+        <nametm>jpU.Mu;.N[.vk;.V &amp;grpq;f</nametm>
+        <locationen>NO: 15, HENARATHGODA MUDUNGODA Near the Pradeshiya Sabha, Henarathgoda</locationen>
+        <locationsi>j;=re.u mdr" fykr;af.dv</locationsi>
+        <locationtm>tJUfk</locationtm>
+        <district>GAMPAHA</district>
+      </agent>
+      <agent>
+        <code>242434</code>
+        <nameen>K.Lingarajah</nameen>
+        <namesi>fla' ,sx.rdcd uy;d</namesi>
+        <nametm>jpU.Nf.ypq;fuh[h</nametm>
+        <locationen>No.122/2 Thiruvaiyaru West,, Kilinochchi. Kilinochchi</locationen>
+        <locationsi>ls,sfkdÉÑh</locationsi>
+        <locationtm>fpspnehr;rp</locationtm>
+        <district>KILINOCHCHI</district>
+      </agent>
+    </prize>
+    <prize>
+      <code>4</code>
+      <index>4</index>
+      <value>2,000,000.00</value>
+      <count>0</count>
+    </prize>
+    <prize>
+      <code>3</code>
+      <index>3</index>
+      <value>10,000,000.00</value>
+      <count>0</count>
+    </prize>
+    <prize>
+      <code>2</code>
+      <index>2</index>
+      <value>10,000,000.00</value>
+      <count>0</count>
+    </prize>
+    <prize>
+      <code>1</code>
+      <index>1</index>
+      <value>605,224,112.20</value>
+      <count>0</count>
+    </prize>
+  </results>
+</lottery>

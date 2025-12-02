@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><lottery>
+	  <code>DS</code><!-- Lottery Code -->
+	<name>Supiri Dhana Sampatha</name><!-- Lottery Name -->
+	<number>731</number><!-- Draw Number -->
+	<date>2025-12-01 05:36:55</date>
+	<color>purple</color>
+ 
+
+	<super>29293646.8000</super><power>0</power><grand>0</grand>
+	
+	<balls>
+<ball>Q</ball><ball>3</ball><ball>4</ball><ball>7</ball><ball>7</ball><ball>5</ball><ball>6</ball>
+	</balls>
+
+	<total>3023140.00</total>
+	<count>42004</count>
+	
+ 
+	<next>
+		<date>2025-11-25 00:00:00</date>
+		<color>red</color>
+		<super>29369146.8000</super><power>0</power><grand>0</grand> 
+	</next>
+	<results>
+		<prize>
+			<code>13</code><index>14</index><value>40.00</value><count>16793</count><game>0</game>
+		</prize>
+		<prize>
+			<code>12</code><index>13</index><value>40.00</value><count>15251</count><game>0</game>
+		</prize>
+		<prize>
+			<code>14</code><index>12</index><value>40.00</value><count>6131</count><game>0</game>
+		</prize>
+		<prize>
+			<code>11</code><index>11</index><value>120.00</value><count>1702</count><game>0</game>
+		</prize>
+		<prize>
+			<code>10</code><index>10</index><value>200.00</value><count>1691</count><game>0</game>
+		</prize>
+		<prize>
+			<code>9</code><index>9</index><value>200.00</value><count>171</count><game>0</game>
+		</prize>
+		<prize>
+			<code>8</code><index>8</index><value>500.00</value><count>63</count><game>0</game>
+		</prize>
+		<prize>
+			<code>7</code><index>7</index><value>2000.00</value><count>166</count><game>0</game>
+		</prize>
+		<prize>
+			<code>6</code><index>6</index><value>2000.00</value><count>18</count><game>0</game>
+		</prize>
+		<prize>
+			<code>5</code><index>5</index><value>20000.00</value><count>16</count><game>0</game>
+		</prize>
+		<prize>
+			<code>3</code><index>4</index><value>100000.00</value><count>2</count><game>0</game>
+							<agent>
+								<code>018303</code>
+								<nameen>W G U K JAYANANDA</nameen>
+								<namesi>v&#237;&#39;&#212;&#39;hQ&#39; l=udr chdkkao uy;d</namesi>
+								<nametm>jpU.Nf.[ahee;j</nametm>
+								<locationen>NO 4/A,, THAMMANNAWA, HURIGASWEWA, INFRFONT OF LIBERTY PLAZA- KOLLUPITIYA</locationen>
+								<locationsi>fld,a&#168;ms&#225;h</locationsi>
+								<locationtm>nfhs;Sgpl;b</locationtm>
+								<district></district>
+							</agent> 
+						
+							<agent>
+								<code>040478</code>
+								<nameen>J.P.M. JAYASUNDARA</nameen>
+								<namesi>f&#202;&#39;mS&#39;t&#239;&#39; chiqkaor uy;d</namesi>
+								<nametm>jpU.N[.gP.vk;.[aRe;ju</nametm>
+								<locationen>ANANDA RAJAKARUNA MAWATHA,, GALEWELA., Near the District Hospita - GALEWELA.</locationen>
+								<locationsi>.f,afj,&#39;</locationsi>
+								<locationtm>fNyntiy</locationtm>
+								<district></district>
+							</agent> 
+						
+		</prize>
+		<prize>
+			<code>2</code><index>3</index><value>2500000.00</value><count>0</count><game>0</game>
+		</prize>
+		<prize>
+			<code>1</code><index>2</index><value>29293646.80</value><count>0</count><game>0</game>
+		</prize>
+
+	</results>
+	<attributes>
+	
+	</attributes>
+</lottery>
