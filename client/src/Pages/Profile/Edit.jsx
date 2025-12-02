@@ -1,6 +1,10 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
+<<<<<<< HEAD:client/src/Pages/Profile/Edit.jsx
 import '../../css/profile.css';
+=======
+import '../../../css/profile.css';
+>>>>>>> 7dadbdd797c315785d0ff54abc7d518c78689039:resources/js/Pages/Profile/Edit.jsx
 import DeleteUserForm from './Partials/DeleteUserForm';
 import UpdatePasswordForm from './Partials/UpdatePasswordForm';
 import UpdateProfileInformationForm from './Partials/UpdateProfileInformationForm';

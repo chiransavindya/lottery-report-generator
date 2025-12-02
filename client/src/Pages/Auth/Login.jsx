@@ -6,7 +6,11 @@ import TextInput from '@/Components/TextInput';
 import GuestLayout from '@/Layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
 import { useEffect } from 'react';
+<<<<<<< HEAD:client/src/Pages/Auth/Login.jsx
 import "../../css/login.css";
+=======
+import "../../../css/login.css";
+>>>>>>> 7dadbdd797c315785d0ff54abc7d518c78689039:resources/js/Pages/Auth/Login.jsx
 
 
 export default function Login({ status, canResetPassword }) {

@@ -4,7 +4,11 @@ import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
 import { useState } from 'react';
+<<<<<<< HEAD:client/src/Layouts/AuthenticatedLayout.jsx
 import '../css/authenticated.css';
+=======
+import '../../css/authenticated.css';
+>>>>>>> 7dadbdd797c315785d0ff54abc7d518c78689039:resources/js/Layouts/AuthenticatedLayout.jsx
 
 export default function Authenticated({ auth, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
