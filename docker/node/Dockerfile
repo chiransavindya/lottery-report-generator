@@ -1,12 +1,25 @@
-# docker/node/Dockerfile
-FROM node:18 as builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build   # assumes build outputs to 'dist' or 'build' - check your repo (likely vite -> dist)
+# ---------- Build Stage ----------
+FROM node:18-alpine AS builder
 
-# stage to copy outputs (no runtime)
-FROM alpine:3.18
 WORKDIR /app
-COPY --from=builder /app/dist ./dist   # adjust if vite outputs 'dist' or 'build'
+
+# Cache dependencies
+COPY package*.json ./
+RUN --mount=type=cache,target=/root/.npm npm ci
+
+COPY . .
+RUN npm run build
+
+# ---------- Production Stage ----------
+FROM nginx:1.24-alpine
+
+# Copy React build
+COPY --from=builder /app/build /var/www/public/build
+
+# Copy Laravel Nginx config (updated production)
+COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
+
+# Expose port
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
