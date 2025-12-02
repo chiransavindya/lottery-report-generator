@@ -1,0 +1,31 @@
+/client/node_modules
+/server/vendor
+/server/public/build
+/server/public/hot
+/server/public/storage
+/server/storage/*.key
+/server/.env
+/server/.env.backup
+/server/.env.production
+/server/.phpunit.result.cache
+.env
+.env.backup
+.env.production
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+
+# Docker volumes
+/server/storage/logs/*
+!/server/storage/logs/.gitkeep

@@ -1,0 +1,20 @@
+.image-container1 {
+  width: 9.3cm;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+ 
+.headersin-logo {
+  width: 9.3cm;
+  height: 100%;
+}
+
+.date-text1 {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.31cm;
+    font-weight: 1000;
+    margin-left: -3.1cm;
+    margin-top: 0.15cm;
+  }

@@ -1,0 +1,327 @@
+/* Improve image quality and ensure proper section layout */
+.report-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: white;
+}
+
+.report-section {
+  max-width: 11cm;
+  min-height: 17cm; /* Adjust to fit A4 proportions */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 2px;
+  page-break-after: always; /* Ensure each section is on a separate page */
+  margin-top: 0.5cm;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  margin-bottom: 0.05cm; /* Bottom margin for all components */
+}
+
+/* Remove margin-top for the first component */
+.report-section .component:first-child {
+  margin-bottom: 0;
+}
+
+/* Remove margin-bottom for the last component */
+.report-section .component:last-child {
+  margin-top: -0.05cm;
+}
+
+
+.report-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.report-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.report-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.report-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Enhanced button container styling */
+.report-button-container {
+  padding: 25px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Download control panel layout */
+.download-control-panel {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Report sections */
+.report-section-container {
+  flex: 1 1 450px;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.section-title.high-quality {
+  color: #000000;
+}
+
+/* Language buttons grid */
+.language-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Individual language buttons */
+.language-button {
+  color: white;
+  border: none;
+  height: 80px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.language-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.language-button:disabled {
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* High quality section language buttons */
+.language-button.hq.english {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.language-button.hq.sinhala {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+
+.language-button.hq.tamil {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+}
+
+.language-button.hq.generating {
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+/* All reports buttons */
+.all-reports-button {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 18px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.all-reports-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.all-reports-button:disabled {
+  cursor: not-allowed;
+  transform: none;
+}
+
+.all-reports-button.high-quality {
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+.all-reports-button.high-quality.generating {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+/* Status panel */
+.status-panel {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.status-display {
+  padding: 12px 16px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.status-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #155724;
+}
+
+.status-subtitle {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #155724;
+}
+
+/* Individual button styling */
+.individual-button {
+  transition: all 0.2s ease;
+}
+
+.individual-button:hover {
+  transform: scale(1.05);
+}
+
+/* Status indicator styles */
+.status-generating {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Loading spinner for buttons */
+.button-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Print-specific styles */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .report-container {
+    padding: 0;
+    margin: 0;
+    display: block !important;
+  }
+
+  .report-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-after: always;
+    margin: 0;
+    padding: 0.5cm;
+    min-height: auto;
+    max-width: none;
+    width: 100%;
+    background: white !important;
+  }
+
+  .report-section:last-child {
+    page-break-after: avoid;
+  }
+
+  .component {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: white !important;
+  }
+
+  /* Hide buttons and UI elements when printing */
+  .report-button-container,
+  .individual-download-buttons,
+  .print-buttons,
+  .combined-download-buttons,
+  .status-generating {
+    display: none !important;
+  }
+
+  /* Ensure all colors and backgrounds are preserved */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Ensure images are preserved */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Screen-only styles (hide from print) */
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
