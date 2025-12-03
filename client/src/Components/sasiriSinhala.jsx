@@ -32,7 +32,7 @@ const SasiriSinhala = ({ name = "Sasiri" }) => {
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase().trim() || "";
+    const colorLower = color?.trim()?.toLowerCase() || "";
 
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";

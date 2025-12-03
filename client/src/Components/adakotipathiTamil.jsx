@@ -28,14 +28,14 @@ const AdakotipathiTamil = ({ name = "Ada kotipathi" }) => {
     fetchLottery();
   }, [name]);
 
- 
+
   const balls = [lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4, lottery.ball5].filter(
     (ball) => ball !== null
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "பச்சை";
     if (colorLower === "light green") return "வெளிர் பச்சை";
     if (colorLower === "dark green") return "அடர் பச்சை";
@@ -51,13 +51,13 @@ const AdakotipathiTamil = ({ name = "Ada kotipathi" }) => {
     if (colorLower === "brown") return "பழுப்பு";
     if (colorLower === "light brown") return "வெளிர் பழுப்பு";
     if (colorLower === "dark brown") return "அடர் பழுப்பு";
-    
-    return color;
-};
 
-const formatCurrency = (amount) => {
-  return "ரூ. " + Number(amount).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-};
+    return color;
+  };
+
+  const formatCurrency = (amount) => {
+    return "ரூ. " + Number(amount).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
 
 
   return (
@@ -72,22 +72,22 @@ const formatCurrency = (amount) => {
             />
           </div>
           <div className="adakotipathi-ticket-draw-number-container-tm">
-            
-              <div className="adakotipathi-ticket-draw-number-text-tm">
-                வெற்றி வாரம்
-              </div>
-              <div className="adakotipathi-ticket-draw-number-text1-tm">
-                {lottery.number || "Loading..."}
-              </div>
-           
-            
-              <div className="adakotipathi-ticket-colour-text-tm">
-                வர்ணம்
-              </div>
-              <div className="adakotipathi-ticket-colour-text1-tm">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-            
+
+            <div className="adakotipathi-ticket-draw-number-text-tm">
+              வெற்றி வாரம்
+            </div>
+            <div className="adakotipathi-ticket-draw-number-text1-tm">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="adakotipathi-ticket-colour-text-tm">
+              வர்ணம்
+            </div>
+            <div className="adakotipathi-ticket-colour-text1-tm">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="adakotipathi-ticket-winning-numbers">
               <div className="adakotipathi-ticket-winning-numbers-title-tm">
                 <span>----- வெற்றி எண்கள் -----</span>
@@ -96,25 +96,25 @@ const formatCurrency = (amount) => {
               <div className="adakotipathi-ticket-winning-numbers-container-tm">
                 {balls.length > 0
                   ? balls.map((ball, index) => (
-                      
-                        <div key={index} className="adakotipathi-ticket-winning-number">
-                          <div className="adakotipathi-ticket-winning-number-text">
-                            {ball}
-                          </div>
-                        </div>
-                      
-                    ))
+
+                    <div key={index} className="adakotipathi-ticket-winning-number">
+                      <div className="adakotipathi-ticket-winning-number-text">
+                        {ball}
+                      </div>
+                    </div>
+
+                  ))
                   : "Loading..."}
               </div>
             </div>
             <div className="adakotipathi-ticket-special">
-            <div className="adakotipathi-ticket-bottomtm">
-              அடுத்த சுப்பர் ஐக்பொட் : <div className="adakotipathi-ticket-bottomtm-txt">
-              {formatCurrency(lottery.next_super) || "Loading..."}
+              <div className="adakotipathi-ticket-bottomtm">
+                அடுத்த சுப்பர் ஐக்பொட் : <div className="adakotipathi-ticket-bottomtm-txt">
+                  {formatCurrency(lottery.next_super) || "Loading..."}
+                </div>
               </div>
-            </div>
-                {/* Special Numbers Section - Temporarily commented out */}
-                {/*
+              {/* Special Numbers Section - Temporarily commented out */}
+              {/*
                 {lottery.special4 && (
                 <div className="adakotipathi-ticket-special-prize-container-tm">
                   <img
@@ -141,7 +141,7 @@ const formatCurrency = (amount) => {
               )}
               */}
 
-          </div>
+            </div>
           </div>
         </div>
       </div>

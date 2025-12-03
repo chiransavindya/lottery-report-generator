@@ -31,13 +31,13 @@ const KaprukaTamil = ({ name = "Kapruka" }) => {
   }, [name]);
 
   // Combine individual balls into an array
-  const balls = [lottery.ball5, lottery.ball6, lottery.ball1,lottery.ball2,lottery.ball3,lottery.ball4].filter(
+  const balls = [lottery.ball5, lottery.ball6, lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4].filter(
     (ball) => ball !== null
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "பச்சை";
     if (colorLower === "light green") return "வெளிர் பச்சை";
     if (colorLower === "dark green") return "அடர் பச்சை";
@@ -53,13 +53,13 @@ const KaprukaTamil = ({ name = "Kapruka" }) => {
     if (colorLower === "brown") return "பழுப்பு";
     if (colorLower === "light brown") return "வெளிர் பழுப்பு";
     if (colorLower === "dark brown") return "அடர் பழுப்பு";
-    
-    return color;
-};
 
-const formatCurrency = (amount) => {
-  return "ரூ. " + Number(amount).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-};
+    return color;
+  };
+
+  const formatCurrency = (amount) => {
+    return "ரூ. " + Number(amount).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
 
 
   return (
@@ -74,54 +74,54 @@ const formatCurrency = (amount) => {
             />
           </div>
           <div className="kapruka-ticket-draw-number-containertm">
-            
-              <div className="kapruka-ticket-draw-number-text-tm">
-                வெற்றி வாரம்
-              </div>
-              <div className="kapruka-ticket-draw-number-text1-tm">
-                {lottery.number || "Loading..."}
-              </div>
-            
-            
-              <div className="kapruka-ticket-colour-text-tm">
-                வர்ணம்
-              </div>
-              <div className="kapruka-ticket-colour-text1-tm">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-          
-              <div className="kapruka-ticket-winning-numbers-tm">
+
+            <div className="kapruka-ticket-draw-number-text-tm">
+              வெற்றி வாரம்
+            </div>
+            <div className="kapruka-ticket-draw-number-text1-tm">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="kapruka-ticket-colour-text-tm">
+              வர்ணம்
+            </div>
+            <div className="kapruka-ticket-colour-text1-tm">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
+            <div className="kapruka-ticket-winning-numbers-tm">
               <div className="kapruka-ticket-winning-numbers-titletm">
-              ஆங்கில எமுத்து
+                ஆங்கில எமுத்து
               </div>
               <div className="kapruka-ticket-winning-numbers-title1tm">
-               சூப்பர் எண்
+                சூப்பர் எண்
               </div>
               <div className="kapruka-ticket-winning-numbers-title2tm">
-               வெற்றி எண்கள்
+                வெற்றி எண்கள்
               </div>
-              </div>
-              <div className="kapruka-ticket-winning-numbers-containertm">
-                {balls.length > 0
-                  ? balls.map((ball, index) => (
-                      
-                        <div key={index} className="kapruka-ticket-winning-number">
-                          <div className="kapruka-ticket-winning-number-text">
-                            {ball}
-                          </div>
-                        </div>
-                     
-                    ))
-                  : "Loading..."}
-              </div>
-              <div className="kapruka-ticket-special">
-            <div className="kapruka-ticket-bottomtm">
+            </div>
+            <div className="kapruka-ticket-winning-numbers-containertm">
+              {balls.length > 0
+                ? balls.map((ball, index) => (
+
+                  <div key={index} className="kapruka-ticket-winning-number">
+                    <div className="kapruka-ticket-winning-number-text">
+                      {ball}
+                    </div>
+                  </div>
+
+                ))
+                : "Loading..."}
+            </div>
+            <div className="kapruka-ticket-special">
+              <div className="kapruka-ticket-bottomtm">
                 அடுத்த சுப்பர் ஐக்பொட் : <div className="kapruka-ticket-bottomtm-txt">
                   {formatCurrency(lottery.next_super) || "Loading..."}
                 </div>
-            </div>
-            {/* Special Numbers Section - Temporarily removed */}
-            {/**
+              </div>
+              {/* Special Numbers Section - Temporarily removed */}
+              {/**
             {lottery.show_special_section && (
               <div className="kapruka-ticket-special-prize-container">
                 <img
@@ -142,7 +142,7 @@ const formatCurrency = (amount) => {
               </div>
             )}
             */}
-          </div>
+            </div>
           </div>
         </div>
       </div>

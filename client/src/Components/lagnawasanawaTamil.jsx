@@ -42,8 +42,8 @@ const LagnaWasanaTamil = ({ name = "Lagna Wasanawa" }) => {
 
   // Function to translate color to Tamil
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "பச்சை";
     if (colorLower === "light green") return "வெளிர் பச்சை";
     if (colorLower === "dark green") return "அடர் பச்சை";
@@ -59,9 +59,9 @@ const LagnaWasanaTamil = ({ name = "Lagna Wasanawa" }) => {
     if (colorLower === "brown") return "பழுப்பு";
     if (colorLower === "light brown") return "வெளிர் பழுப்பு";
     if (colorLower === "dark brown") return "அடர் பழுப்பு";
-    
+
     return color;
-};
+  };
 
 
   // Function to translate ball names to Tamil
@@ -131,33 +131,33 @@ const LagnaWasanaTamil = ({ name = "Lagna Wasanawa" }) => {
               <div className="lagna-ticket-winning-numbers-containertm">
                 {balls.length > 0
                   ? balls.map((ball, index) => (
-                      <div key={index} className="lagna-ticket-winning-number">
-                        {index === 4 && ballImageMap[ball] ? (
-                          <>
-                            <img
-                              src={ballImageMap[ball]}
-                              alt={`Ball ${ball}`}
-                              className="lagna-ticket-ball-imaget"
-                            />
-                            <div className="lagna-ticket-ball-namet">
-                              {translateBallName(ball)}
-                            </div>
-                          </>
-                        ) : (
-                          <div className="lagna-ticket-winning-number-text">
+                    <div key={index} className="lagna-ticket-winning-number">
+                      {index === 4 && ballImageMap[ball] ? (
+                        <>
+                          <img
+                            src={ballImageMap[ball]}
+                            alt={`Ball ${ball}`}
+                            className="lagna-ticket-ball-imaget"
+                          />
+                          <div className="lagna-ticket-ball-namet">
                             {translateBallName(ball)}
                           </div>
-                        )}
-                      </div>
-                    ))
+                        </>
+                      ) : (
+                        <div className="lagna-ticket-winning-number-text">
+                          {translateBallName(ball)}
+                        </div>
+                      )}
+                    </div>
+                  ))
                   : "Loading..."}
               </div>
             </div>
 
             <div className="lagna-ticket-special-tm">
               <div className="lagna-ticket-bottomtm">
-                அடுத்த சுப்பர் ஐக்பொட்  : <div className="lagna-ticket-bottomtm-txt"> 
-                {formatCurrency(lottery.next_super) || "Loading..."}
+                அடுத்த சுப்பர் ஐக்பொட்  : <div className="lagna-ticket-bottomtm-txt">
+                  {formatCurrency(lottery.next_super) || "Loading..."}
                 </div>
               </div>
               {/** Special numbers section - Temporarily removed */}

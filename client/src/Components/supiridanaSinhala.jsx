@@ -32,8 +32,8 @@ const SupiridanaSinhala = ({ name = "Supiri Dhana Sampatha" }) => {
   }, [name]);
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase().trim() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -49,7 +49,7 @@ const SupiridanaSinhala = ({ name = "Supiri Dhana Sampatha" }) => {
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
   };
 
@@ -73,57 +73,57 @@ const SupiridanaSinhala = ({ name = "Supiri Dhana Sampatha" }) => {
             />
           </div>
           <div className="supiridana-ticket-draw-number-containersn">
-            
-              <div className="supiridana-ticket-draw-number-text">
-                  දිනුම් වාරය
+
+            <div className="supiridana-ticket-draw-number-text">
+              දිනුම් වාරය
+            </div>
+            <div className="supiridana-ticket-draw-number-text1">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="supiridana-ticket-colour-text">
+              වර්ණය
+            </div>
+            <div className="supiridana-ticket-colour-text1">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
+            <div className="supiridana-ticket-winning-numbers">
+              <div className="supiridana-ticket-winning-numbers-titles">
+                <span>ඉංග්‍රීසි අක්ෂරය</span>
+                <span>ජයග්‍රාහී අංක</span>
               </div>
-              <div className="supiridana-ticket-draw-number-text1">
-                {lottery.number || "Loading..."}
-              </div>
-            
-           
-              <div className="supiridana-ticket-colour-text">
-                වර්ණය
-              </div>
-              <div className="supiridana-ticket-colour-text1">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-           
-              <div className="supiridana-ticket-winning-numbers">
-                <div className="supiridana-ticket-winning-numbers-titles">
-                  <span>ඉංග්‍රීසි අක්ෂරය</span>
-                  <span>ජයග්‍රාහී අංක</span>
+
+              {/* Main container that holds all three sections in one row */}
+              <div className="supiridana-ticket-all-numbers-row-sn">
+
+                {/* English Letter Container */}
+                <div className="supiridana-ticket-english-letter-container-sn">
+                  {balls.length > 0 && balls[0] && (
+                    <div className="supiridana-ticket-winning-number-sn">
+                      <div className="supiridana-ticket-winning-number-text">
+                        {balls[0]}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                
-                {/* Main container that holds all three sections in one row */}
-                <div className="supiridana-ticket-all-numbers-row-sn">
-                  
-                  {/* English Letter Container */}
-                  <div className="supiridana-ticket-english-letter-container-sn">
-                    {balls.length > 0 && balls[0] && (
-                      <div className="supiridana-ticket-winning-number-sn">
+
+                {/* Winning Numbers Container */}
+                <div className="supiridana-ticket-winning-numbers-container-sn">
+                  {balls.length > 1
+                    ? balls.slice(1).map((ball, index) => (
+                      <div key={index} className="supiridana-ticket-winning-number-sn">
                         <div className="supiridana-ticket-winning-number-text">
-                          {balls[0]}
+                          {ball}
                         </div>
                       </div>
-                    )}
-                  </div>
-
-                  {/* Winning Numbers Container */}
-                  <div className="supiridana-ticket-winning-numbers-container-sn">
-                    {balls.length > 1
-                      ? balls.slice(1).map((ball, index) => (
-                          <div key={index} className="supiridana-ticket-winning-number-sn">
-                            <div className="supiridana-ticket-winning-number-text">
-                              {ball}
-                            </div>
-                          </div>
-                        ))
-                      : "Loading..."}
-                  </div>
-                  
+                    ))
+                    : "Loading..."}
                 </div>
+
               </div>
+            </div>
             <div className="supiridana-ticket-special">
               <div className="supiridana-ticket-bottom-sn">
                 මීළඟ සුපිරි ජයමල්ල : {formatCurrency(lottery.next_super) || "Loading..."}

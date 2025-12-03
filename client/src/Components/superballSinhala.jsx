@@ -30,14 +30,14 @@ const SuperballSinhala = ({ name = "Superball" }) => {
     fetchLottery();
   }, [name]);
 
- 
+
   const balls = [lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4, lottery.ball5].filter(
     (ball) => ball !== null
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -53,7 +53,7 @@ const SuperballSinhala = ({ name = "Superball" }) => {
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
   };
 
@@ -74,22 +74,22 @@ const SuperballSinhala = ({ name = "Superball" }) => {
             />
           </div>
           <div className="superball-ticket-draw-number-containersn">
-            
-              <div className="superball-ticket-draw-number-textsn">
-                දිනුම් වාරය
-              </div>
-              <div className="superball-ticket-draw-number-text1-sn">
-                {lottery.number || "Loading..."}
-              </div>
-           
-            
-              <div className="superball-ticket-colour-textsn">
-                වර්ණය
-              </div>
-              <div className="superball-ticket-colour-text1">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-            
+
+            <div className="superball-ticket-draw-number-textsn">
+              දිනුම් වාරය
+            </div>
+            <div className="superball-ticket-draw-number-text1-sn">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="superball-ticket-colour-textsn">
+              වර්ණය
+            </div>
+            <div className="superball-ticket-colour-text1">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="superball-ticket-winning-numbers">
               <div className="superball-ticket-winning-numbers-titlesn">
                 <span>----- ජයග්‍රාහී අංක -----</span>
@@ -98,61 +98,61 @@ const SuperballSinhala = ({ name = "Superball" }) => {
               <div className="superball-ticket-winning-numbers-container-sn">
                 {balls.length > 0
                   ? balls.map((ball, index) => (
-                      
-                        <div key={index} className="superball-ticket-winning-number">
-                          <div className="superball-ticket-winning-number-text">
-                            {ball}
-                          </div>
-                        </div>
-                   
-                    ))
+
+                    <div key={index} className="superball-ticket-winning-number">
+                      <div className="superball-ticket-winning-number-text">
+                        {ball}
+                      </div>
+                    </div>
+
+                  ))
                   : "Loading..."}
               </div>
             </div>
             <div className="superball-ticket-special">
               <div className="superball-ticket-bottom-sn">
                 මීළඟ සුපිරි ජයමල්ල :<br />
-                 {formatCurrency(lottery.next_super) || "Loading..."}
+                {formatCurrency(lottery.next_super) || "Loading..."}
               </div>
               {/* Special Numbers Section */}
               {lottery.show_special_section && (
-  <div className="superball-ticket-special-prize-container-sn">
-    <img
-      src="/images/sc.png"
-      alt="Special Prize"
-      className="superball-ticket-special-prize-icon-sn"
-    />
+                <div className="superball-ticket-special-prize-container-sn">
+                  <img
+                    src="/images/sc.png"
+                    alt="Special Prize"
+                    className="superball-ticket-special-prize-icon-sn"
+                  />
 
-    <table className="special-prize-table">
-      <thead>
-        <tr>
-          <th>මුදල</th>
-          <th>විශේෂ අංකය</th>
-        </tr>
-      </thead>
-      <tbody>
-        {lottery.special1 && (
-          <tr>
-            <td>{lottery.special1_label || 'රු. 50,000/-'}</td>
-            <td className="special-number">{lottery.special1}</td>
-          </tr>
-        )}
-        {lottery.special2 && (
-          <tr>
-            <td>{lottery.special2_label || 'රු. 40/-'}</td>
-            <td className="special-number">{lottery.special2}</td>
-          </tr>
-        )}
-        {lottery.special3 && (
-          <tr>
-            <td>{lottery.special3_label || 'රු. 200/-'}</td>
-            <td className="special-number">{lottery.special3}</td>
-          </tr>
-        )}
-      </tbody>
-    </table>
-  </div>
-)}
+                  <table className="special-prize-table">
+                    <thead>
+                      <tr>
+                        <th>මුදල</th>
+                        <th>විශේෂ අංකය</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {lottery.special1 && (
+                        <tr>
+                          <td>{lottery.special1_label || 'රු. 50,000/-'}</td>
+                          <td className="special-number">{lottery.special1}</td>
+                        </tr>
+                      )}
+                      {lottery.special2 && (
+                        <tr>
+                          <td>{lottery.special2_label || 'රු. 40/-'}</td>
+                          <td className="special-number">{lottery.special2}</td>
+                        </tr>
+                      )}
+                      {lottery.special3 && (
+                        <tr>
+                          <td>{lottery.special3_label || 'රු. 200/-'}</td>
+                          <td className="special-number">{lottery.special3}</td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              )}
 
             </div>
           </div>

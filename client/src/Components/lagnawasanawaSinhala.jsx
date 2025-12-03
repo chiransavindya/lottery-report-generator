@@ -38,8 +38,8 @@ const LagnaWasanaSinhala = ({ name = "Lagna Wasanawa" }) => {
 
   // Function to translate color to Sinhala
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -55,7 +55,7 @@ const LagnaWasanaSinhala = ({ name = "Lagna Wasanawa" }) => {
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
   };
 
@@ -124,25 +124,25 @@ const LagnaWasanaSinhala = ({ name = "Lagna Wasanawa" }) => {
               <div className="lagna-ticket-winning-numbers-containersn">
                 {balls.length > 0
                   ? balls.map((ball, index) => (
-                      <div key={index} className="lagna-ticket-winning-number">
-                        {index === 4 && ballImageMap[ball] ? (
-                          <>
-                            <img
-                              src={ballImageMap[ball]}
-                              alt={`Ball ${ball}`}
-                              className="lagna-ticket-ball-images"
-                            />
-                            <div className="lagna-ticket-ball-names">
-                              {translateBallName(ball)}
-                            </div>
-                          </>
-                        ) : (
-                          <div className="lagna-ticket-winning-number-text">
+                    <div key={index} className="lagna-ticket-winning-number">
+                      {index === 4 && ballImageMap[ball] ? (
+                        <>
+                          <img
+                            src={ballImageMap[ball]}
+                            alt={`Ball ${ball}`}
+                            className="lagna-ticket-ball-images"
+                          />
+                          <div className="lagna-ticket-ball-names">
                             {translateBallName(ball)}
                           </div>
-                        )}
-                      </div>
-                    ))
+                        </>
+                      ) : (
+                        <div className="lagna-ticket-winning-number-text">
+                          {translateBallName(ball)}
+                        </div>
+                      )}
+                    </div>
+                  ))
                   : "Loading..."}
               </div>
             </div>

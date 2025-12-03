@@ -31,10 +31,10 @@ const SupiridanaTamil = ({ name = "Supiri Dhana Sampatha" }) => {
     fetchLottery();
   }, [name]);
 
- 
+
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "பச்சை";
     if (colorLower === "light green") return "வெளிர் பச்சை";
     if (colorLower === "dark green") return "அடர் பச்சை";
@@ -50,9 +50,9 @@ const SupiridanaTamil = ({ name = "Supiri Dhana Sampatha" }) => {
     if (colorLower === "brown") return "பழுப்பு";
     if (colorLower === "light brown") return "வெளிர் பழுப்பு";
     if (colorLower === "dark brown") return "அடர் பழுப்பு";
-    
+
     return color;
-};
+  };
 
 
   const balls = [lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4, lottery.ball5, lottery.ball6, lottery.ball7].filter(
@@ -75,67 +75,67 @@ const SupiridanaTamil = ({ name = "Supiri Dhana Sampatha" }) => {
             />
           </div>
           <div className="supiridana-ticket-draw-number-containertm">
-            
-              <div className="supiridana-ticket-draw-number-text">
-                வெற்றி வாரம்
+
+            <div className="supiridana-ticket-draw-number-text">
+              வெற்றி வாரம்
+            </div>
+            <div className="supiridana-ticket-draw-number-text1-tm">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="supiridana-ticket-colour-text">
+              வர்ணம்
+            </div>
+            <div className="supiridana-ticket-colour-text1">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
+
+            <div className="supiridana-ticket-winning-numbers">
+              <div className="supiridana-ticket-winning-numbers-titletm">
+                <span>ஆங்கில எழுத்து</span>
+                <span>-----வெற்றி எண்கள்-----</span>
               </div>
-              <div className="supiridana-ticket-draw-number-text1-tm">
-                {lottery.number || "Loading..."}
-              </div>
-           
-            
-              <div className="supiridana-ticket-colour-text">
-                வர்ணம்
-              </div>
-              <div className="supiridana-ticket-colour-text1">
-                  {translateColor(lottery.color) || "Loading..."}
-              </div>
-         
-              
-              <div className="supiridana-ticket-winning-numbers">
-                <div className="supiridana-ticket-winning-numbers-titletm">
-                  <span>ஆங்கில எழுத்து</span>
-                  <span>-----வெற்றி எண்கள்-----</span>
+
+              {/* Main container that holds two sections in one row */}
+              <div className="supiridana-ticket-all-numbers-row-tm">
+
+                {/* English Letter Container */}
+                <div className="supiridana-ticket-english-letter-container-tm">
+                  {balls.length > 0 && balls[0] && (
+                    <div className="supiridana-ticket-winning-number-tm">
+                      <div className="supiridana-ticket-winning-number-text">
+                        {balls[0]}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                
-                {/* Main container that holds two sections in one row */}
-                <div className="supiridana-ticket-all-numbers-row-tm">
-                  
-                  {/* English Letter Container */}
-                  <div className="supiridana-ticket-english-letter-container-tm">
-                    {balls.length > 0 && balls[0] && (
-                      <div className="supiridana-ticket-winning-number-tm">
+
+                {/* Winning Numbers Container (includes former super number) */}
+                <div className="supiridana-ticket-winning-numbers-container-tm">
+                  {balls.length > 1
+                    ? balls.slice(1).map((ball, index) => (
+                      <div key={index} className="supiridana-ticket-winning-number-tm">
                         <div className="supiridana-ticket-winning-number-text">
-                          {balls[0]}
+                          {ball}
                         </div>
                       </div>
-                    )}
-                  </div>
-
-                  {/* Winning Numbers Container (includes former super number) */}
-                  <div className="supiridana-ticket-winning-numbers-container-tm">
-                    {balls.length > 1
-                      ? balls.slice(1).map((ball, index) => (
-                          <div key={index} className="supiridana-ticket-winning-number-tm">
-                            <div className="supiridana-ticket-winning-number-text">
-                              {ball}
-                            </div>
-                          </div>
-                        ))
-                      : "Loading..."}
-                  </div>
-                  
+                    ))
+                    : "Loading..."}
                 </div>
-              </div>
-            <div className="supiridana-ticket-special">
-            <div className="supiridana-ticket-bottomtm">
-              அடுத்த சுப்பர் ஐக்பொட் : 
-              <div className="supiridana-ticket-bottomtm-txt">
-                {formatCurrency(lottery.next_super) || "Loading..."}
+
               </div>
             </div>
-            {/* Special Numbers Section - Temporarily removed */}
-            {/**
+            <div className="supiridana-ticket-special">
+              <div className="supiridana-ticket-bottomtm">
+                அடுத்த சுப்பர் ஐக்பொட் :
+                <div className="supiridana-ticket-bottomtm-txt">
+                  {formatCurrency(lottery.next_super) || "Loading..."}
+                </div>
+              </div>
+              {/* Special Numbers Section - Temporarily removed */}
+              {/**
             {(lottery.special1 || lottery.special2) && (
   <div className="supiridana-ticket-special-prize-container-tm">
     <img
@@ -170,7 +170,7 @@ const SupiridanaTamil = ({ name = "Supiri Dhana Sampatha" }) => {
 )}
 */}
 
-          </div>
+            </div>
           </div>
         </div>
       </div>

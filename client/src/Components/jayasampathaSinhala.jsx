@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../css/jayasampatha.css";
 
 const JayasampathaSinhala = ({ name = "Jaya Sampatha" }) => {
-const [lottery, setLottery] = useState({
+  const [lottery, setLottery] = useState({
     number: null,
     color: null,
     ball1: null,
@@ -13,7 +13,7 @@ const [lottery, setLottery] = useState({
     ball5: null,
     next_super: null,
     // special1: null, // Temporarily commented out
-   // special2: null, // Temporarily commented out
+    // special2: null, // Temporarily commented out
   });
 
   useEffect(() => {
@@ -35,8 +35,8 @@ const [lottery, setLottery] = useState({
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -52,9 +52,9 @@ const [lottery, setLottery] = useState({
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
-};
+  };
 
   const formatCurrency = (amount) => {
     return "රු. " + Number(amount).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -72,21 +72,21 @@ const [lottery, setLottery] = useState({
             />
           </div>
           <div className="jayasampatha-ticket-draw-number-container-sn">
-            
-              <div className="jayasampatha-ticket-draw-number-text-sn">
-                දිනුම් වාරය
-              </div>
-              <div className="jayasampatha-ticket-draw-number-text1-sn">
-                {lottery.number || "Loading..."}
-              </div>
-            
-              <div className="jayasampatha-ticket-colour-text-sn">
-                වර්ණය
-              </div>
-              <div className="jayasampatha-ticket-colour-text1-sn">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-            
+
+            <div className="jayasampatha-ticket-draw-number-text-sn">
+              දිනුම් වාරය
+            </div>
+            <div className="jayasampatha-ticket-draw-number-text1-sn">
+              {lottery.number || "Loading..."}
+            </div>
+
+            <div className="jayasampatha-ticket-colour-text-sn">
+              වර්ණය
+            </div>
+            <div className="jayasampatha-ticket-colour-text1-sn">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="jayasampatha-ticket-winning-numbers">
               <div className="jayasampatha-ticket-winning-numbers-titles">
                 ------- ජයග්‍රාහී අංක -------
@@ -103,23 +103,23 @@ const [lottery, setLottery] = useState({
                 <div className="jayasampatha-ticket-winning-numbers-containersn">
                   {balls.length > 0
                     ? balls.slice(0, 4).map((ball, index) => (
-                        <div key={index} className="jayasampatha-ticket-winning-number">
-                          <div className="jayasampatha-ticket-winning-number-text">
-                            {ball}
-                          </div>
+                      <div key={index} className="jayasampatha-ticket-winning-number">
+                        <div className="jayasampatha-ticket-winning-number-text">
+                          {ball}
                         </div>
-                      ))
+                      </div>
+                    ))
                     : "Loading..."}
                 </div>
               </div>
             </div>
             <div className="jayasampatha-ticket-special">
-            <div className="jayasampatha-ticket-bottom-sn">
-            ත්‍යාගවල මුළු වටිනාකම : {formatCurrency(lottery.total) || "Loading..."}
-            </div>
+              <div className="jayasampatha-ticket-bottom-sn">
+                ත්‍යාගවල මුළු වටිනාකම : {formatCurrency(lottery.total) || "Loading..."}
+              </div>
 
-            {/* Special Numbers Section - Temporarily commented out */}
-            {/*
+              {/* Special Numbers Section - Temporarily commented out */}
+              {/*
             {lottery.show_special_section && (
               <div className="jayasampatha-ticket-special-prize-container">
                 <img
@@ -141,7 +141,7 @@ const [lottery, setLottery] = useState({
               </div>
             )}
             */}
-          </div>
+            </div>
           </div>
         </div>
       </div>

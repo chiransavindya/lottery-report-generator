@@ -29,14 +29,14 @@ const JayodaSinhala = ({ name = "Jayoda" }) => {
     fetchLottery();
   }, [name]);
 
- 
+
   const balls = [lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4, lottery.ball5].filter(
     (ball) => ball !== null
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -52,7 +52,7 @@ const JayodaSinhala = ({ name = "Jayoda" }) => {
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
   };
 
@@ -73,22 +73,22 @@ const JayodaSinhala = ({ name = "Jayoda" }) => {
             />
           </div>
           <div className="jayoda-ticket-draw-number-containersn">
-            
-              <div className="jayoda-ticket-draw-number-text">
-                දිනුම් වාරය
-              </div>
-              <div className="jayoda-ticket-draw-number-text1-sn">
-                {lottery.number || "Loading..."}
-              </div>
-           
-            
-              <div className="jayoda-ticket-colour-text">
-                වර්ණය
-              </div>
-              <div className="jayoda-ticket-colour-text1">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-            
+
+            <div className="jayoda-ticket-draw-number-text">
+              දිනුම් වාරය
+            </div>
+            <div className="jayoda-ticket-draw-number-text1-sn">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="jayoda-ticket-colour-text">
+              වර්ණය
+            </div>
+            <div className="jayoda-ticket-colour-text1">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="jayoda-ticket-winning-numbers">
               <div className="jayoda-ticket-winning-numbers-titles">
                 <span>------- ජයග්‍රාහී අංක -------</span>
@@ -97,42 +97,42 @@ const JayodaSinhala = ({ name = "Jayoda" }) => {
               <div className="jayoda-ticket-winning-numbers-container">
                 {balls.length > 0
                   ? balls.map((ball, index) => (
-                      
-                        <div key={index} className="jayoda-ticket-winning-number">
-                          <div className="jayoda-ticket-winning-number-text">
-                            {ball}
-                          </div>
-                        </div>
-                      
-                    ))
+
+                    <div key={index} className="jayoda-ticket-winning-number">
+                      <div className="jayoda-ticket-winning-number-text">
+                        {ball}
+                      </div>
+                    </div>
+
+                  ))
                   : "Loading..."}
               </div>
             </div>
             <div className="jayoda-ticket-special">
-            <div className="jayoda-ticket-bottom-sn">
+              <div className="jayoda-ticket-bottom-sn">
                 මීළඟ සුපිරි ජයමල්ල : {formatCurrency(lottery.next_super) || "Loading..."}
-            </div>
-            {/* Special Numbers Section */}
-            {lottery.show_special_section && (
-              <div className="jayoda-ticket-special-prize-container">
-                <img
-                  src="/images/sc.png"
-                  alt="Special Prize"
-                  className="jayoda-ticket-special-prize-icon"
-                />
-                <div className="special-numbers">
+              </div>
+              {/* Special Numbers Section */}
+              {lottery.show_special_section && (
+                <div className="jayoda-ticket-special-prize-container">
+                  <img
+                    src="/images/sc.png"
+                    alt="Special Prize"
+                    className="jayoda-ticket-special-prize-icon"
+                  />
+                  <div className="special-numbers">
                     {lottery.special1 && (
                       <>
-                        {lottery.special1_label || 'රු. 50,000/-'} පනම් ප්‍රිස්කුවන් සඳහා <br/> විශේෂ අංකය :{" "}
+                        {lottery.special1_label || 'රු. 50,000/-'} පනම් ප්‍රිස්කුවන් සඳහා <br /> විශේෂ අංකය :{" "}
                         {lottery.special1 || "Loading..."}
                         <br />
                       </>
                     )}
                     {lottery.special2 && <>{lottery.special2_label || 'රු. 40/-'} : {lottery.special2}</>}
                   </div>
-              </div>
-            )}
-          </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

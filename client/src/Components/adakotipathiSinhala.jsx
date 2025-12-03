@@ -28,14 +28,14 @@ const AdakotipathiSinhala = ({ name = "Ada kotipathi" }) => {
     fetchLottery();
   }, [name]);
 
- 
+
   const balls = [lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4, lottery.ball5].filter(
     (ball) => ball !== null
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -51,7 +51,7 @@ const AdakotipathiSinhala = ({ name = "Ada kotipathi" }) => {
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
   };
 
@@ -71,21 +71,21 @@ const AdakotipathiSinhala = ({ name = "Ada kotipathi" }) => {
             />
           </div>
           <div className="adakotipathi-ticket-draw-number-container-sn">
-            
-              <div className="adakotipathi-ticket-draw-number-text-sn">
-                දිනුම් වාරය
-              </div>
-              <div className="adakotipathi-ticket-draw-number-text1-sn">
-                {lottery.number || "Loading..."}
-              </div>
-            
-              <div className="adakotipathi-ticket-colour-text-sn">
-                වර්ණය
-              </div>
-              <div className="adakotipathi-ticket-colour-text1-sn">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-         
+
+            <div className="adakotipathi-ticket-draw-number-text-sn">
+              දිනුම් වාරය
+            </div>
+            <div className="adakotipathi-ticket-draw-number-text1-sn">
+              {lottery.number || "Loading..."}
+            </div>
+
+            <div className="adakotipathi-ticket-colour-text-sn">
+              වර්ණය
+            </div>
+            <div className="adakotipathi-ticket-colour-text1-sn">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="adakotipathi-ticket-winning-numbers">
               <div className="adakotipathi-ticket-winning-numbers-titles">
                 <span>----- ජයග්‍රාහී අංක -----</span>
@@ -94,23 +94,23 @@ const AdakotipathiSinhala = ({ name = "Ada kotipathi" }) => {
               <div className="adakotipathi-ticket-winning-numbers-containersn">
                 {balls.length > 0
                   ? balls.map((ball, index) => (
-                      
-                        <div key={index} className="adakotipathi-ticket-winning-number">
-                          <div className="adakotipathi-ticket-winning-number-text">
-                            {ball}
-                          </div>
-                        </div>
-                     
-                    ))
+
+                    <div key={index} className="adakotipathi-ticket-winning-number">
+                      <div className="adakotipathi-ticket-winning-number-text">
+                        {ball}
+                      </div>
+                    </div>
+
+                  ))
                   : "Loading..."}
               </div>
             </div>
             <div className="adakotipathi-ticket-special">
-            <div className="adakotipathi-ticket-bottomsn">
-              මීළඟ සුපිරි ජයමල්ල : {formatCurrency(lottery.next_super) || "Loading..."}
-            </div>
-                {/* Special Numbers Section - Temporarily commented out */}
-                {/*
+              <div className="adakotipathi-ticket-bottomsn">
+                මීළඟ සුපිරි ජයමල්ල : {formatCurrency(lottery.next_super) || "Loading..."}
+              </div>
+              {/* Special Numbers Section - Temporarily commented out */}
+              {/*
                 {lottery.special4 && (
                 <div className="adakotipathi-ticket-special-prize-container-sn">
                   <img
@@ -137,7 +137,7 @@ const AdakotipathiSinhala = ({ name = "Ada kotipathi" }) => {
                 </div>
               )}
               */}
-          </div>
+            </div>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ const SasiriTamil = ({ name = "Sasiri" }) => {
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase().trim() || "";
+    const colorLower = color?.trim()?.toLowerCase() || "";
 
     if (colorLower === "green") return "பச்சை";
     if (colorLower === "light green") return "வெளிர் பச்சை";

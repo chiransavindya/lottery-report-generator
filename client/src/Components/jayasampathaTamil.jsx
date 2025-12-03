@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../css/jayasampatha.css";
 
 const JayasampathaTamil = ({ name = "Jaya Sampatha" }) => {
-const [lottery, setLottery] = useState({
+  const [lottery, setLottery] = useState({
     number: null,
     color: null,
     ball1: null,
@@ -14,9 +14,9 @@ const [lottery, setLottery] = useState({
     next_super: null,
     // special1: null, // Temporarily removed
     // special2: null, // Temporarily removed
-});
+  });
 
-useEffect(() => {
+  useEffect(() => {
     const fetchLottery = async () => {
       try {
         const response = await axios.get(`/api/lottery`, { params: { name } });
@@ -35,8 +35,8 @@ useEffect(() => {
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "பச்சை";
     if (colorLower === "light green") return "வெளிர் பச்சை";
     if (colorLower === "dark green") return "அடர் பச்சை";
@@ -52,7 +52,7 @@ useEffect(() => {
     if (colorLower === "brown") return "பழுப்பு";
     if (colorLower === "light brown") return "வெளிர் பழுப்பு";
     if (colorLower === "dark brown") return "அடர் பழுப்பு";
-    
+
     return color;
   };
 
@@ -72,22 +72,22 @@ useEffect(() => {
             />
           </div>
           <div className="jayasampatha-ticket-draw-number-container-tm">
-            
-              <div className="jayasampatha-ticket-draw-number-text-tm">
-                வெற்றி வாரம்
-              </div>
-              <div className="jayasampatha-ticket-draw-number-text1-tm">
-                {lottery.number || "Loading..."}
-              </div>
-           
-          
-              <div className="jayasampatha-ticket-colour-text-tm">
-                வர்ணம்
-              </div>
-              <div className="jayasampatha-ticket-colour-text1-tm">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-          
+
+            <div className="jayasampatha-ticket-draw-number-text-tm">
+              வெற்றி வாரம்
+            </div>
+            <div className="jayasampatha-ticket-draw-number-text1-tm">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="jayasampatha-ticket-colour-text-tm">
+              வர்ணம்
+            </div>
+            <div className="jayasampatha-ticket-colour-text1-tm">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="jayasampatha-ticket-winning-numbers-tm">
               <div className="jayasampatha-ticket-winning-numbers-title-tm">
                 ------ வெற்றி எண்கள் ------
@@ -104,22 +104,22 @@ useEffect(() => {
                 <div className="jayasampatha-ticket-winning-numbers-container-tm">
                   {balls.length > 0
                     ? balls.slice(0, 4).map((ball, index) => (
-                        <div key={index} className="jayasampatha-ticket-winning-number">
-                          <div className="jayasampatha-ticket-winning-number-text">
-                            {ball}
-                          </div>
+                      <div key={index} className="jayasampatha-ticket-winning-number">
+                        <div className="jayasampatha-ticket-winning-number-text">
+                          {ball}
                         </div>
-                      ))
+                      </div>
+                    ))
                     : "Loading..."}
                 </div>
               </div>
             </div>
             <div className="jayasampatha-ticket-special">
-            <div className="jayasampatha-ticket-bottom-tm">
-            பரிசுகளின் மொத்த மதிப்பு : {formatCurrency(lottery.total) || "Loading..."}
-            </div>
-            {/* Special Numbers Section - Temporarily removed */}
-            {/**
+              <div className="jayasampatha-ticket-bottom-tm">
+                பரிசுகளின் மொத்த மதிப்பு : {formatCurrency(lottery.total) || "Loading..."}
+              </div>
+              {/* Special Numbers Section - Temporarily removed */}
+              {/**
             {lottery.show_special_section && (
               <div className="jayasampatha-ticket-special-prize-container">
                 <img
@@ -141,7 +141,7 @@ useEffect(() => {
               </div>
             )}
             */}
-          </div>
+            </div>
           </div>
         </div>
       </div>

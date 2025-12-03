@@ -33,14 +33,14 @@ const ShanidaSinhala = ({ name = "Shanida" }) => {
     fetchLottery();
   }, [name]);
 
- 
+
   const balls = [lottery.ball1, lottery.ball2, lottery.ball3, lottery.ball4, lottery.ball5].filter(
     (ball) => ball !== null
   );
 
   const translateColor = (color) => {
-    const colorLower = color?.toLowerCase() || "";
-    
+    const colorLower = color?.trim()?.toLowerCase() || "";
+
     if (colorLower === "green") return "කොළ";
     if (colorLower === "light green") return "ලා කොළ";
     if (colorLower === "dark green") return "තද කොළ";
@@ -56,7 +56,7 @@ const ShanidaSinhala = ({ name = "Shanida" }) => {
     if (colorLower === "brown") return "දුඹුරු";
     if (colorLower === "light brown") return "ලා දුඹුරු";
     if (colorLower === "dark brown") return "තද දුඹුරු";
-    
+
     return color;
   };
 
@@ -67,7 +67,7 @@ const ShanidaSinhala = ({ name = "Shanida" }) => {
   // Function to sort special prizes by value (lowest to highest)
   const getSortedSpecialPrizes = () => {
     const specialPrizes = [];
-    
+
     // Collect all special prizes that exist
     if (lottery.special1 && lottery.special1_label) {
       specialPrizes.push({
@@ -125,90 +125,90 @@ const ShanidaSinhala = ({ name = "Shanida" }) => {
             />
           </div>
           <div className="shanida-ticket-draw-number-containersn">
-            
-              <div className="shanida-ticket-draw-number-text-sn">
-                දිනුම් වාරය
-              </div>
-              <div className="shanida-ticket-draw-number-text1-sn">
-                {lottery.number || "Loading..."}
-              </div>
-            
-            
-              <div className="shanida-ticket-colour-text-sn">
-                වර්ණය
-              </div>
-              <div className="shanida-ticket-colour-text1-sn">
-                {translateColor(lottery.color) || "Loading..."}
-              </div>
-            
+
+            <div className="shanida-ticket-draw-number-text-sn">
+              දිනුම් වාරය
+            </div>
+            <div className="shanida-ticket-draw-number-text1-sn">
+              {lottery.number || "Loading..."}
+            </div>
+
+
+            <div className="shanida-ticket-colour-text-sn">
+              වර්ණය
+            </div>
+            <div className="shanida-ticket-colour-text1-sn">
+              {translateColor(lottery.color) || "Loading..."}
+            </div>
+
             <div className="shanida-ticket-winning-numbers-sn">
-                <div className="shanida-ticket-winning-numbers-title-sn">
-                  <span className="winning-numbers-text-sn">------- ජයග්‍රාහී අංක -------</span>
-                  <span className="english-letter-text-sn">ඉංග්‍රීසි අක්ෂරය</span>
-                </div>
-                
-                {/* Main container that holds both sections in one row */}
-                <div className="shanida-ticket-all-numbers-row-sn">
-                  
-                  {/* Winning Numbers Container (all except last) */}
-                  <div className="shanida-ticket-winning-numbers-container-sn">
-                    {balls.length > 1
-                      ? balls.slice(0, -1).map((ball, index) => (
-                          <div key={index} className="shanida-ticket-winning-number-sn">
-                            <div className="shanida-ticket-winning-number-text-sn">
-                              {ball}
-                            </div>
-                          </div>
-                        ))
-                      : "Loading..."}
-                  </div>
-                  
-                  {/* English Letter Container (last number) */}
-                  <div className="shanida-ticket-english-letter-container-sn">
-                    {balls.length > 0 && balls[balls.length - 1] && (
-                      <div className="shanida-ticket-english-letter-sn">
-                        <div className="shanida-ticket-english-letter-text-sn">
-                          {balls[balls.length - 1]}
+              <div className="shanida-ticket-winning-numbers-title-sn">
+                <span className="winning-numbers-text-sn">------- ජයග්‍රාහී අංක -------</span>
+                <span className="english-letter-text-sn">ඉංග්‍රීසි අක්ෂරය</span>
+              </div>
+
+              {/* Main container that holds both sections in one row */}
+              <div className="shanida-ticket-all-numbers-row-sn">
+
+                {/* Winning Numbers Container (all except last) */}
+                <div className="shanida-ticket-winning-numbers-container-sn">
+                  {balls.length > 1
+                    ? balls.slice(0, -1).map((ball, index) => (
+                      <div key={index} className="shanida-ticket-winning-number-sn">
+                        <div className="shanida-ticket-winning-number-text-sn">
+                          {ball}
                         </div>
                       </div>
-                    )}
-                  </div>
-                  
+                    ))
+                    : "Loading..."}
                 </div>
+
+                {/* English Letter Container (last number) */}
+                <div className="shanida-ticket-english-letter-container-sn">
+                  {balls.length > 0 && balls[balls.length - 1] && (
+                    <div className="shanida-ticket-english-letter-sn">
+                      <div className="shanida-ticket-english-letter-text-sn">
+                        {balls[balls.length - 1]}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
               </div>
-            <div className="shanida-ticket-special">
-            <div className="shanida-ticket-bottomsn">
-              මීළඟ සුපිරි ජයමල්ල : {formatCurrency(lottery.next_super) || "Loading..."}
             </div>
-            {/* Special Numbers Section */}
-            {getSortedSpecialPrizes().length > 0 && (
-  <div className="shanida-ticket-special-prize-container-sn">
-    <img
-      src="/images/sc.png"
-      alt="Special Prize"
-      className="shanida-ticket-special-prize-icon-sn"
-    />
+            <div className="shanida-ticket-special">
+              <div className="shanida-ticket-bottomsn">
+                මීළඟ සුපිරි ජයමල්ල : {formatCurrency(lottery.next_super) || "Loading..."}
+              </div>
+              {/* Special Numbers Section */}
+              {getSortedSpecialPrizes().length > 0 && (
+                <div className="shanida-ticket-special-prize-container-sn">
+                  <img
+                    src="/images/sc.png"
+                    alt="Special Prize"
+                    className="shanida-ticket-special-prize-icon-sn"
+                  />
 
-    <table className="special-prize-table-sn">
-      <thead>
-        <tr>
-          <th>මුදල</th>
-          <th>විශේෂ අංකය</th>
-        </tr>
-      </thead>
-      <tbody>
-        {getSortedSpecialPrizes().map((prize, index) => (
-          <tr key={index}>
-            <td>{prize.label}</td>
-            <td className="special-number">{prize.number}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-)}
+                  <table className="special-prize-table-sn">
+                    <thead>
+                      <tr>
+                        <th>මුදල</th>
+                        <th>විශේෂ අංකය</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {getSortedSpecialPrizes().map((prize, index) => (
+                        <tr key={index}>
+                          <td>{prize.label}</td>
+                          <td className="special-number">{prize.number}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
 
-          </div>
+            </div>
           </div>
         </div>
       </div>
