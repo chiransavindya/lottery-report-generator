@@ -160,12 +160,30 @@ class LotteryController extends Controller
 
         // Extract next super value with better error handling
         $nextSuper = null;
-        if (isset($data['next']['super'])) {
+        
+        // For Jaya Sampatha and Sasiri, use <total> tag as next super jackpot
+        $lotteriesUsingTotal = ['Jaya Sampatha', 'SASIRI', 'Sasiri'];
+        $usesTotalForSuper = false;
+        
+        foreach ($lotteriesUsingTotal as $lotteryCheck) {
+            if (strcasecmp(trim($lotteryName), $lotteryCheck) === 0) {
+                $usesTotalForSuper = true;
+                break;
+            }
+        }
+        
+        if ($usesTotalForSuper && isset($data['total'])) {
+            // For Jaya Sampatha and Sasiri, get next super from <total> tag
+            $nextSuper = is_string($data['total']) ? 
+                (float) str_replace(',', '', $data['total']) : 
+                (float) $data['total'];
+        } elseif (isset($data['next']['super'])) {
+            // For other lotteries, get next super from <next><super> tag
             $nextSuper = is_string($data['next']['super']) ? 
                 (float) str_replace(',', '', $data['next']['super']) : 
                 (float) $data['next']['super'];
         } elseif (isset($data['super'])) {
-            // Some lotteries might have super directly
+            // Fallback: Some lotteries might have super directly
             $nextSuper = is_string($data['super']) ? 
                 (float) str_replace(',', '', $data['super']) : 
                 (float) $data['super'];
@@ -204,7 +222,7 @@ class LotteryController extends Controller
             'date' => isset($data['date']) ? Carbon::parse($data['date'])->toDateTimeString() : null,
             'color' => isset($data['color']) ? ucfirst($data['color']) : null,
             'next_date' => isset($data['next']['date']) ? Carbon::parse($data['next']['date'])->toDateTimeString() : null,
-            'next_super' => $nextSuper !== null ? number_format($nextSuper * 0.91, 2, '.', '') : number_format(0, 2, '.', ''),
+            'next_super' => $nextSuper !== null ? number_format($nextSuper, 2, '.', '') : number_format(0, 2, '.', ''),
             'ball1' => $balls[0] ?? null,
             'ball2' => $balls[1] ?? null,
             'ball3' => $balls[2] ?? null,
