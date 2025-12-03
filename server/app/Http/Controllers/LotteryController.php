@@ -220,7 +220,7 @@ class LotteryController extends Controller
             'name' => $data['name'] ?? null,
             'number' => $data['number'],
             'date' => isset($data['date']) ? Carbon::parse($data['date'])->toDateTimeString() : null,
-            'color' => isset($data['color']) ? ucfirst($data['color']) : null,
+            'color' => isset($data['color']) ? ucwords($data['color']) : null,
             'next_date' => isset($data['next']['date']) ? Carbon::parse($data['next']['date'])->toDateTimeString() : null,
             'next_super' => $nextSuper !== null ? number_format($nextSuper, 2, '.', '') : number_format(0, 2, '.', ''),
             'ball1' => $balls[0] ?? null,
