@@ -70,7 +70,7 @@ const SuperballEnglish = ({ name = "Superball" }) => {
             <div className="superball-ticket-winning-numbers">
               <div className="superball-ticket-winning-numbers-title">
                 <span>---- Winning Numbers ----</span>
-                <span>English letter</span>
+                <span>English Letter</span>
               </div>
               <div className="superball-ticket-winning-numbers-container">
                 {balls.length > 0

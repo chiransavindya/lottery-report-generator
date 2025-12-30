@@ -123,7 +123,7 @@ const AdakotipathiEnglish = ({ name = "Ada kotipathi" }) => {
             <div className="adakotipathi-ticket-winning-numbers">
               <div className="adakotipathi-ticket-winning-numbers-title">
                 <span className="winning-numbers-text">----Winning Numbers----</span>
-                <span className="english-letter-text">English letter</span>
+                <span className="english-letter-text">English Letter</span>
               </div>
               <div className="adakotipathi-ticket-winning-numbers-container">
                 {balls.length > 0
