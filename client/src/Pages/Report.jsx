@@ -1,7 +1,8 @@
 import { Head } from "@inertiajs/react";
+import axios from "axios";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../css/report.css";
 
 // English Components
@@ -49,6 +50,35 @@ const Report = () => {
   const tamilReportRef = useRef(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatingLanguage, setGeneratingLanguage] = useState('');
+  const [reportDateIso, setReportDateIso] = useState('');
+
+  useEffect(() => {
+    const fetchReportDateFromXml = async () => {
+      try {
+        // Use the same source as the headers: latest Kapruka record date (from XML)
+        const response = await axios.get("/api/lottery", { params: { name: "Kapruka" } });
+        if (response.data && response.data.date) {
+          const date = new Date(response.data.date);
+          const year = date.getFullYear();
+          const month = String(date.getMonth() + 1).padStart(2, "0");
+          const day = String(date.getDate()).padStart(2, "0");
+          setReportDateIso(`${year}-${month}-${day}`);
+          return;
+        }
+      } catch (error) {
+        console.error("Error fetching report date:", error);
+      }
+
+      // Fallback to today's date if API fails
+      const fallback = new Date();
+      const year = fallback.getFullYear();
+      const month = String(fallback.getMonth() + 1).padStart(2, "0");
+      const day = String(fallback.getDate()).padStart(2, "0");
+      setReportDateIso(`${year}-${month}-${day}`);
+    };
+
+    fetchReportDateFromXml();
+  }, []);
 
   const captureElementAsPng = async (elementRef, scale = 4) => {
     if (!elementRef.current) {
@@ -114,8 +144,8 @@ const Report = () => {
 
       pdf.addImage(imgData, "PNG", 0, 0, mmWidth, mmHeight);
 
-      const today = new Date().toISOString().split("T")[0];
-      pdf.save(`Newspaper-Results-HQ-${languageName.toLowerCase()}-${today}.pdf`);
+      const fileDate = reportDateIso || new Date().toISOString().split("T")[0];
+      pdf.save(`Newspaper-Results-HQ-${languageName.toLowerCase()}-${fileDate}.pdf`);
     } catch (error) {
       console.error(`Error generating ${languageName} HQ PDF:`, error);
       alert(`Error generating ${languageName} HQ PDF. Please try again.`);
@@ -152,8 +182,8 @@ const Report = () => {
       pdf.addPage([tamil.mmWidth, tamil.mmHeight]);
       pdf.addImage(tamil.imgData, "PNG", 0, 0, tamil.mmWidth, tamil.mmHeight);
 
-      const today = new Date().toISOString().split("T")[0];
-      pdf.save(`Newspaper-Results-hq-${today}.pdf`);
+      const fileDate = reportDateIso || new Date().toISOString().split("T")[0];
+      pdf.save(`Newspaper-Results-hq-${fileDate}.pdf`);
     } catch (error) {
       console.error('Error generating high quality PDF:', error);
       alert('Error generating PDF. Please try again.');
