@@ -1,8 +1,8 @@
+import { Head } from "@inertiajs/react";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import { useRef, useState } from "react";
 import "../css/report.css";
-import { Head } from "@inertiajs/react";
 
 // English Components
 import AdakotipathiEnglish from "../Components/adakotipathiEnglish";
@@ -50,6 +50,42 @@ const Report = () => {
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatingLanguage, setGeneratingLanguage] = useState('');
 
+  const captureElementAsPng = async (elementRef, scale = 4) => {
+    if (!elementRef.current) {
+      throw new Error('Missing element ref for PDF capture');
+    }
+
+    const element = elementRef.current;
+    element.style.opacity = "1";
+    element.style.display = "block";
+
+    await new Promise((resolve) => setTimeout(resolve, 100));
+
+    const canvas = await html2canvas(element, {
+      scale: scale,
+      useCORS: true,
+      logging: false,
+      willReadFrequently: true,
+      backgroundColor: "white",
+      scrollX: 0,
+      scrollY: 0,
+    });
+
+    const imgData = canvas.toDataURL("image/png");
+    const pxWidth = canvas.width;
+    const pxHeight = canvas.height;
+
+    // Convert px -> mm at 96dpi, then undo the html2canvas scale.
+    const mmWidth = (pxWidth * 0.264583) / scale;
+    const mmHeight = (pxHeight * 0.264583) / scale;
+
+    return {
+      imgData,
+      mmWidth,
+      mmHeight,
+    };
+  };
+
   const today = new Date().getDay();
   // const isMondayOrWednesday = today === 1 || today === 3; // Jayoda temporarily removed
   // const isSasiriDay = [0, 2, 4, 5, 6].includes(today); // Sasiri now shows all 7 days
@@ -64,39 +100,19 @@ const Report = () => {
     setGeneratingLanguage(`${languageName} HQ`);
 
     try {
+      // Higher scale for better quality
+      const scale = 4;
+      const { imgData, mmWidth, mmHeight } = await captureElementAsPng(elementRef, scale);
+
+      // IMPORTANT: Do NOT force A4. Use the captured content size as the PDF page size.
       const pdf = new jsPDF({
         orientation: "portrait",
         unit: "mm",
-        format: "a4",
+        format: [mmWidth, mmHeight],
         compress: true,
       });
 
-      const element = elementRef.current;
-      element.style.opacity = "1";
-      element.style.display = "block";
-
-      await new Promise((resolve) => setTimeout(resolve, 100));
-
-      // Higher scale for better quality
-      const scale = 4;
-
-      const canvas = await html2canvas(element, {
-        scale: scale,
-        useCORS: true,
-        logging: false,
-        willReadFrequently: true,
-        backgroundColor: "white",
-        scrollX: 0,
-        scrollY: 0,
-      });
-
-      const imgData = canvas.toDataURL("image/png");
-      const pxWidth = canvas.width;
-      const pxHeight = canvas.height;
-      const mmWidth = (pxWidth * 0.264583) / scale;
-      const mmHeight = (pxHeight * 0.264583) / scale;
-
-      pdf.addImage(imgData, "PNG", 10, 10, mmWidth, mmHeight);
+      pdf.addImage(imgData, "PNG", 0, 0, mmWidth, mmHeight);
 
       const today = new Date().toISOString().split("T")[0];
       pdf.save(`Newspaper-Results-HQ-${languageName.toLowerCase()}-${today}.pdf`);
@@ -117,50 +133,24 @@ const Report = () => {
     setGeneratingLanguage('High Quality');
 
     try {
+      const scale = 4; // Higher quality
+
+      const english = await captureElementAsPng(englishReportRef, scale);
       const pdf = new jsPDF({
         orientation: "portrait",
         unit: "mm",
-        format: "a4",
+        format: [english.mmWidth, english.mmHeight],
         compress: true,
       });
+      pdf.addImage(english.imgData, "PNG", 0, 0, english.mmWidth, english.mmHeight);
 
-      const highQualityCapture = async (elementRef, addPage) => {
-        if (!elementRef.current) return;
+      const sinhala = await captureElementAsPng(sinhalaReportRef, scale);
+      pdf.addPage([sinhala.mmWidth, sinhala.mmHeight]);
+      pdf.addImage(sinhala.imgData, "PNG", 0, 0, sinhala.mmWidth, sinhala.mmHeight);
 
-        const element = elementRef.current;
-        element.style.opacity = "1";
-        element.style.display = "block";
-
-        await new Promise((resolve) => setTimeout(resolve, 100));
-
-        const scale = 4; // Higher quality
-
-        const canvas = await html2canvas(element, {
-          scale: scale,
-          useCORS: true,
-          logging: false,
-          willReadFrequently: true,
-          backgroundColor: "white",
-          scrollX: 0,
-          scrollY: 0,
-        });
-
-        const imgData = canvas.toDataURL("image/png");
-        const pxWidth = canvas.width;
-        const pxHeight = canvas.height;
-        const mmWidth = (pxWidth * 0.264583) / scale;
-        const mmHeight = (pxHeight * 0.264583) / scale;
-
-        pdf.addImage(imgData, "PNG", 10, 10, mmWidth, mmHeight);
-
-        if (addPage) {
-          pdf.addPage();
-        }
-      };
-
-      await highQualityCapture(englishReportRef, true);
-      await highQualityCapture(sinhalaReportRef, true);
-      await highQualityCapture(tamilReportRef, false);
+      const tamil = await captureElementAsPng(tamilReportRef, scale);
+      pdf.addPage([tamil.mmWidth, tamil.mmHeight]);
+      pdf.addImage(tamil.imgData, "PNG", 0, 0, tamil.mmWidth, tamil.mmHeight);
 
       const today = new Date().toISOString().split("T")[0];
       pdf.save(`Newspaper-Results-hq-${today}.pdf`);
