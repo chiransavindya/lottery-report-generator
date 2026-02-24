@@ -1,0 +1,157 @@
+/* Lagnawasana Banner Styles */
+
+.lw-data-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    /* Adjust based on background logo */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2em;
+    color: white;
+    font-size: 1.1cqw;
+    /* Reduced from 1.4cqw */
+}
+
+/* Row 1: Draw Info */
+.lw-info-row {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 0.3em;
+    /* Reduced from 0.8em */
+    justify-content: flex-start;
+}
+
+.lw-info-box {
+    display: flex;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.lw-info-label {
+    background: #e5e7eb;
+    color: black;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.lw-info-val {
+    background: white;
+    color: black;
+    padding: 0.5em 1.5em;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    min-width: 4em;
+    justify-content: center;
+}
+
+/* Row 2: Labels */
+.lw-labels-row {
+    display: flex;
+    margin-bottom: 0.2em;
+    text-align: left;
+    width: 100%;
+}
+
+.lw-lbl {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.col-win {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* Row 3: Winning Numbers & Zodiac */
+.lw-results-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    /* Reduced from 1.5em */
+    width: 100%;
+}
+
+.lw-ball-group {
+    display: flex;
+    gap: 0.8em;
+}
+
+.lw-ball {
+    width: 2.8em;
+    /* Reduced from 3.2em */
+    height: 2.8em;
+    line-height: 2.8em;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.9em;
+    /* 19px */
+    color: black;
+    background: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+/* Zodiac Box */
+.lw-zodiac-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0.3em 1em;
+    /* 3px 10px */
+    border-radius: 2em;
+    /* 20px */
+    border-radius: 2em;
+    /* 20px */
+    margin-left: 2em;
+    /* Fixed margin instead of % */
+    margin-right: auto;
+    gap: 1em;
+}
+
+.lw-zodiac-icon {
+    width: 2.5em;
+    /* 25px */
+    height: 2.5em;
+    object-fit: contain;
+}
+
+.lw-zodiac-name {
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+/* Row 4: Jackpot */
+.lw-jackpot-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lw-jackpot-pill {
+    background: rgba(45, 55, 72, 0.95);
+    color: white;
+    padding: 0.5em 2em;
+    /* Reduced padding */
+    border-radius: 2.5em;
+    font-size: 1.3em;
+    /* Reduced size */
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,193 @@
+/* Report Accordion Styles */
+
+.report-accordion-section {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.accordion-header {
+    padding: 20px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.accordion-icon {
+    font-size: 24px;
+}
+
+.accordion-name {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.accordion-toggle {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.accordion-download-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.accordion-download-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-download-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.accordion-download-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.accordion-download-btn.generating {
+    background: rgba(255, 255, 255, 0.15);
+    cursor: wait;
+}
+
+.accordion-content {
+    padding: 0;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+.accordion-content .a4-container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: 16px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .accordion-title {
+        font-size: 16px;
+    }
+
+    .accordion-name {
+        font-size: 18px;
+    }
+
+    .accordion-download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion-toggle {
+        position: absolute;
+        right: 16px;
+        top: 20px;
+    }
+}
+
+/* Content area adjustments */
+.content-area {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Remove old sidebar since we have download buttons in headers */
+.download-sidebar {
+    display: none;
+}
+
+/* Smooth transitions */
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content[style*="display: block"] {
+    max-height: none;
+    opacity: 1;
+    padding: 20px;
+}
+
+.accordion-content[style*="display: none"] {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+/* Navbar adjustments */
+.navbar {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Animation on expand/collapse */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accordion-content[style*="display: block"] .a4-container {
+    animation: slideDown 0.3s ease;
+}
