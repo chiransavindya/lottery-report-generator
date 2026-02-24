@@ -68,7 +68,7 @@
 .kapruka-ticket-draw-number-container {
   flex: 1;
   align-items: flex-start;
-  margin-left: -8cm;
+  margin-left: -7.5cm;
   margin-right: 0.1cm;
   margin-top: 0.05cm;
 }
@@ -77,7 +77,7 @@
 .kapruka-ticket-draw-number-containersn {
   flex: 1;
   align-items: flex-start;
-  margin-left: -6.8cm;
+  margin-left: -6.3cm;
   margin-right: 0.1cm;
   margin-top: 0.05cm;
 }
@@ -86,7 +86,7 @@
 .kapruka-ticket-draw-number-containertm {
   flex: 1;
   align-items: flex-start;
-  margin-left: -8.3cm;
+  margin-left: -7.5cm;
   margin-right: 0.1cm;
   margin-top: 0.05cm;
 }
@@ -311,7 +311,7 @@
   color: white;
   font-size: 0.23cm;
   font-weight: 1000;
-  margin-left: -1.0cm;
+  margin-left: -0.6cm;
   margin-top: 0.05cm;
   margin-bottom: 0.05cm;
   justify-content: center;
@@ -492,7 +492,7 @@
 /* Bottom section - Tamil version */
 .kapruka-ticket-bottomtm {
   align-items: center;
-  margin-left: 1.5cm;
+  margin-left: 0.5cm;
   margin-right: 0.5cm;
   margin-top: 0.05cm;
   width: auto;

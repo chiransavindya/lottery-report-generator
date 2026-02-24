@@ -8,8 +8,8 @@ const HeaderTamil = () => {
   useEffect(() => {
     const translateWeekdayToTamil = (weekday) => {
       const weekdaysTamil = {
-        Sunday: "ஞாயிறு",
-        Monday: "திங்கள்கிழமை",
+        Sunday: "ஞாயிற்றுக்கிழமை",
+        Monday: "திங்கட்கிழமை",
         Tuesday: "செவ்வாய்க்கிழமை",
         Wednesday: "புதன்கிழமை",
         Thursday: "வியாழக்கிழமை",

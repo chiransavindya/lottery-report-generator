@@ -30,6 +30,7 @@
   margin-bottom: 0.05cm; /* Bottom margin for all components */
 }
 
+
 /* Remove margin-top for the first component */
 .report-section .component:first-child {
   margin-bottom: 0;

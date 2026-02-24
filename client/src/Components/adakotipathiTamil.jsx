@@ -41,7 +41,7 @@ const AdakotipathiTamil = ({ name = "Ada kotipathi" }) => {
     if (colorLower === "dark green") return "அடர் பச்சை";
     if (colorLower === "red") return "சிகப்பு";
     if (colorLower === "blue") return "நீலம்";
-    if (colorLower === "light blue") return "இளநீலம்";
+    if (colorLower === "light blue") return "இள நீலம்";
     if (colorLower === "dark blue") return "அடர் நீலம்";
     if (colorLower === "orange") return "செம்மஞ்சள்";
     if (colorLower === "pink") return "இளஞ்சிகப்பு";
