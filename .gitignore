@@ -1,31 +1,107 @@
-/client/node_modules
-/server/vendor
-/server/public/build
-/server/public/hot
-/server/public/storage
-/server/storage/*.key
-/server/.env
-/server/.env.backup
-/server/.env.production
-/server/.phpunit.result.cache
+
+# ============================================================
+# Laravel Framework
+# ============================================================
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+
+# ============================================================
+# Storage – runtime / generated (keep .gitignore stubs only)
+# ============================================================
+/storage/*.key
+/storage/app/public
+/storage/app/temp
+/storage/app/lottery-uploads
+/storage/app/private
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/pail/*
+
+# Keep the .gitignore placeholder files inside storage
+!/storage/app/public/.gitignore
+!/storage/app/temp/.gitignore
+!/storage/framework/cache/data/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/testing/.gitignore
+!/storage/framework/views/.gitignore
+!/storage/logs/.gitignore
+!/storage/pail/.gitignore
+
+# ============================================================
+# Bootstrap cache
+# ============================================================
+/bootstrap/cache/*.php
+/bootstrap/cache/*.tmp
+
+# ============================================================
+# Environment & secrets  ← NEVER commit these
+# ============================================================
 .env
-.env.backup
-.env.production
+.env.*
+
+# ============================================================
+# PHP / Composer
+# ============================================================
+.phpunit.result.cache
+.phpactor.json
+composer.phar
+
+# ============================================================
+# Laravel Homestead / Vagrant
+# ============================================================
+Homestead.json
+Homestead.yaml
+Auth.json
+
+# ============================================================
+# Node / NPM / Yarn
+# ============================================================
 npm-debug.log
 yarn-error.log
-/.fleet
-/.idea
-/.vscode
+*.log
 
-# OS specific
-.DS_Store
-Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
+# ============================================================
+# IDEs & editors
+# ============================================================
+.idea
+.vscode
+.zed
+.fleet
 *.swp
 *.swo
 *~
 
-# Docker volumes
-/server/storage/logs/*
-!/server/storage/logs/.gitkeep
+# ============================================================
+# OS artefacts
+# ============================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ============================================================
+# Database files (SQLite – local dev only, never commit)
+# ============================================================
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+/database/*.sqlite*
+
+# ============================================================
+# Generated / uploaded data files (lottery XMLs, reports)
+# ============================================================
+*.pdf
+/storage/app/private/lottery-uploads/**
+/storage/app/private/temp/**
+/storage/app/private/reports/**
+
+# ============================================================
+# Docker – local volume data
+# ============================================================
+/docker/mysql/data/

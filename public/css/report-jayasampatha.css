@@ -1,0 +1,138 @@
+/* Jayasampatha Banner Styles */
+
+.js-data-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2em;
+    color: white;
+    font-size: 1.1cqw;
+    /* Reduced from 1.4cqw */
+}
+
+/* Row 1: Draw Info */
+.js-info-row {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 0.8em;
+    justify-content: flex-start;
+}
+
+.js-info-box {
+    display: flex;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.js-info-label {
+    background: #e5e7eb;
+    color: black;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.js-info-val {
+    background: white;
+    color: black;
+    padding: 0.5em 1.5em;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    min-width: 4em;
+    justify-content: center;
+}
+
+/* Row 2: Labels */
+.js-labels-row {
+    display: flex;
+    margin-bottom: 0.2em;
+    text-align: left;
+    width: 100%;
+}
+
+.js-lbl {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.js-lbl.col-eng {
+    width: 5em;
+    margin-right: 1.5em;
+}
+
+.js-lbl.col-win {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* Row 3: Results */
+.js-results-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.js-ball-group {
+    display: flex;
+    gap: 0.8em;
+}
+
+.js-ball-group.col-eng {
+    justify-content: center;
+    margin-right: 1.5em;
+    min-width: 5em;
+}
+
+.js-ball-group.col-win {
+    justify-content: flex-start;
+}
+
+.js-ball {
+    width: 3.2em;
+    height: 3.2em;
+    line-height: 3.2em;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.9em;
+    color: black;
+    background: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.letter-ball {
+    border-radius: 50%;
+}
+
+/* Row 4: Jackpot/Total */
+.js-jackpot-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.js-jackpot-pill {
+    background: rgba(45, 55, 72, 0.95);
+    color: white;
+    padding: 0.8em 2.5em;
+    border-radius: 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

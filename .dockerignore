@@ -1,88 +1,13 @@
-# --------------------------------------------------------
-# Git & Editor files
-# --------------------------------------------------------
 .git
 .gitignore
-.gitattributes
-.github/
-.editorconfig
-.fleet
-.idea/
-.vscode/
-
-# --------------------------------------------------------
-# Environment & Config
-# --------------------------------------------------------
 .env
-.env.*
-!env.example
-auth.json
-Homestead.json
-Homestead.yaml
-
-# --------------------------------------------------------
-# Logs & Temporary Files
-# --------------------------------------------------------
+node_modules
+vendor
 storage/logs/*
 storage/framework/cache/*
 storage/framework/sessions/*
 storage/framework/views/*
-!storage/framework/.gitkeep
-!storage/logs/.gitkeep
-npm-debug.log
-yarn-error.log
-*.log
-
-# --------------------------------------------------------
-# Dependencies (handled in Docker build)
-# --------------------------------------------------------
-**/node_modules
-**/vendor
-
-# --------------------------------------------------------
-# Tests & Local Files
-# --------------------------------------------------------
-tests/
-.phpunit.result.cache
-phpunit.xml
-
-# --------------------------------------------------------
-# Documentation
-# --------------------------------------------------------
-*.md
-README.md
-
-# --------------------------------------------------------
-# Docker / Compose / Build Artifacts
-# --------------------------------------------------------
-docker-compose.yml
-.dockerignore
-Dockerfile
-docker/
-!docker/php/Dockerfile
-!docker/nginx/default.conf
-
-# --------------------------------------------------------
-# Frontend Hot Reload / Symlinks
-# --------------------------------------------------------
-/public/hot
-/public/storage
-
-# --------------------------------------------------------
-# OS & Misc
-# --------------------------------------------------------
-*.DS_Store
+bootstrap/cache/*
+.DS_Store
 Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
-*.swp
-*.swo
-*~
-
-# --------------------------------------------------------
-# Deployment & Scripts
-# --------------------------------------------------------
-deploy.sh
-dbCheck.sh
-*.bat
-*.ps1
+*.log

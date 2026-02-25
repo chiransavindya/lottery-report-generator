@@ -1,0 +1,142 @@
+/* Kapruka Banner Styles */
+/* Removed .lottery-banner-container as it's in report-view.css now */
+
+.kp-data-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2em;
+    color: white;
+    font-size: 1.1cqw;
+}
+
+/* Row 1: Draw Info */
+.kp-info-row {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 0.3em;
+    justify-content: flex-start;
+}
+
+.kp-info-box {
+    display: flex;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.kp-info-label {
+    background: #e5e7eb;
+    color: black;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.kp-info-val {
+    background: white;
+    color: black;
+    padding: 0.5em 1.5em;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    min-width: 4em;
+    justify-content: center;
+}
+
+/* Row 2: Labels */
+.kp-labels-row {
+    display: flex;
+    margin-bottom: 0.2em;
+    text-align: left;
+    width: 100%;
+}
+
+.kp-lbl {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.col-eng {
+    width: 6em;
+    margin-right: 1.5em;
+    text-align: center;
+}
+
+.col-sup {
+    width: 6em;
+    margin-right: 1.5em;
+    text-align: center;
+}
+
+.col-win {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* Row 3: Balls */
+.kp-balls-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+.kp-ball-group {
+    display: flex;
+    gap: 0.8em;
+}
+
+.kp-ball-group.col-eng,
+.kp-ball-group.col-sup {
+    justify-content: center;
+    margin-right: 1.5em;
+    width: 6em;
+}
+
+.kp-ball-group.col-win {
+    justify-content: flex-start;
+}
+
+.kp-ball {
+    width: 3.0em;
+    height: 3.0em;
+    line-height: 3.0em;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: black;
+    background: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+/* Row 4: Jackpot */
+.kp-jackpot-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kp-jackpot-pill {
+    background: rgba(45, 55, 72, 0.95);
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 2.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
