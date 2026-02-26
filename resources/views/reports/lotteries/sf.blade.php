@@ -56,15 +56,18 @@
                 @endif
             </div>
 
-            <!-- Row 4: Jackpot -->
-            @if($draw->next_jackpot)
-                <div class="sf-jackpot-row">
+            <!-- Row 4: Jackpot & Second Chance Logo -->
+            <div class="sf-jackpot-row">
+                @if($draw->next_jackpot)
                     <div class="sf-jackpot-pill">
                         {{ $L('Next Jackpot') }} : Rs.
                         {{ number_format($draw->next_jackpot, 2) }}
                     </div>
-                </div>
-            @endif
+                @else
+                    <div></div>
+                @endif
+                <img src="{{ asset('images/pdf_static_images/lottery_bg_images/sc.png') }}" alt="Second Chance" class="sf-second-chance-logo">
+            </div>
         </div>
 
         <!-- Right Side: Prize Table -->

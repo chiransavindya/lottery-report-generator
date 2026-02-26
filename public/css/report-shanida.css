@@ -129,6 +129,15 @@
 /* Jackpot */
 .sf-jackpot-row {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sf-second-chance-logo {
+    height: 4.5em;
+    width: auto;
+    margin-right: 1em;
 }
 
 .sf-jackpot-pill {
