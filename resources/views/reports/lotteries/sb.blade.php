@@ -51,24 +51,21 @@
                 @endif
             </div>
 
-            <!-- Row 4: Jackpot & Second Chance Logo -->
-            <div class="sb-jackpot-row">
-                @if($draw->next_jackpot)
+            <!-- Row 4: Jackpot -->
+            @if($draw->next_jackpot)
+                <div class="sb-jackpot-row">
                     <div class="sb-jackpot-pill">
                         {{ $L('Next Jackpot') }} : Rs.
                         {{ number_format($draw->next_jackpot, 2) }}
                     </div>
-                @else
-                    <div></div>
-                @endif
-                <img src="{{ asset('images/pdf_static_images/lottery_bg_images/sc.png') }}" alt="Second Chance" class="sb-second-chance-logo">
-            </div>
+                </div>
+            @endif
         </div>
 
-        <!-- Right Side: Prize Table -->
+        <!-- Right Side: Prize Card (horizontal layout matching screenshot) -->
         @php
             $prizeRows = [];
-            $targetAmounts = [40, 200]; // Superball specific targets (usually reverse of SF or similar)
+            $targetAmounts = [200, 40]; // Rs.200 first, then Rs.40
             if ($draw->prize_breakdown) {
                 foreach ($targetAmounts as $target) {
                     foreach ($draw->prize_breakdown as $p) {
@@ -82,28 +79,35 @@
         @endphp
 
         @if(count($prizeRows) > 0)
-            <div class="sb-table-content">
-                <table class="sb-prize-table">
-                    <thead>
-                        <tr>
-                            <th>{{ $L('Amount') }}</th>
-                            <th>{{ $L('Special No') }}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($prizeRows as $prize)
-                            @php
-                                $amt = (int) ($prize['amount'] ?? $prize['value'] ?? 0);
-                                $metaKey = "SP_{$amt}_NO";
-                                $specialNo = $draw->metadata[$metaKey] ?? $prize['code'] ?? '-';
-                            @endphp
-                            <tr>
-                                <td class="sb-prize-amt">Rs. {{ number_format($amt) }}/-</td>
-                                <td class="sb-special-no">{{ $specialNo }}</td>
-                            </tr>
+            @php
+                $specialNos = [];
+                foreach ($prizeRows as $p) {
+                    $amt = (int) ($p['amount'] ?? $p['value'] ?? 0);
+                    $metaKey = "SP_{$amt}_NO";
+                    $specialNos[$amt] = $draw->metadata[$metaKey] ?? $p['code'] ?? '-';
+                }
+            @endphp
+            <div class="sb-prize-card">
+                <!-- Logo on the left -->
+                <div class="sb-prize-card-logo">
+                    <img src="{{ asset('images/pdf_static_images/lottery_bg_images/sc.png') }}" alt="Second Chance">
+                </div>
+                <!-- Right: title + columns -->
+                <div class="sb-prize-card-body">
+                    <div class="sb-prize-card-title">{{ $L('Special No') }}</div>
+                    <div class="sb-prize-card-cols">
+                        @foreach($prizeRows as $p)
+                            @php $amt = (int) ($p['amount'] ?? $p['value'] ?? 0); @endphp
+                            <div class="sb-prize-card-col">
+                                <div class="sb-prize-card-label">Rs.{{ number_format($amt) }}/- {{ $L('Prize') }}</div>
+                                <div class="sb-prize-card-number">{{ $specialNos[$amt] ?? '-' }}</div>
+                            </div>
+                            @if(!$loop->last)
+                                <div class="sb-prize-card-divider"></div>
+                            @endif
                         @endforeach
-                    </tbody>
-                </table>
+                    </div>
+                </div>
             </div>
         @endif
     </div>
