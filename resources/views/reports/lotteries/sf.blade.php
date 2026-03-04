@@ -8,7 +8,7 @@
     };
 @endphp
 
-<div class="lottery-banner-container sf-banner">
+<div class="lottery-banner-container sf-banner lang-{{ $lang }}">
     <img src="{{ asset('images/pdf_static_images/lottery_bg_images/' . $sfImage) }}" alt="Shanida Banner"
         class="lottery-banner-image">
 
@@ -31,16 +31,16 @@
 
             <!-- Row 2: Labels -->
             <div class="sf-labels-row">
-                <span class="sf-lbl col-win">{{ $L('Winning Numbers') }}</span>
+                <span class="sf-lbl sf-col-win">{{ $L('Winning Numbers') }}</span>
                 @if($draw->english_letters)
-                    <span class="sf-lbl col-eng">{{ $L('English Letter') }}</span>
+                    <span class="sf-lbl sf-col-eng">{{ $L('English Letter') }}</span>
                 @endif
             </div>
 
             <!-- Row 3: Results -->
             <div class="sf-results-row">
                 <!-- Winning Numbers -->
-                <div class="sf-ball-group col-win">
+                <div class="sf-ball-group sf-col-win">
                     @foreach($draw->numbers as $number)
                         <div class="sf-ball circle-white">{{ str_pad($number, 2, '0', STR_PAD_LEFT) }}</div>
                     @endforeach
@@ -48,7 +48,7 @@
 
                 <!-- English Letter -->
                 @if($draw->english_letters)
-                    <div class="sf-ball-group col-eng">
+                    <div class="sf-ball-group sf-col-eng">
                         @foreach(explode(',', $draw->english_letters) as $letter)
                             <div class="sf-ball circle-white">{{ strtoupper(ltrim(trim($letter), '0')) }}</div>
                         @endforeach
@@ -70,7 +70,7 @@
         <!-- Right Side: Prize Card (horizontal layout matching screenshot) -->
         @php
             $prizeRows = [];
-            $targetAmounts = [200, 40]; // Rs.200 first, then Rs.40
+            $targetAmounts = [50000, 200, 40]; // Rs.50,000 first (if present), then Rs.200, then Rs.40
             if ($draw->prize_breakdown) {
                 foreach ($targetAmounts as $target) {
                     foreach ($draw->prize_breakdown as $p) {
@@ -95,7 +95,7 @@
             <div class="sf-prize-card">
                 <!-- Logo on the left -->
                 <div class="sf-prize-card-logo">
-                    <img src="{{ asset('images/pdf_static_images/lottery_bg_images/sc.png') }}" alt="Second Chance">
+                    <img src="{{ asset('images/pdf_static_images/lottery_bg_images/lc.png') }}" alt="Lucky Chance">
                 </div>
                 <!-- Right: title + columns -->
                 <div class="sf-prize-card-body">
