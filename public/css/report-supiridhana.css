@@ -1,4 +1,15 @@
-/* Supiri Dhana Sampatha Banner Styles */
+/* ============================================================
+   SUPIRI DHANA SAMPATHA BANNER STYLES  —  report-supiridhana.css
+   ============================================================
+   STRUCTURE:
+   1. COMMON  — all 3 languages
+   2. ENGLISH (lang-en)
+   3. SINHALA (lang-si)
+   4. TAMIL   (lang-ta)
+   ============================================================ */
+
+
+/* ── 1. COMMON ── */
 
 .ds-data-overlay {
     position: absolute;
@@ -12,10 +23,8 @@
     padding-right: 2em;
     color: white;
     font-size: 1.1cqw;
-    /* Reduced from 1.4cqw */
 }
 
-/* Row 1: Draw Info */
 .ds-info-row {
     display: flex;
     gap: 1.5em;
@@ -44,8 +53,8 @@
 .ds-info-val {
     background: white;
     color: black;
-    padding: 0.5em 1.5em;
-    font-size: 1.4em;
+    padding: 0em;
+    font-size: 2.4em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -53,7 +62,6 @@
     justify-content: center;
 }
 
-/* Row 2: Labels */
 .ds-labels-row {
     display: flex;
     margin-bottom: 0.2em;
@@ -69,18 +77,17 @@
     text-align: center;
 }
 
-.ds-lbl.col-eng {
+.ds-lbl.ds-col-eng {
     width: 5em;
     margin-right: 1.5em;
 }
 
-.ds-lbl.col-win {
+.ds-lbl.ds-col-win {
     flex-grow: 1;
     text-align: left;
     padding-left: 1em;
 }
 
-/* Row 3: Results */
 .ds-results-row {
     display: flex;
     align-items: center;
@@ -93,35 +100,34 @@
     gap: 0.8em;
 }
 
-.ds-ball-group.col-eng {
+.ds-ball-group.ds-col-eng {
     justify-content: center;
     margin-right: 1.5em;
     min-width: 5em;
 }
 
-.ds-ball-group.col-win {
+.ds-ball-group.ds-col-win {
     justify-content: flex-start;
 }
 
 .ds-ball {
-    width: 3.2em;
-    height: 3.2em;
-    line-height: 3.2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 1.9em;
+    font-size: 3.2em;
     color: black;
     background: white;
     font-family: 'Arial', sans-serif;
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
 }
 
-.letter-ball {
+.ds-letter-ball {
     border-radius: 50%;
 }
 
-/* Row 4: Jackpot */
 .ds-jackpot-row {
     display: flex;
     justify-content: flex-start;
@@ -130,9 +136,96 @@
 .ds-jackpot-pill {
     background: rgba(45, 55, 72, 0.95);
     color: white;
-    padding: 0.8em 2.5em;
+    padding: 0.3em 1em;
     border-radius: 2.5em;
-    font-size: 1.5em;
+    font-size: 2.3em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* ── 2. ENGLISH (lang-en) ── */
+
+.ds-banner.lang-en .ds-data-overlay {
+    font-size: 1.1cqw;
+}
+
+.ds-banner.lang-en .ds-info-label {
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+.ds-banner.lang-en .ds-info-val {
+    font-size: 2.4em;
+}
+
+.ds-banner.lang-en .ds-lbl {
+    font-size: 1.1em;
+}
+
+.ds-banner.lang-en .ds-ball {
+    font-size: 3.2em;
+}
+
+.ds-banner.lang-en .ds-jackpot-pill {
+    font-size: 2.3em;
+    padding: 0.3em 1em;
+}
+
+
+/* ── 3. SINHALA (lang-si) ── */
+
+.ds-banner.lang-si .ds-data-overlay {
+    font-size: 1.85cqw;
+}
+
+.ds-banner.lang-si .ds-info-label {
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+}
+
+.ds-banner.lang-si .ds-info-val {
+    font-size: 1.9em;
+}
+
+.ds-banner.lang-si .ds-lbl {
+    font-size: 0.95em;
+}
+
+.ds-banner.lang-si .ds-ball {
+    font-size: 2.8em;
+}
+
+.ds-banner.lang-si .ds-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.8em;
+}
+
+
+/* ── 4. TAMIL (lang-ta) ── */
+
+.ds-banner.lang-ta .ds-data-overlay {
+    font-size: 1.5cqw;
+}
+
+.ds-banner.lang-ta .ds-info-label {
+    font-size: 1.0em;
+    padding: 0.3em 0.5em;
+}
+
+.ds-banner.lang-ta .ds-info-val {
+    font-size: 1.8em;
+}
+
+.ds-banner.lang-ta .ds-lbl {
+    font-size: 0.85em;
+}
+
+.ds-banner.lang-ta .ds-ball {
+    font-size: 2.5em;
+}
+
+.ds-banner.lang-ta .ds-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
 }

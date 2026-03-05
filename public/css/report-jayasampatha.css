@@ -1,5 +1,25 @@
-/* Jayasampatha Banner Styles */
+/* ============================================================
+   JAYASAMPATHA BANNER STYLES
+   report-jayasampatha.css
+   ============================================================
 
+   STRUCTURE:
+   ─────────────────────────────────────────────────────────
+   1. COMMON  — Controls ALL 3 languages simultaneously.
+               Change here to affect English + Sinhala + Tamil.
+
+   2. ENGLISH (lang-en) — Overrides for English only.
+   3. SINHALA (lang-si) — Overrides for Sinhala only.
+   4. TAMIL   (lang-ta) — Overrides for Tamil only.
+   ─────────────────────────────────────────────────────────
+*/
+
+
+/* ============================================================
+   1. COMMON — affects ALL languages
+   ============================================================ */
+
+/* Overlay container */
 .js-data-overlay {
     position: absolute;
     top: 0;
@@ -12,10 +32,9 @@
     padding-right: 2em;
     color: white;
     font-size: 1.1cqw;
-    /* Reduced from 1.4cqw */
 }
 
-/* Row 1: Draw Info */
+/* Row 1: Draw info boxes */
 .js-info-row {
     display: flex;
     gap: 1.5em;
@@ -44,8 +63,8 @@
 .js-info-val {
     background: white;
     color: black;
-    padding: 0.5em 1.5em;
-    font-size: 1.4em;
+    padding: 0em 0em;
+    font-size: 2.4em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -53,7 +72,7 @@
     justify-content: center;
 }
 
-/* Row 2: Labels */
+/* Row 2: Column labels */
 .js-labels-row {
     display: flex;
     margin-bottom: 0.2em;
@@ -69,18 +88,18 @@
     text-align: center;
 }
 
-.js-lbl.col-eng {
+.js-lbl.js-col-eng {
     width: 5em;
     margin-right: 1.5em;
 }
 
-.js-lbl.col-win {
+.js-lbl.js-col-win {
     flex-grow: 1;
     text-align: left;
     padding-left: 1em;
 }
 
-/* Row 3: Results */
+/* Row 3: Ball rows */
 .js-results-row {
     display: flex;
     align-items: center;
@@ -93,35 +112,35 @@
     gap: 0.8em;
 }
 
-.js-ball-group.col-eng {
+.js-ball-group.js-col-eng {
     justify-content: center;
     margin-right: 1.5em;
     min-width: 5em;
 }
 
-.js-ball-group.col-win {
+.js-ball-group.js-col-win {
     justify-content: flex-start;
 }
 
 .js-ball {
-    width: 3.2em;
-    height: 3.2em;
-    line-height: 3.2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 1.9em;
+    font-size: 3.2em;
     color: black;
     background: white;
     font-family: 'Arial', sans-serif;
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
 }
 
-.letter-ball {
+.js-letter-ball {
     border-radius: 50%;
 }
 
-/* Row 4: Jackpot/Total */
+/* Row 4: Total Prize Value / Jackpot */
 .js-jackpot-row {
     display: flex;
     justify-content: flex-start;
@@ -130,9 +149,117 @@
 .js-jackpot-pill {
     background: rgba(45, 55, 72, 0.95);
     color: white;
-    padding: 0.8em 2.5em;
+    padding: 0.3em 1em;
     border-radius: 2.5em;
-    font-size: 1.5em;
+    font-size: 2.3em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* ============================================================
+   2. ENGLISH (lang-en) — overrides for English language only
+   ============================================================ */
+
+/* Overlay */
+.js-banner.lang-en .js-data-overlay {
+    font-size: 1.1cqw;
+}
+
+/* Draw info */
+.js-banner.lang-en .js-info-label {
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+.js-banner.lang-en .js-info-val {
+    font-size: 2.4em;
+}
+
+/* Column labels */
+.js-banner.lang-en .js-lbl {
+    font-size: 1.1em;
+}
+
+/* Balls */
+.js-banner.lang-en .js-ball {
+    font-size: 3.2em;
+}
+
+/* Jackpot */
+.js-banner.lang-en .js-jackpot-pill {
+    font-size: 2.3em;
+    padding: 0.3em 1em;
+}
+
+
+/* ============================================================
+   3. SINHALA (lang-si) — overrides for Sinhala language only
+   ============================================================ */
+
+/* Overlay */
+.js-banner.lang-si .js-data-overlay {
+    font-size: 1.85cqw;
+}
+
+/* Draw info */
+.js-banner.lang-si .js-info-label {
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+}
+
+.js-banner.lang-si .js-info-val {
+    font-size: 1.9em;
+}
+
+/* Column labels */
+.js-banner.lang-si .js-lbl {
+    font-size: 0.95em;
+}
+
+/* Balls */
+.js-banner.lang-si .js-ball {
+    font-size: 2.8em;
+}
+
+/* Jackpot */
+.js-banner.lang-si .js-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.8em;
+}
+
+
+/* ============================================================
+   4. TAMIL (lang-ta) — overrides for Tamil language only
+   ============================================================ */
+
+/* Overlay */
+.js-banner.lang-ta .js-data-overlay {
+    font-size: 1.5cqw;
+}
+
+/* Draw info */
+.js-banner.lang-ta .js-info-label {
+    font-size: 1.0em;
+    padding: 0.3em 0.5em;
+}
+
+.js-banner.lang-ta .js-info-val {
+    font-size: 1.8em;
+}
+
+/* Column labels */
+.js-banner.lang-ta .js-lbl {
+    font-size: 0.85em;
+}
+
+/* Balls */
+.js-banner.lang-ta .js-ball {
+    font-size: 2.5em;
+}
+
+/* Jackpot */
+.js-banner.lang-ta .js-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
 }

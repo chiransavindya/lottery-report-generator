@@ -1,4 +1,15 @@
-/* Superball Banner Styles */
+/* ============================================================
+   SUPERBALL BANNER STYLES  —  report-superball.css
+   ============================================================
+   STRUCTURE:
+   1. COMMON  — all 3 languages
+   2. ENGLISH (lang-en)
+   3. SINHALA (lang-si)
+   4. TAMIL   (lang-ta)
+   ============================================================ */
+
+
+/* ── 1. COMMON ── */
 
 .sb-data-overlay {
     position: absolute;
@@ -13,10 +24,8 @@
     padding-left: 2em;
     color: white;
     font-size: 1.1cqw;
-    /* Reduced from 1.4cqw */
 }
 
-/* Main Content Area (Left) */
 .sb-main-content {
     display: flex;
     flex-direction: column;
@@ -24,7 +33,6 @@
     flex-grow: 1;
 }
 
-/* Table Content Area (Right) */
 .sb-table-content {
     min-width: 25em;
     margin-left: 2em;
@@ -34,7 +42,6 @@
     box-shadow: 0 0.4em 0.6em rgba(0, 0, 0, 0.1);
 }
 
-/* Info Row */
 .sb-info-row {
     display: flex;
     gap: 1.5em;
@@ -62,8 +69,8 @@
 .sb-info-val {
     background: white;
     color: black;
-    padding: 0.5em 1.5em;
-    font-size: 1.4em;
+    padding: 0em;
+    font-size: 2.4em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -71,7 +78,6 @@
     justify-content: center;
 }
 
-/* Labels Row */
 .sb-labels-row {
     display: flex;
     margin-bottom: 0.2em;
@@ -85,16 +91,15 @@
     text-align: center;
 }
 
-.sb-lbl.col-win {
+.sb-lbl.sb-col-win {
     margin-right: 2em;
     text-align: left;
 }
 
-.sb-lbl.col-eng {
+.sb-lbl.sb-col-eng {
     width: 5em;
 }
 
-/* Results Row */
 .sb-results-row {
     display: flex;
     align-items: center;
@@ -108,20 +113,19 @@
 }
 
 .sb-ball {
-    width: 3.2em;
-    height: 3.2em;
-    line-height: 3.2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 3.2em;
     color: black;
     background: white;
     font-family: 'Arial', sans-serif;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
 }
 
-/* Jackpot */
 .sb-jackpot-row {
     display: flex;
 }
@@ -129,18 +133,18 @@
 .sb-jackpot-pill {
     background: rgba(45, 55, 72, 0.95);
     color: white;
-    padding: 0.8em 2em;
-    border-radius: 2em;
-    font-size: 1.5em;
+    padding: 0.3em 1em;
+    border-radius: 2.5em;
+    font-size: 2.3em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* ── Prize Card (horizontal – matches screenshot) ── */
+/* Prize Card */
 .sb-prize-card {
     display: flex;
     align-items: stretch;
-    background: #ffffff;
+    background: #fff;
     border: 0.15em solid #1a1a1a;
     border-radius: 0.4em;
     overflow: hidden;
@@ -149,7 +153,6 @@
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.18);
 }
 
-/* Logo column */
 .sb-prize-card-logo {
     display: flex;
     align-items: center;
@@ -164,7 +167,6 @@
     width: auto;
 }
 
-/* Body: title + cols */
 .sb-prize-card-body {
     display: flex;
     flex-direction: column;
@@ -198,7 +200,7 @@
 .sb-prize-card-label {
     font-size: 1.1em;
     font-weight: 600;
-    color: #333333;
+    color: #333;
     text-align: center;
     margin-bottom: 0.15em;
 }
@@ -214,4 +216,127 @@
     width: 0.12em;
     background: #1a1a1a;
     align-self: stretch;
+}
+
+
+/* ── 2. ENGLISH (lang-en) ── */
+
+.sb-banner.lang-en .sb-data-overlay {
+    font-size: 1.1cqw;
+}
+
+.sb-banner.lang-en .sb-info-label {
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+.sb-banner.lang-en .sb-info-val {
+    font-size: 2.4em;
+}
+
+.sb-banner.lang-en .sb-lbl {
+    font-size: 1.1em;
+}
+
+.sb-banner.lang-en .sb-ball {
+    font-size: 3.2em;
+}
+
+.sb-banner.lang-en .sb-jackpot-pill {
+    font-size: 2.3em;
+    padding: 0.3em 1em;
+}
+
+.sb-banner.lang-en .sb-prize-card-title {
+    font-size: 1.4em;
+}
+
+.sb-banner.lang-en .sb-prize-card-label {
+    font-size: 1.1em;
+}
+
+.sb-banner.lang-en .sb-prize-card-number {
+    font-size: 2.6em;
+}
+
+
+/* ── 3. SINHALA (lang-si) ── */
+
+.sb-banner.lang-si .sb-data-overlay {
+    font-size: 1.85cqw;
+}
+
+.sb-banner.lang-si .sb-info-label {
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+}
+
+.sb-banner.lang-si .sb-info-val {
+    font-size: 1.9em;
+}
+
+.sb-banner.lang-si .sb-lbl {
+    font-size: 0.95em;
+}
+
+.sb-banner.lang-si .sb-ball {
+    font-size: 2.8em;
+}
+
+.sb-banner.lang-si .sb-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.8em;
+}
+
+.sb-banner.lang-si .sb-prize-card-title {
+    font-size: 1.15em;
+}
+
+.sb-banner.lang-si .sb-prize-card-label {
+    font-size: 0.9em;
+}
+
+.sb-banner.lang-si .sb-prize-card-number {
+    font-size: 2.2em;
+}
+
+
+/* ── 4. TAMIL (lang-ta) ── */
+
+.sb-banner.lang-ta .sb-data-overlay {
+    font-size: 1.5cqw;
+}
+
+.sb-banner.lang-ta .sb-info-label {
+    font-size: 0.95em;
+    padding: 0.3em 0.5em;
+}
+
+.sb-banner.lang-ta .sb-info-val {
+    font-size: 1.8em;
+}
+
+.sb-banner.lang-ta .sb-lbl {
+    font-size: 0.8em;
+}
+
+.sb-banner.lang-ta .sb-ball {
+    font-size: 2.5em;
+}
+
+.sb-banner.lang-ta .sb-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
+}
+
+.sb-banner.lang-ta .sb-prize-card-title {
+    font-size: 1.05em;
+}
+
+.sb-banner.lang-ta .sb-prize-card-label {
+    font-size: 0.8em;
+}
+
+.sb-banner.lang-ta .sb-prize-card-number {
+    font-size: 2.0em;
 }

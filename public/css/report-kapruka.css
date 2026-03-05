@@ -1,11 +1,31 @@
-/* Kapruka Banner Styles */
-/* Removed .lottery-banner-container as it's in report-view.css now */
+/* ============================================================
+   KAPRUKA BANNER STYLES
+   report-kapruka.css
+   ============================================================
 
+   STRUCTURE:
+   ─────────────────────────────────────────────────────────
+   1. COMMON  — Controls ALL 3 languages simultaneously.
+               Change here to affect English + Sinhala + Tamil.
+
+   2. ENGLISH (lang-en) — Overrides for English only.
+   3. SINHALA (lang-si) — Overrides for Sinhala only.
+   4. TAMIL   (lang-ta) — Overrides for Tamil only.
+   ─────────────────────────────────────────────────────────
+*/
+
+
+/* ============================================================
+   1. COMMON — affects ALL languages
+      Edit these to adjust layout shared by en / si / ta
+   ============================================================ */
+
+/* Overlay container */
 .kp-data-overlay {
     position: absolute;
     top: 0;
     right: 0;
-    width: 75%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -15,7 +35,7 @@
     font-size: 1.1cqw;
 }
 
-/* Row 1: Draw Info */
+/* Row 1: Draw info boxes */
 .kp-info-row {
     display: flex;
     gap: 1.5em;
@@ -44,7 +64,7 @@
 .kp-info-val {
     background: white;
     color: black;
-    padding: 0.0em 0.0em;
+    padding: 0em 0em;
     font-size: 2.4em;
     font-weight: bold;
     display: flex;
@@ -53,7 +73,7 @@
     justify-content: center;
 }
 
-/* Row 2: Labels */
+/* Row 2: Column labels */
 .kp-labels-row {
     display: flex;
     margin-bottom: 0.2em;
@@ -69,25 +89,25 @@
     text-align: center;
 }
 
-.col-eng {
+.kp-col-eng {
     width: 6em;
     margin-right: 1.5em;
     text-align: center;
 }
 
-.col-sup {
+.kp-col-sup {
     width: 6em;
     margin-right: 1.5em;
     text-align: center;
 }
 
-.col-win {
+.kp-col-win {
     flex-grow: 1;
     text-align: left;
     padding-left: 1em;
 }
 
-/* Row 3: Balls */
+/* Row 3: Ball rows */
 .kp-balls-row {
     display: flex;
     align-items: center;
@@ -100,14 +120,14 @@
     gap: 0.8em;
 }
 
-.kp-ball-group.col-eng,
-.kp-ball-group.col-sup {
+.kp-ball-group.kp-col-eng,
+.kp-ball-group.kp-col-sup {
     justify-content: center;
     margin-right: 1.5em;
     width: 6em;
 }
 
-.kp-ball-group.col-win {
+.kp-ball-group.kp-col-win {
     justify-content: flex-start;
 }
 
@@ -139,4 +159,115 @@
     font-size: 2.3em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* ============================================================
+   2. ENGLISH (lang-en) — overrides for English language only
+      These selectors ONLY apply when the root has .lang-en
+   ============================================================ */
+
+/* Overlay */
+.kp-banner.lang-en .kp-data-overlay {
+    font-size: 1.1cqw;
+}
+
+/* Draw info */
+.kp-banner.lang-en .kp-info-label {
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+.kp-banner.lang-en .kp-info-val {
+    font-size: 2.4em;
+}
+
+/* Column labels */
+.kp-banner.lang-en .kp-lbl {
+    font-size: 1.1em;
+}
+
+/* Balls */
+.kp-banner.lang-en .kp-ball {
+    font-size: 3.2em;
+}
+
+/* Jackpot */
+.kp-banner.lang-en .kp-jackpot-pill {
+    font-size: 2.3em;
+    padding: 0.3em 1em;
+}
+
+
+/* ============================================================
+   3. SINHALA (lang-si) — overrides for Sinhala language only
+      These selectors ONLY apply when the root has .lang-si
+   ============================================================ */
+
+/* Overlay */
+.kp-banner.lang-si .kp-data-overlay {
+    font-size: 1.75cqw;
+}
+
+/* Draw info */
+.kp-banner.lang-si .kp-info-label {
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+}
+
+.kp-banner.lang-si .kp-info-val {
+    font-size: 1.9em;
+}
+
+/* Column labels */
+.kp-banner.lang-si .kp-lbl {
+    font-size: 0.95em;
+}
+
+/* Balls */
+.kp-banner.lang-si .kp-ball {
+    font-size: 2.8em;
+}
+
+/* Jackpot */
+.kp-banner.lang-si .kp-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.8em;
+}
+
+
+/* ============================================================
+   4. TAMIL (lang-ta) — overrides for Tamil language only
+      These selectors ONLY apply when the root has .lang-ta
+   ============================================================ */
+
+/* Overlay */
+.kp-banner.lang-ta .kp-data-overlay {
+    font-size: 1.5cqw;
+}
+
+/* Draw info */
+.kp-banner.lang-ta .kp-info-label {
+    font-size: 1.0em;
+    padding: 0.3em 0.5em;
+}
+
+.kp-banner.lang-ta .kp-info-val {
+    font-size: 1.8em;
+}
+
+/* Column labels */
+.kp-banner.lang-ta .kp-lbl {
+    font-size: 0.85em;
+}
+
+/* Balls */
+.kp-banner.lang-ta .kp-ball {
+    font-size: 2.5em;
+}
+
+/* Jackpot */
+.kp-banner.lang-ta .kp-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
 }

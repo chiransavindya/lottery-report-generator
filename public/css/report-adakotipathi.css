@@ -1,5 +1,25 @@
-/* Ada Kotipathi Banner Styles */
+/* ============================================================
+   ADA KOTIPATHI BANNER STYLES
+   report-adakotipathi.css
+   ============================================================
 
+   STRUCTURE:
+   ─────────────────────────────────────────────────────────
+   1. COMMON  — Controls ALL 3 languages simultaneously.
+               Change here to affect English + Sinhala + Tamil.
+
+   2. ENGLISH (lang-en) — Overrides for English only.
+   3. SINHALA (lang-si) — Overrides for Sinhala only.
+   4. TAMIL   (lang-ta) — Overrides for Tamil only.
+   ─────────────────────────────────────────────────────────
+*/
+
+
+/* ============================================================
+   1. COMMON — affects ALL languages
+   ============================================================ */
+
+/* Overlay container */
 .ak-data-overlay {
     position: absolute;
     top: 0;
@@ -12,10 +32,9 @@
     padding-right: 2em;
     color: white;
     font-size: 1.1cqw;
-    /* Reduced from 1.4cqw */
 }
 
-/* Row 1: Draw Info */
+/* Row 1: Draw info boxes */
 .ak-info-row {
     display: flex;
     gap: 1.5em;
@@ -44,8 +63,8 @@
 .ak-info-val {
     background: white;
     color: black;
-    padding: 0.5em 1.5em;
-    font-size: 1.4em;
+    padding: 0em 0em;
+    font-size: 2.4em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -53,7 +72,7 @@
     justify-content: center;
 }
 
-/* Row 2: Labels */
+/* Row 2: Column labels */
 .ak-labels-row {
     display: flex;
     margin-bottom: 0.2em;
@@ -69,57 +88,54 @@
     text-align: center;
 }
 
-.col-eng {
+.ak-col-eng {
     width: 6em;
     margin-right: 1.5em;
     text-align: center;
 }
 
-.col-win {
+.ak-col-win {
     flex-grow: 1;
     text-align: left;
     padding-left: 2em;
-    /* 20px */
 }
 
-/* Row 3: Results */
+/* Row 3: Ball rows */
 .ak-results-row {
     display: flex;
     align-items: center;
     margin-bottom: 1em;
-    /* 10px */
     width: 100%;
 }
 
 .ak-ball-group {
     display: flex;
     gap: 0.5em;
-    /* 5px */
 }
 
-.ak-ball-group.col-eng {
+.ak-ball-group.ak-col-eng {
     justify-content: center;
     margin-right: 1.5em;
     width: 6em;
 }
 
-.ak-ball-group.col-win {
+.ak-ball-group.ak-col-win {
     justify-content: flex-start;
     padding-left: 0;
 }
 
 .ak-ball {
-    width: 3.2em;
-    height: 3.2em;
-    line-height: 3.2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 3.2em;
     color: black;
     background: white;
     font-family: 'Arial', sans-serif;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
 }
 
 /* Row 4: Jackpot */
@@ -131,11 +147,117 @@
 .ak-jackpot-pill {
     background: rgba(45, 55, 72, 0.95);
     color: white;
-    padding: 0.8em 2em;
-    /* 20px */
-    border-radius: 2em;
-    font-size: 1.5em;
-    /* 15px */
+    padding: 0.3em 1em;
+    border-radius: 2.5em;
+    font-size: 2.3em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* ============================================================
+   2. ENGLISH (lang-en) — overrides for English language only
+   ============================================================ */
+
+/* Overlay */
+.ak-banner.lang-en .ak-data-overlay {
+    font-size: 1.1cqw;
+}
+
+/* Draw info */
+.ak-banner.lang-en .ak-info-label {
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+.ak-banner.lang-en .ak-info-val {
+    font-size: 2.4em;
+}
+
+/* Column labels */
+.ak-banner.lang-en .ak-lbl {
+    font-size: 1.1em;
+}
+
+/* Balls */
+.ak-banner.lang-en .ak-ball {
+    font-size: 3.2em;
+}
+
+/* Jackpot */
+.ak-banner.lang-en .ak-jackpot-pill {
+    font-size: 2.3em;
+    padding: 0.3em 1em;
+}
+
+
+/* ============================================================
+   3. SINHALA (lang-si) — overrides for Sinhala language only
+   ============================================================ */
+
+/* Overlay */
+.ak-banner.lang-si .ak-data-overlay {
+    font-size: 1.85cqw;
+}
+
+/* Draw info */
+.ak-banner.lang-si .ak-info-label {
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+}
+
+.ak-banner.lang-si .ak-info-val {
+    font-size: 1.9em;
+}
+
+/* Column labels */
+.ak-banner.lang-si .ak-lbl {
+    font-size: 0.95em;
+}
+
+/* Balls */
+.ak-banner.lang-si .ak-ball {
+    font-size: 2.8em;
+}
+
+/* Jackpot */
+.ak-banner.lang-si .ak-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.8em;
+}
+
+
+/* ============================================================
+   4. TAMIL (lang-ta) — overrides for Tamil language only
+   ============================================================ */
+
+/* Overlay */
+.ak-banner.lang-ta .ak-data-overlay {
+    font-size: 1.5cqw;
+}
+
+/* Draw info */
+.ak-banner.lang-ta .ak-info-label {
+    font-size: 1.0em;
+    padding: 0.3em 0.5em;
+}
+
+.ak-banner.lang-ta .ak-info-val {
+    font-size: 1.8em;
+}
+
+/* Column labels */
+.ak-banner.lang-ta .ak-lbl {
+    font-size: 0.85em;
+}
+
+/* Balls */
+.ak-banner.lang-ta .ak-ball {
+    font-size: 2.5em;
+}
+
+/* Jackpot */
+.ak-banner.lang-ta .ak-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
 }

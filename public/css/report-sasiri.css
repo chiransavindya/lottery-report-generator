@@ -1,5 +1,30 @@
-/* Sasiri Banner Styles */
+/* ============================================================
+   SASIRI BANNER STYLES
+   report-sasiri.css
+   ============================================================
 
+   STRUCTURE:
+   ─────────────────────────────────────────────────────────
+   1. COMMON  — Controls ALL 3 languages simultaneously.
+               Change here to affect English + Sinhala + Tamil.
+
+   2. ENGLISH (lang-en) — Overrides for English only.
+   3. SINHALA (lang-si) — Overrides for Sinhala only.
+   4. TAMIL   (lang-ta) — Overrides for Tamil only.
+   ─────────────────────────────────────────────────────────
+   NOTE: Sasiri uses separate background images per language:
+         en → sasiri_english.png
+         si → sasiri_sinhala.png
+         ta → sasiri_tamil.png
+   ─────────────────────────────────────────────────────────
+*/
+
+
+/* ============================================================
+   1. COMMON — affects ALL languages
+   ============================================================ */
+
+/* Overlay container */
 .sr-data-overlay {
     position: absolute;
     top: 0;
@@ -12,16 +37,16 @@
     padding-right: 2em;
     color: white;
     font-size: 1.1cqw;
-    /* Reduced from 1.4cqw */
 }
 
+/* Main content column */
 .sr-main-content {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-/* Row 1: Draw Info */
+/* Row 1: Draw Info boxes */
 .sr-info-row {
     display: flex;
     gap: 1.5em;
@@ -33,7 +58,6 @@
     background: white;
     border: 1px solid #ccc;
     height: 2.4em;
-    /* 24px */
 }
 
 .sr-info-label {
@@ -51,8 +75,8 @@
 .sr-info-val {
     background: white;
     color: black;
-    padding: 0 1.2em;
-    font-size: 1.2em;
+    padding: 0em 0em;
+    font-size: 2.0em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -60,7 +84,7 @@
     justify-content: center;
 }
 
-/* Row 2: Middle Section */
+/* Row 2: Middle section (Winning Numbers + Winners box side-by-side) */
 .sr-middle-row {
     display: flex;
     align-items: flex-end;
@@ -68,7 +92,7 @@
     margin-bottom: 0.5em;
 }
 
-/* Winning Numbers Section */
+/* Winning Numbers section */
 .sr-winning-section {
     display: flex;
     flex-direction: column;
@@ -90,27 +114,26 @@
 }
 
 .sr-ball {
-    width: 2.8em;
-    /* Reduced from 3.2em */
-    height: 2.8em;
-    line-height: 2.8em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 3.0em;
     color: black;
     background: white;
     font-family: 'Arial', sans-serif;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
 }
 
-/* Winners Box */
+/* Winners stats box */
 .sr-winners-box {
     display: flex;
     background: white;
     border: 1px solid #ccc;
     margin-left: 1.5em;
     height: 3.8em;
-    /* 38px */
 }
 
 .sr-winners-label {
@@ -136,7 +159,7 @@
     justify-content: center;
 }
 
-/* Row 3: Total Prize Value */
+/* Row 3: Total Prize Value pill */
 .sr-jackpot-row {
     display: flex;
     margin-top: 0.5em;
@@ -145,11 +168,134 @@
 .sr-jackpot-pill {
     background: rgba(45, 55, 72, 0.95);
     color: white;
-    padding: 0.6em 1.5em;
-    border-radius: 0.6em;
-    font-size: 1.3em;
+    padding: 0.3em 1em;
+    border-radius: 2.5em;
+    font-size: 2.0em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
     width: 100%;
     text-align: center;
+}
+
+
+/* ============================================================
+   2. ENGLISH (lang-en) — overrides for English language only
+   ============================================================ */
+
+/* Overlay */
+.sr-banner.lang-en .sr-data-overlay {
+    font-size: 1.1cqw;
+}
+
+/* Draw info */
+.sr-banner.lang-en .sr-info-label {
+    font-size: 1.1em;
+    padding: 0 0.8em;
+}
+
+.sr-banner.lang-en .sr-info-val {
+    font-size: 2.0em;
+}
+
+/* Winning label */
+.sr-banner.lang-en .sr-winning-label {
+    font-size: 1em;
+}
+
+/* Balls */
+.sr-banner.lang-en .sr-ball {
+    font-size: 3.0em;
+}
+
+/* Winners label */
+.sr-banner.lang-en .sr-winners-label {
+    font-size: 1em;
+}
+
+/* Total value pill */
+.sr-banner.lang-en .sr-jackpot-pill {
+    font-size: 2.0em;
+    padding: 0.3em 1em;
+}
+
+
+/* ============================================================
+   3. SINHALA (lang-si) — overrides for Sinhala language only
+   ============================================================ */
+
+/* Overlay */
+.sr-banner.lang-si .sr-data-overlay {
+    font-size: 1.85cqw;
+}
+
+/* Draw info */
+.sr-banner.lang-si .sr-info-label {
+    font-size: 0.95em;
+    padding: 0 0.6em;
+}
+
+.sr-banner.lang-si .sr-info-val {
+    font-size: 1.6em;
+}
+
+/* Winning label */
+.sr-banner.lang-si .sr-winning-label {
+    font-size: 0.85em;
+}
+
+/* Balls */
+.sr-banner.lang-si .sr-ball {
+    font-size: 2.6em;
+}
+
+/* Winners label */
+.sr-banner.lang-si .sr-winners-label {
+    font-size: 0.85em;
+}
+
+/* Total value pill */
+.sr-banner.lang-si .sr-jackpot-pill {
+    font-size: 1.6em;
+    padding: 0.3em 0.8em;
+}
+
+
+/* ============================================================
+   4. TAMIL (lang-ta) — overrides for Tamil language only
+   ============================================================ */
+
+/* Overlay */
+.sr-banner.lang-ta .sr-data-overlay {
+    font-size: 1.5cqw;
+}
+
+/* Draw info */
+.sr-banner.lang-ta .sr-info-label {
+    font-size: 0.85em;
+    padding: 0 0.5em;
+}
+
+.sr-banner.lang-ta .sr-info-val {
+    font-size: 1.4em;
+}
+
+/* Winning label */
+.sr-banner.lang-ta .sr-winning-label {
+    font-size: 0.75em;
+}
+
+/* Balls */
+.sr-banner.lang-ta .sr-ball {
+    font-size: 2.3em;
+}
+
+/* Winners label */
+.sr-banner.lang-ta .sr-winners-label {
+    font-size: 0.75em;
+}
+
+/* Total value pill */
+.sr-banner.lang-ta .sr-jackpot-pill {
+    font-size: 1.4em;
+    padding: 0.3em 0.7em;
 }

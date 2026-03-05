@@ -1,5 +1,29 @@
-/* Shanida Fortune Banner Styles */
+/* ============================================================
+   SHANIDA FORTUNE BANNER STYLES
+   report-shanida.css
+   ============================================================
 
+   STRUCTURE:
+   ─────────────────────────────────────────────────────────
+   1. COMMON  — Controls ALL 3 languages simultaneously.
+               Change here to affect English + Sinhala + Tamil.
+
+   2. ENGLISH (lang-en) — Overrides for English only.
+   3. SINHALA (lang-si) — Overrides for Sinhala only.
+   4. TAMIL   (lang-ta) — Overrides for Tamil only.
+   ─────────────────────────────────────────────────────────
+   NOTE: Shanida uses separate background images per language:
+         en / si → shanida_all.png
+         ta      → shanida_tamil.png
+   ─────────────────────────────────────────────────────────
+*/
+
+
+/* ============================================================
+   1. COMMON — affects ALL languages
+   ============================================================ */
+
+/* Overlay container */
 .sf-data-overlay {
     position: absolute;
     top: 0;
@@ -13,10 +37,9 @@
     padding-left: 2em;
     color: white;
     font-size: 1.1cqw;
-    /* Reduced from 1.4cqw */
 }
 
-/* Main Content Area (Left) */
+/* Main content area (left) */
 .sf-main-content {
     display: flex;
     flex-direction: column;
@@ -24,21 +47,17 @@
     flex-grow: 1;
 }
 
-/* Table Content Area (Right) */
+/* Table content area (Right — unused kept for compatibility) */
 .sf-table-content {
     min-width: 25em;
-    /* 250px */
     margin-left: 2em;
-    /* 20px */
     background: rgba(255, 255, 255, 0.9);
     padding: 1em;
-    /* 10px */
     border-radius: 0.8em;
-    /* 8px */
     box-shadow: 0 0.4em 0.6em rgba(0, 0, 0, 0.1);
 }
 
-/* Info Row */
+/* Row 1: Draw info boxes */
 .sf-info-row {
     display: flex;
     gap: 1.5em;
@@ -66,8 +85,8 @@
 .sf-info-val {
     background: white;
     color: black;
-    padding: 0.5em 1.5em;
-    font-size: 1.4em;
+    padding: 0em 0em;
+    font-size: 2.4em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -75,7 +94,7 @@
     justify-content: center;
 }
 
-/* Labels Row */
+/* Row 2: Column labels */
 .sf-labels-row {
     display: flex;
     margin-bottom: 0.2em;
@@ -89,17 +108,16 @@
     text-align: center;
 }
 
-.sf-lbl.col-win {
+.sf-lbl.sf-col-win {
     margin-right: 2em;
     text-align: left;
 }
 
-.sf-lbl.col-eng {
+.sf-lbl.sf-col-eng {
     width: 5em;
-    /* 50px */
 }
 
-/* Results Row */
+/* Row 3: Ball rows */
 .sf-results-row {
     display: flex;
     align-items: center;
@@ -113,20 +131,20 @@
 }
 
 .sf-ball {
-    width: 3.2em;
-    height: 3.2em;
-    line-height: 3.2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 3.2em;
     color: black;
     background: white;
     font-family: 'Arial', sans-serif;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
 }
 
-/* Jackpot */
+/* Row 4: Jackpot */
 .sf-jackpot-row {
     display: flex;
 }
@@ -134,14 +152,14 @@
 .sf-jackpot-pill {
     background: rgba(45, 55, 72, 0.95);
     color: white;
-    padding: 0.8em 2em;
-    border-radius: 2em;
-    font-size: 1.5em;
+    padding: 0.3em 1em;
+    border-radius: 2.5em;
+    font-size: 2.3em;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* ── Prize Card (horizontal – matches screenshot) ── */
+/* Prize Card (horizontal layout — shared across all languages) */
 .sf-prize-card {
     display: flex;
     align-items: stretch;
@@ -154,7 +172,6 @@
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.18);
 }
 
-/* Logo column */
 .sf-prize-card-logo {
     display: flex;
     align-items: center;
@@ -169,7 +186,6 @@
     width: auto;
 }
 
-/* Body: title + cols */
 .sf-prize-card-body {
     display: flex;
     flex-direction: column;
@@ -219,4 +235,151 @@
     width: 0.12em;
     background: #1a1a1a;
     align-self: stretch;
+}
+
+
+/* ============================================================
+   2. ENGLISH (lang-en) — overrides for English language only
+   ============================================================ */
+
+/* Overlay */
+.sf-banner.lang-en .sf-data-overlay {
+    font-size: 1.1cqw;
+}
+
+/* Draw info */
+.sf-banner.lang-en .sf-info-label {
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
+.sf-banner.lang-en .sf-info-val {
+    font-size: 2.4em;
+}
+
+/* Column labels */
+.sf-banner.lang-en .sf-lbl {
+    font-size: 1.1em;
+}
+
+/* Balls */
+.sf-banner.lang-en .sf-ball {
+    font-size: 3.2em;
+}
+
+/* Jackpot */
+.sf-banner.lang-en .sf-jackpot-pill {
+    font-size: 2.3em;
+    padding: 0.3em 1em;
+}
+
+/* Prize card */
+.sf-banner.lang-en .sf-prize-card-title {
+    font-size: 1.4em;
+}
+
+.sf-banner.lang-en .sf-prize-card-label {
+    font-size: 1.1em;
+}
+
+.sf-banner.lang-en .sf-prize-card-number {
+    font-size: 2.6em;
+}
+
+
+/* ============================================================
+   3. SINHALA (lang-si) — overrides for Sinhala language only
+   ============================================================ */
+
+/* Overlay */
+.sf-banner.lang-si .sf-data-overlay {
+    font-size: 1.85cqw;
+}
+
+/* Draw info */
+.sf-banner.lang-si .sf-info-label {
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+}
+
+.sf-banner.lang-si .sf-info-val {
+    font-size: 1.9em;
+}
+
+/* Column labels */
+.sf-banner.lang-si .sf-lbl {
+    font-size: 0.95em;
+}
+
+/* Balls */
+.sf-banner.lang-si .sf-ball {
+    font-size: 2.8em;
+}
+
+/* Jackpot */
+.sf-banner.lang-si .sf-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.8em;
+}
+
+/* Prize card */
+.sf-banner.lang-si .sf-prize-card-title {
+    font-size: 1.15em;
+}
+
+.sf-banner.lang-si .sf-prize-card-label {
+    font-size: 0.9em;
+}
+
+.sf-banner.lang-si .sf-prize-card-number {
+    font-size: 2.2em;
+}
+
+
+/* ============================================================
+   4. TAMIL (lang-ta) — overrides for Tamil language only
+   ============================================================ */
+
+/* Overlay */
+.sf-banner.lang-ta .sf-data-overlay {
+    font-size: 1.5cqw;
+}
+
+/* Draw info */
+.sf-banner.lang-ta .sf-info-label {
+    font-size: 0.95em;
+    padding: 0.3em 0.5em;
+}
+
+.sf-banner.lang-ta .sf-info-val {
+    font-size: 1.8em;
+}
+
+/* Column labels */
+.sf-banner.lang-ta .sf-lbl {
+    font-size: 0.8em;
+}
+
+/* Balls */
+.sf-banner.lang-ta .sf-ball {
+    font-size: 2.5em;
+}
+
+/* Jackpot */
+.sf-banner.lang-ta .sf-jackpot-pill {
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
+}
+
+/* Prize card */
+.sf-banner.lang-ta .sf-prize-card-title {
+    font-size: 1.05em;
+}
+
+.sf-banner.lang-ta .sf-prize-card-label {
+    font-size: 0.8em;
+}
+
+.sf-banner.lang-ta .sf-prize-card-number {
+    font-size: 2.0em;
 }
