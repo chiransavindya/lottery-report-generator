@@ -69,43 +69,58 @@
 
         <!-- Right Side: Prize Card (horizontal layout matching screenshot) -->
         @php
+            /*
+             * Build $prizeRows from METADATA keys only.
+             *
+             * XML attribute format used by the DLB system:
+             *   SP_200_NO     → special number for the Rs.200   prize
+             *   SP_40_NO      → special number for the Rs.40    prize
+             *   SP_50,000_NO  → special number for the Rs.50,000 prize  ← comma in key!
+             *
+             * IMPORTANT: The parser stores attribute keys verbatim from the XML,
+             * so "SP_50,000_NO" contains a literal comma — do NOT use SP_50000_NO.
+             *
+             * $sfPrizeMap maps: display amount (int) → exact XML metadata key
+             * A prize column is ONLY rendered when its metadata key is present
+             * and non-empty. No fallback to prize_breakdown codes.
+             */
+            $sfPrizeMap = [
+                50000 => 'SP_50,000_NO',   // Rs.50,000 — note the comma in the key
+                200   => 'SP_200_NO',       // Rs.200
+                40    => 'SP_40_NO',        // Rs.40
+            ];
+
             $prizeRows = [];
-            $targetAmounts = [50000, 200, 40]; // Rs.50,000 first (if present), then Rs.200, then Rs.40
-            if ($draw->prize_breakdown) {
-                foreach ($targetAmounts as $target) {
-                    foreach ($draw->prize_breakdown as $p) {
-                        if ((int) ($p['amount'] ?? $p['value'] ?? 0) == $target) {
-                            $prizeRows[] = $p;
-                            break;
-                        }
-                    }
+            $sfMeta    = $draw->metadata ?? [];
+
+            foreach ($sfPrizeMap as $sfAmt => $sfMetaKey) {
+                if (!empty($sfMeta[$sfMetaKey])) {
+                    $prizeRows[] = [
+                        'amount'     => $sfAmt,
+                        'special_no' => $sfMeta[$sfMetaKey],
+                    ];
                 }
             }
         @endphp
 
         @if(count($prizeRows) > 0)
-            @php
-                $specialNos = [];
-                foreach ($prizeRows as $p) {
-                    $amt = (int) ($p['amount'] ?? $p['value'] ?? 0);
-                    $metaKey = "SP_{$amt}_NO";
-                    $specialNos[$amt] = $draw->metadata[$metaKey] ?? $p['code'] ?? '-';
-                }
-            @endphp
             <div class="sf-prize-card">
-                <!-- Logo on the left -->
+
+                {{-- Logo (Lucky Chance) --}}
                 <div class="sf-prize-card-logo">
                     <img src="{{ asset('images/pdf_static_images/lottery_bg_images/lc.png') }}" alt="Lucky Chance">
                 </div>
-                <!-- Right: title + columns -->
+
+                {{-- One column per SP_{amt}_NO key found in XML metadata --}}
                 <div class="sf-prize-card-body">
                     <div class="sf-prize-card-title">{{ $L('Special No') }}</div>
                     <div class="sf-prize-card-cols">
-                        @foreach($prizeRows as $p)
-                            @php $amt = (int) ($p['amount'] ?? $p['value'] ?? 0); @endphp
+                        @foreach($prizeRows as $row)
                             <div class="sf-prize-card-col">
-                                <div class="sf-prize-card-label">Rs.{{ number_format($amt) }}/- {{ $L('Prize') }}</div>
-                                <div class="sf-prize-card-number">{{ $specialNos[$amt] ?? '-' }}</div>
+                                <div class="sf-prize-card-label">
+                                    Rs.{{ number_format($row['amount']) }}/- {{ $L('Prize') }}
+                                </div>
+                                <div class="sf-prize-card-number">{{ $row['special_no'] }}</div>
                             </div>
                             @if(!$loop->last)
                                 <div class="sf-prize-card-divider"></div>
@@ -113,6 +128,7 @@
                         @endforeach
                     </div>
                 </div>
+
             </div>
         @endif
     </div>
