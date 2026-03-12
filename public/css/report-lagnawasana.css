@@ -86,7 +86,7 @@
 }
 
 .lw-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -189,7 +189,7 @@
 
 /* Column labels */
 .lw-banner.lang-en .lw-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -199,7 +199,7 @@
 
 /* Zodiac */
 .lw-banner.lang-en .lw-zodiac-name {
-    font-size: 1.4em;
+    font-size: 2.4em;
 }
 
 /* Jackpot */
@@ -215,12 +215,12 @@
 
 /* Overlay */
 .lw-banner.lang-si .lw-data-overlay {
-    font-size: 1.85cqw;
+    font-size: 1.5cqw;
 }
 
 /* Draw info */
 .lw-banner.lang-si .lw-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -230,7 +230,7 @@
 
 /* Column labels */
 .lw-banner.lang-si .lw-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -240,7 +240,7 @@
 
 /* Zodiac */
 .lw-banner.lang-si .lw-zodiac-name {
-    font-size: 1.1em;
+    font-size: 1.9em;
 }
 
 /* Jackpot */
@@ -261,7 +261,7 @@
 
 /* Draw info */
 .lw-banner.lang-ta .lw-info-label {
-    font-size: 1.0em;
+    font-size: 1.3em;
     padding: 0.3em 0.6em;
 }
 
@@ -271,7 +271,7 @@
 
 /* Column labels */
 .lw-banner.lang-ta .lw-lbl {
-    font-size: 0.85em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -281,7 +281,7 @@
 
 /* Zodiac */
 .lw-banner.lang-ta .lw-zodiac-name {
-    font-size: 1.0em;
+    font-size: 1.8em;
 }
 
 /* Jackpot */

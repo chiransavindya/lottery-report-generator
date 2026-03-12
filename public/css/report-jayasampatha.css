@@ -81,7 +81,7 @@
 }
 
 .js-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -178,7 +178,7 @@
 
 /* Column labels */
 .js-banner.lang-en .js-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -204,7 +204,7 @@
 
 /* Draw info */
 .js-banner.lang-si .js-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -214,7 +214,7 @@
 
 /* Column labels */
 .js-banner.lang-si .js-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -240,7 +240,7 @@
 
 /* Draw info */
 .js-banner.lang-ta .js-info-label {
-    font-size: 1.0em;
+    font-size: 1.3em;
     padding: 0.3em 0.5em;
 }
 
@@ -250,7 +250,7 @@
 
 /* Column labels */
 .js-banner.lang-ta .js-lbl {
-    font-size: 0.85em;
+    font-size: 1.3em;
 }
 
 /* Balls */

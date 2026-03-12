@@ -101,7 +101,7 @@
 }
 
 .sf-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -109,12 +109,16 @@
 }
 
 .sf-lbl.sf-col-win {
-    margin-right: 2em;
-    text-align: left;
+    width: 18.2em;
+    margin-right: 5em;
+    text-align: center;
 }
 
 .sf-lbl.sf-col-eng {
     width: 5em;
+    text-align: center;
+    align-self: flex-start;
+    margin-left: -6.5em;
 }
 
 /* Row 3: Ball rows */
@@ -128,6 +132,11 @@
 .sf-ball-group {
     display: flex;
     gap: 0.5em;
+}
+
+.sf-ball-group.sf-col-win {
+    width: 21.2em;
+    justify-content: center;
 }
 
 .sf-ball {
@@ -168,7 +177,7 @@
     border-radius: 0.4em;
     overflow: hidden;
     min-width: 28em;
-    margin-left: 1.5em;
+    margin-right: 8.5em;
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.18);
 }
 
@@ -244,7 +253,8 @@
 
 /* Overlay */
 .sf-banner.lang-en .sf-data-overlay {
-    font-size: 1.1cqw;
+    font-size: 1.0cqw;
+    margin-right: -10em;
 }
 
 /* Draw info */
@@ -259,7 +269,7 @@
 
 /* Column labels */
 .sf-banner.lang-en .sf-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -298,7 +308,7 @@
 
 /* Draw info */
 .sf-banner.lang-si .sf-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -308,7 +318,7 @@
 
 /* Column labels */
 .sf-banner.lang-si .sf-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -347,7 +357,7 @@
 
 /* Draw info */
 .sf-banner.lang-ta .sf-info-label {
-    font-size: 0.95em;
+    font-size: 1.3em;
     padding: 0.3em 0.5em;
 }
 
@@ -357,7 +367,7 @@
 
 /* Column labels */
 .sf-banner.lang-ta .sf-lbl {
-    font-size: 0.8em;
+    font-size: 1.3em;
 }
 
 /* Balls */

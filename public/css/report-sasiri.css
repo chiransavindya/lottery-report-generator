@@ -64,7 +64,7 @@
     background: #e5e7eb;
     color: black;
     padding: 0 0.8em;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     border-right: 1px solid #ccc;
     display: flex;
@@ -100,7 +100,7 @@
 }
 
 .sr-winning-label {
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     margin-bottom: 0.2em;
@@ -152,7 +152,7 @@
     background: white;
     color: black;
     padding: 0 1em;
-    font-size: 1.8em;
+    font-size: 2.8em;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -184,12 +184,12 @@
 
 /* Overlay */
 .sr-banner.lang-en .sr-data-overlay {
-    font-size: 1.1cqw;
+    font-size: 1.3cqw;
 }
 
 /* Draw info */
 .sr-banner.lang-en .sr-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0 0.8em;
 }
 
@@ -199,7 +199,7 @@
 
 /* Winning label */
 .sr-banner.lang-en .sr-winning-label {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -209,7 +209,7 @@
 
 /* Winners label */
 .sr-banner.lang-en .sr-winners-label {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /* Total value pill */
@@ -230,7 +230,7 @@
 
 /* Draw info */
 .sr-banner.lang-si .sr-info-label {
-    font-size: 0.95em;
+    font-size: 1.3em;
     padding: 0 0.6em;
 }
 
@@ -240,7 +240,7 @@
 
 /* Winning label */
 .sr-banner.lang-si .sr-winning-label {
-    font-size: 0.85em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -271,7 +271,7 @@
 
 /* Draw info */
 .sr-banner.lang-ta .sr-info-label {
-    font-size: 0.85em;
+    font-size: 1.3em;
     padding: 0 0.5em;
 }
 
@@ -281,7 +281,7 @@
 
 /* Winning label */
 .sr-banner.lang-ta .sr-winning-label {
-    font-size: 0.75em;
+    font-size: 1.3em;
 }
 
 /* Balls */

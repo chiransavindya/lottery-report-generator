@@ -81,7 +81,7 @@
 }
 
 .ak-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -162,6 +162,7 @@
 /* Overlay */
 .ak-banner.lang-en .ak-data-overlay {
     font-size: 1.1cqw;
+    margin-right: -6em;
 }
 
 /* Draw info */
@@ -176,7 +177,7 @@
 
 /* Column labels */
 .ak-banner.lang-en .ak-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -197,12 +198,13 @@
 
 /* Overlay */
 .ak-banner.lang-si .ak-data-overlay {
-    font-size: 1.85cqw;
+    font-size: 1.5cqw;
+    margin-right: -4em;
 }
 
 /* Draw info */
 .ak-banner.lang-si .ak-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -212,7 +214,7 @@
 
 /* Column labels */
 .ak-banner.lang-si .ak-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -238,7 +240,7 @@
 
 /* Draw info */
 .ak-banner.lang-ta .ak-info-label {
-    font-size: 1.0em;
+    font-size: 1.3em;
     padding: 0.3em 0.5em;
 }
 
@@ -248,7 +250,7 @@
 
 /* Column labels */
 .ak-banner.lang-ta .ak-lbl {
-    font-size: 0.85em;
+    font-size: 1.3em;
 }
 
 /* Balls */

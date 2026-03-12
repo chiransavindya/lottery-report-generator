@@ -84,7 +84,7 @@
 }
 
 .sb-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -149,7 +149,7 @@
     border-radius: 0.4em;
     overflow: hidden;
     min-width: 28em;
-    margin-left: 1.5em;
+    margin-right: 11.5em;
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.18);
 }
 
@@ -223,11 +223,12 @@
 
 .sb-banner.lang-en .sb-data-overlay {
     font-size: 1.1cqw;
+    margin-right: -12em;
 }
 
 .sb-banner.lang-en .sb-info-label {
     font-size: 1.3em;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
 }
 
 .sb-banner.lang-en .sb-info-val {
@@ -235,7 +236,7 @@
 }
 
 .sb-banner.lang-en .sb-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .sb-banner.lang-en .sb-ball {
@@ -267,7 +268,7 @@
 }
 
 .sb-banner.lang-si .sb-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -276,7 +277,7 @@
 }
 
 .sb-banner.lang-si .sb-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 .sb-banner.lang-si .sb-ball {
@@ -308,7 +309,7 @@
 }
 
 .sb-banner.lang-ta .sb-info-label {
-    font-size: 0.95em;
+    font-size: 1.3em;
     padding: 0.3em 0.5em;
 }
 
@@ -317,7 +318,7 @@
 }
 
 .sb-banner.lang-ta .sb-lbl {
-    font-size: 0.8em;
+    font-size: 1.3em;
 }
 
 .sb-banner.lang-ta .sb-ball {

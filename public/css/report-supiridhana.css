@@ -70,7 +70,7 @@
 }
 
 .ds-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -160,7 +160,7 @@
 }
 
 .ds-banner.lang-en .ds-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .ds-banner.lang-en .ds-ball {
@@ -180,7 +180,7 @@
 }
 
 .ds-banner.lang-si .ds-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -189,7 +189,7 @@
 }
 
 .ds-banner.lang-si .ds-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 .ds-banner.lang-si .ds-ball {
@@ -209,7 +209,7 @@
 }
 
 .ds-banner.lang-ta .ds-info-label {
-    font-size: 1.0em;
+    font-size: 1.3em;
     padding: 0.3em 0.5em;
 }
 
@@ -218,7 +218,7 @@
 }
 
 .ds-banner.lang-ta .ds-lbl {
-    font-size: 0.85em;
+    font-size: 1.3em;
 }
 
 .ds-banner.lang-ta .ds-ball {

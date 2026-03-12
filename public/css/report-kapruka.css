@@ -82,7 +82,7 @@
 }
 
 .kp-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: white;
     text-transform: capitalize;
@@ -124,7 +124,7 @@
 .kp-ball-group.kp-col-sup {
     justify-content: center;
     margin-right: 1.5em;
-    width: 6em;
+    width: 8em;
 }
 
 .kp-ball-group.kp-col-win {
@@ -184,7 +184,7 @@
 
 /* Column labels */
 .kp-banner.lang-en .kp-lbl {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -206,12 +206,12 @@
 
 /* Overlay */
 .kp-banner.lang-si .kp-data-overlay {
-    font-size: 1.75cqw;
+    font-size: 1.5cqw;
 }
 
 /* Draw info */
 .kp-banner.lang-si .kp-info-label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 0.4em 0.7em;
 }
 
@@ -221,7 +221,7 @@
 
 /* Column labels */
 .kp-banner.lang-si .kp-lbl {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 /* Balls */
@@ -248,7 +248,7 @@
 
 /* Draw info */
 .kp-banner.lang-ta .kp-info-label {
-    font-size: 1.0em;
+    font-size: 1.3em;
     padding: 0.3em 0.5em;
 }
 
@@ -258,7 +258,7 @@
 
 /* Column labels */
 .kp-banner.lang-ta .kp-lbl {
-    font-size: 0.85em;
+    font-size: 1.3em;
 }
 
 /* Balls */
