@@ -28,8 +28,10 @@
     ];
     $lwImage = $lwImageMap[$lang] ?? 'lagna_english.png';
 
-    $L = function ($key) use ($labels) {
-        return mb_convert_case($labels[$key] ?? $key, MB_CASE_TITLE, "UTF-8");
+    $L = function ($key) use ($labels, $lang) {
+        $value = $labels[$key] ?? $key;
+        // Only apply title-case for English; Tamil/Sinhala must not be altered
+        return $lang === 'en' ? mb_convert_case($value, MB_CASE_TITLE, 'UTF-8') : $value;
     };
 @endphp
 

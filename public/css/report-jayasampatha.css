@@ -164,6 +164,7 @@
 /* Overlay */
 .js-banner.lang-en .js-data-overlay {
     font-size: 1.1cqw;
+    margin-right: -10em;
 }
 
 /* Draw info */
@@ -264,4 +265,5 @@
 .js-banner.lang-ta .js-jackpot-pill {
     font-size: 1.8em;
     padding: 0.3em 0.7em;
+    margin-left: -3em;
 }
