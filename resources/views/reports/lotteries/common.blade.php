@@ -19,7 +19,7 @@
         @endif
         
         @if($draw->next_jackpot)
-            <p><strong>Next Jackpot:</strong> Rs. {{ number_format($draw->next_jackpot, 2) }}</p>
+            <p><strong>Next Jackpot:</strong> {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }} {{ number_format($draw->next_jackpot, 2) }}</p>
         @endif
 
         <p style="color: red; font-size: 0.8em; margin-top: 10px;">

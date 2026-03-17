@@ -199,7 +199,8 @@
 
 /* Overlay */
 .js-banner.lang-si .js-data-overlay {
-    font-size: 1.85cqw;
+    font-size: 1.2cqw;
+    margin-right: -10em;
 }
 
 /* Draw info */
@@ -235,7 +236,8 @@
 
 /* Overlay */
 .js-banner.lang-ta .js-data-overlay {
-    font-size: 1.5cqw;
+    font-size: 1.2cqw;
+    margin-right: -9em;
 }
 
 /* Draw info */

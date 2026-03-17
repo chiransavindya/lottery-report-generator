@@ -286,6 +286,7 @@ class ReportGenerationService
                     'Zodiac' => 'ZODIAC (LAGNA)',
                     'Next Jackpot' => 'NEXT SUPER JACKPOT',
                     'Total Value' => 'TOTAL VALUE OF PRIZES',
+                    'Total Prize Value' => 'TOTAL PRIZE VALUE',
                     'Winners' => 'TOTAL NO. OF Rs.200,000 WINNERS',
                     'Prize' => 'Prize',
                     'Special No' => 'Special No.'
@@ -301,6 +302,7 @@ class ReportGenerationService
                     'Zodiac' => 'ලග්නය',
                     'Next Jackpot' => 'මීළඟ සුපිරි ජැක්පොට්',
                     'Total Value' => 'ත්‍යාගවල මුළු වටිනාකම',
+                    'Total Prize Value' => 'ත්‍යාගවල මුළු වටිනාකම',
                     'Winners' => 'රු.200,000 දිනුම්ලාභීන් ගණන',
                     'Prize' => 'ත්‍යාගය',
                     'Special No' => 'විශේෂ අංකය'
@@ -316,6 +318,7 @@ class ReportGenerationService
                     'Zodiac' => 'இராசி',
                     'Next Jackpot' => 'அடுத்த சூப்பர் ஜாக்பாட்',
                     'Total Value' => 'பரிசுகளின் மொத்த மதிப்பு',
+                    'Total Prize Value' => 'வெல்லப்பட்ட மொத்த பரிசுத்தொகை',
                     'Winners' => 'ரூ.200,000 வெற்றியாளர்களின் எண்ணிக்கை',
                     'Prize' => 'பரிசு',
                     'Special No' => 'சிறப்பு எண்'

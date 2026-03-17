@@ -26,12 +26,7 @@
     font-size: 1.1cqw;
 }
 
-.sb-main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-}
+/* .sb-main-content replaced by language-specific classes below */
 
 .sb-table-content {
     min-width: 25em;
@@ -92,12 +87,16 @@
 }
 
 .sb-lbl.sb-col-win {
-    margin-right: 2em;
-    text-align: left;
+width: 13.2em;
+    margin-right: 10em;
+    text-align: center;
 }
 
 .sb-lbl.sb-col-eng {
     width: 5em;
+    text-align: center;
+    align-self: flex-start;
+    margin-left: -8.5em;
 }
 
 .sb-results-row {
@@ -226,6 +225,13 @@
     margin-right: -12em;
 }
 
+.sb-main-content-en {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .sb-banner.lang-en .sb-info-label {
     font-size: 1.3em;
     padding: 0.5em 0.5em;
@@ -246,6 +252,7 @@
 .sb-banner.lang-en .sb-jackpot-pill {
     font-size: 2.3em;
     padding: 0.3em 1em;
+    margin-right: -5em;
 }
 
 .sb-banner.lang-en .sb-prize-card-title {
@@ -264,7 +271,15 @@
 /* ── 3. SINHALA (lang-si) ── */
 
 .sb-banner.lang-si .sb-data-overlay {
-    font-size: 1.85cqw;
+    font-size: 1.2cqw;
+    margin-right: -12em;
+}
+
+.sb-main-content-si {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .sb-banner.lang-si .sb-info-label {
@@ -285,8 +300,9 @@
 }
 
 .sb-banner.lang-si .sb-jackpot-pill {
-    font-size: 1.8em;
+    font-size: 2.3em;
     padding: 0.3em 0.8em;
+    margin-right: -8em;
 }
 
 .sb-banner.lang-si .sb-prize-card-title {
@@ -305,7 +321,16 @@
 /* ── 4. TAMIL (lang-ta) ── */
 
 .sb-banner.lang-ta .sb-data-overlay {
-    font-size: 1.5cqw;
+    font-size: 1.3cqw;
+    margin-right: -12em;
+}
+
+.sb-main-content-ta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: -22em;
 }
 
 .sb-banner.lang-ta .sb-info-label {
@@ -319,6 +344,7 @@
 
 .sb-banner.lang-ta .sb-lbl {
     font-size: 1.3em;
+    margin-right: 8.5em;
 }
 
 .sb-banner.lang-ta .sb-ball {
@@ -328,14 +354,15 @@
 .sb-banner.lang-ta .sb-jackpot-pill {
     font-size: 1.8em;
     padding: 0.3em 0.7em;
+    margin-right: -7em;
 }
 
 .sb-banner.lang-ta .sb-prize-card-title {
-    font-size: 1.05em;
+    font-size: 1.35em;
 }
 
 .sb-banner.lang-ta .sb-prize-card-label {
-    font-size: 0.8em;
+    font-size: 1.0em;
 }
 
 .sb-banner.lang-ta .sb-prize-card-number {

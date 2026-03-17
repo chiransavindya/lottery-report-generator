@@ -42,7 +42,7 @@
     <div class="sb-data-overlay">
 
         {{-- [C-MAIN] LEFT — main lottery data --}}
-        <div class="sb-main-content">
+        <div class="sb-main-content-{{ $lang }}">
 
             {{-- [C1] ROW 1 — Draw Number + Colour boxes
                  English → .sb-banner.lang-en .sb-info-label { font-size: 1.3em; padding: 0.5em 1em }
@@ -115,7 +115,7 @@
             @if($draw->next_jackpot)
                 <div class="sb-jackpot-row">
                     <div class="sb-jackpot-pill">
-                        {{ $L('Next Jackpot') }} : Rs.
+                        {{ $L('Next Jackpot') }} : {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }}
                         {{ number_format($draw->next_jackpot, 2) }}
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         @foreach($prizeRows as $p)
                             @php $amt = (int) ($p['amount'] ?? $p['value'] ?? 0); @endphp
                             <div class="sb-prize-card-col">
-                                <div class="sb-prize-card-label">Rs.{{ number_format($amt) }}/- {{ $L('Prize') }}</div>
+                                <div class="sb-prize-card-label">{{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }}{{ number_format($amt) }}/- {{ $L('Prize') }}</div>
                                 <div class="sb-prize-card-number">{{ $specialNos[$amt] ?? '-' }}</div>
                             </div>
                             @if(!$loop->last)

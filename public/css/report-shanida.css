@@ -40,12 +40,7 @@
 }
 
 /* Main content area (left) */
-.sf-main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-}
+/* .sf-main-content replaced by language-specific classes below */
 
 /* Table content area (Right — unused kept for compatibility) */
 .sf-table-content {
@@ -257,6 +252,13 @@
     margin-right: -10em;
 }
 
+.sf-main-content-en {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 /* Draw info */
 .sf-banner.lang-en .sf-info-label {
     font-size: 1.3em;
@@ -303,7 +305,15 @@
 
 /* Overlay */
 .sf-banner.lang-si .sf-data-overlay {
-    font-size: 1.85cqw;
+    font-size: 1.2cqw;
+    margin-right: -9em;
+}
+
+.sf-main-content-si {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 /* Draw info */
@@ -334,7 +344,7 @@
 
 /* Prize card */
 .sf-banner.lang-si .sf-prize-card-title {
-    font-size: 1.15em;
+    font-size: 1.55em;
 }
 
 .sf-banner.lang-si .sf-prize-card-label {
@@ -352,7 +362,16 @@
 
 /* Overlay */
 .sf-banner.lang-ta .sf-data-overlay {
-    font-size: 1.5cqw;
+    font-size: 1.1cqw;
+    margin-right: -10em;
+}
+
+.sf-main-content-ta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: -8em;
 }
 
 /* Draw info */
@@ -379,15 +398,16 @@
 .sf-banner.lang-ta .sf-jackpot-pill {
     font-size: 1.8em;
     padding: 0.3em 0.7em;
+    margin-right: -8em;
 }
 
 /* Prize card */
 .sf-banner.lang-ta .sf-prize-card-title {
-    font-size: 1.05em;
+    font-size: 1.35em;
 }
 
 .sf-banner.lang-ta .sf-prize-card-label {
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .sf-banner.lang-ta .sf-prize-card-number {

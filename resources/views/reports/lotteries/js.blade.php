@@ -109,14 +109,14 @@
         @if($draw->total_prize_value || $draw->total_sales)
             <div class="js-jackpot-row">
                 <div class="js-jackpot-pill">
-                    {{ $L('Total Prize Value') }} : Rs.
+                    {{ $L('Total Prize Value') }} : {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }}
                     {{ number_format($draw->total_prize_value ?? $draw->total_sales, 2) }}
                 </div>
             </div>
         @elseif($draw->next_jackpot)
             <div class="js-jackpot-row">
                 <div class="js-jackpot-pill">
-                    {{ $L('Next Jackpot') }} : Rs. {{ number_format($draw->next_jackpot, 2) }}
+                    {{ $L('Next Jackpot') }} : {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }} {{ number_format($draw->next_jackpot, 2) }}
                 </div>
             </div>
         @endif

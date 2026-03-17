@@ -14,7 +14,7 @@
 
     <div class="sf-data-overlay">
         <!-- Main Content Area (Left/Center) -->
-        <div class="sf-main-content">
+        <div class="sf-main-content-{{ $lang }}">
             <!-- Row 1: Draw Info -->
             <div class="sf-info-row">
                 <div class="sf-info-box">
@@ -60,7 +60,7 @@
             @if($draw->next_jackpot)
                 <div class="sf-jackpot-row">
                     <div class="sf-jackpot-pill">
-                        {{ $L('Next Jackpot') }} : Rs.
+                        {{ $L('Next Jackpot') }} : {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }}
                         {{ number_format($draw->next_jackpot, 2) }}
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                         @foreach($prizeRows as $row)
                             <div class="sf-prize-card-col">
                                 <div class="sf-prize-card-label">
-                                    Rs.{{ number_format($row['amount']) }}/- {{ $L('Prize') }}
+                                    {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }}{{ number_format($row['amount']) }}/- {{ $L('Prize') }}
                                 </div>
                                 <div class="sf-prize-card-number">{{ $row['special_no'] }}</div>
                             </div>

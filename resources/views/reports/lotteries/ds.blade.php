@@ -109,7 +109,7 @@
         @if($draw->next_jackpot)
             <div class="ds-jackpot-row">
                 <div class="ds-jackpot-pill">
-                    {{ $L('Next Jackpot') }} : Rs. {{ number_format($draw->next_jackpot, 2) }}
+                    {{ $L('Next Jackpot') }} : {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }} {{ number_format($draw->next_jackpot, 2) }}
                 </div>
             </div>
         @endif

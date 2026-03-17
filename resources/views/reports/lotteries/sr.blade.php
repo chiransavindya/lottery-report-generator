@@ -130,7 +130,7 @@
             @if($draw->total_prize_value || $draw->total_sales)
                 <div class="sr-jackpot-row">
                     <div class="sr-jackpot-pill">
-                        {{ $L('Total Value') }} : Rs.
+                        {{ $L('Total Value') }} : {{ $lang === 'ta' ? 'ரூ.' : 'Rs.' }}
                         {{ number_format($draw->total_prize_value ?? $draw->total_sales, 2) }}
                     </div>
                 </div>

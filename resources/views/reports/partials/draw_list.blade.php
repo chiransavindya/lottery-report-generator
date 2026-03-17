@@ -179,7 +179,7 @@
                                 <div style="order: {{ $getOrder('jackpot') }};">
                                     <label style="font-size: 11px; color: var(--text-light); font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 8px;">{{ $labels['Next Jackpot'] }}</label>
                                     <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #f59e0b; padding: 10px 15px; border-radius: 8px;">
-                                        <div style="font-size: 16px; font-weight: 900; color: #78350f;">Rs. {{ number_format($draw->next_jackpot, 2) }}</div>
+                                        <div style="font-size: 16px; font-weight: 900; color: #78350f;">{{ $language === 'ta' ? 'ரூ.' : 'Rs.' }} {{ number_format($draw->next_jackpot, 2) }}</div>
                                     </div>
                                 </div>
                             @endif
@@ -189,7 +189,7 @@
                                 <div style="order: {{ $getOrder('total_val') }};">
                                     <label style="font-size: 11px; color: var(--text-light); font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 8px;">{{ $labels['Total Value'] }}</label>
                                     <div style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 4px solid #3b82f6; padding: 10px 15px; border-radius: 8px;">
-                                        <div style="font-size: 16px; font-weight: 900; color: #1e40af;">Rs. {{ number_format($draw->total_prize_value ?? $draw->total_sales, 2) }}</div>
+                                        <div style="font-size: 16px; font-weight: 900; color: #1e40af;">{{ $language === 'ta' ? 'ரூ.' : 'Rs.' }} {{ number_format($draw->total_prize_value ?? $draw->total_sales, 2) }}</div>
                                     </div>
                                 </div>
                             @endif
@@ -246,7 +246,7 @@
                                                 $specialNo = $draw->metadata[$metaKey] ?? $prize['code'] ?? '-';
                                             @endphp
                                             <tr style="border-bottom: 2px solid black;">
-                                                <td style="padding: 8px; font-weight: 700; color: black; font-size: 14px; border-right: 2px solid black;">Rs. {{ number_format($amt) }}/-</td>
+                                                <td style="padding: 8px; font-weight: 700; color: black; font-size: 14px; border-right: 2px solid black;">{{ $language === 'ta' ? 'ரூ.' : 'Rs.' }} {{ number_format($amt) }}/-</td>
                                                 <td style="padding: 8px; text-align: center; font-weight: 700; color: black; font-size: 14px;">{{ $specialNo }}</td>
                                             </tr>
                                         @endforeach

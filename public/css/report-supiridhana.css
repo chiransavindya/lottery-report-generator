@@ -176,7 +176,8 @@
 /* ── 3. SINHALA (lang-si) ── */
 
 .ds-banner.lang-si .ds-data-overlay {
-    font-size: 1.85cqw;
+    font-size: 1.1cqw;
+    margin-right: -10em;
 }
 
 .ds-banner.lang-si .ds-info-label {
@@ -205,7 +206,8 @@
 /* ── 4. TAMIL (lang-ta) ── */
 
 .ds-banner.lang-ta .ds-data-overlay {
-    font-size: 1.5cqw;
+    font-size: 1.1cqw;
+    margin-right: -5em;
 }
 
 .ds-banner.lang-ta .ds-info-label {

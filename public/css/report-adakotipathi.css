@@ -235,7 +235,8 @@
 
 /* Overlay */
 .ak-banner.lang-ta .ak-data-overlay {
-    font-size: 1.5cqw;
+    font-size: 1.3cqw;
+    margin-right: -4em;
 }
 
 /* Draw info */
@@ -251,6 +252,7 @@
 /* Column labels */
 .ak-banner.lang-ta .ak-lbl {
     font-size: 1.3em;
+    margin-right: -1em;
 }
 
 /* Balls */

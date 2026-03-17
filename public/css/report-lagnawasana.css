@@ -256,7 +256,8 @@
 
 /* Overlay */
 .lw-banner.lang-ta .lw-data-overlay {
-    font-size: 1.5cqw;
+    font-size: 1.4cqw;
+    margin-right: -2em;
 }
 
 /* Draw info */
